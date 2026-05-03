@@ -1,0 +1,68 @@
+/* ── Flashcards ───────────────────────────────────────────── */
+.fc-scene {
+  perspective: 1000px;
+  width: 100%; height: 200px;
+  margin-bottom: 1rem; cursor: pointer;
+}
+
+.fc-card {
+  width: 100%; height: 100%; position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.48s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fc-card--flipped { transform: rotateY(180deg); }
+
+.fc-face {
+  position: absolute; inset: 0; backface-visibility: hidden;
+  border-radius: var(--radius-xl); border: 1px solid var(--beige-escuro);
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  padding: 1.5rem 2rem; text-align: center; gap: 0.5rem;
+}
+
+.fc-face--front { background: var(--rosa-fundo); }
+.fc-face--back  { background: var(--beige); transform: rotateY(180deg); }
+
+.fc-face__label { font-size: 9.5px; color: var(--beige-texto); letter-spacing: 0.16em; text-transform: uppercase; }
+.fc-face__text  { font-size: 16px; font-weight: 400; color: var(--texto); font-family: var(--font-serif); line-height: 1.5; }
+.fc-face--back .fc-face__text { font-size: 13.5px; font-family: var(--font-sans); color: var(--texto-medio); line-height: 1.7; }
+.fc-face__hint  { font-size: 10px; color: var(--beige-texto); letter-spacing: 0.05em; }
+
+/* Controls */
+.fc-controls {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 10px; margin-bottom: 1rem;
+}
+.fc-controls__btn {
+  padding: 0.45rem 0.9rem; background: none;
+  border: 1.5px solid var(--beige-escuro); border-radius: var(--radius-md);
+  color: var(--texto-medio); font-size: 12.5px; transition: all 0.15s;
+}
+.fc-controls__btn:hover:not(:disabled) { border-color: var(--rosa); color: var(--texto); }
+.fc-controls__btn:disabled { opacity: 0.32; }
+
+.fc-controls__center { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+
+.fc-controls__flip-btn {
+  background: var(--rosa); color: #fff; border: none;
+  border-radius: var(--radius-md); padding: 0.5rem 1.4rem;
+  font-size: 13px; font-weight: 600; transition: opacity 0.15s;
+}
+.fc-controls__flip-btn:hover { opacity: 0.88; }
+.fc-controls__counter { font-size: 10.5px; color: var(--texto-fraco); }
+
+/* Dots */
+.fc-dots { display: flex; gap: 4px; justify-content: center; flex-wrap: wrap; margin-bottom: 1rem; }
+.fc-dot  { width: 5px; height: 5px; border-radius: 50%; background: var(--beige-escuro); cursor: pointer; transition: all 0.18s; }
+.fc-dot--active { background: var(--rosa); transform: scale(1.5); }
+.fc-dot--seen   { background: var(--rosa); opacity: 0.35; }
+
+/* Toolbar */
+.fc-toolbar { display: flex; gap: 7px; justify-content: center; }
+.fc-toolbar__btn {
+  background: none; border: 1px solid var(--beige-escuro);
+  border-radius: var(--radius-md); padding: 0.38rem 0.9rem;
+  font-size: 11.5px; color: var(--texto-fraco); transition: all 0.15s;
+}
+.fc-toolbar__btn:hover { border-color: var(--rosa); color: var(--texto-medio); }

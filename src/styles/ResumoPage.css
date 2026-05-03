@@ -1,0 +1,20 @@
+/* ── Resumo ───────────────────────────────────────────────── */
+.resumo__paragrafo {
+  font-size: 14px;
+  line-height: 1.85;
+  color: var(--texto-medio);
+  white-space: pre-wrap;
+
+}
+.resumo__paragrafo + .resumo__paragrafo { margin-top: 1rem; }
+
+.resumo__gif {
+  width: 100%; max-width: 420px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--beige-escuro);
+  display: block; margin-bottom: 1rem;
+}
+.resumo__gif-label {
+  font-size: 11px; color: var(--texto-fraco);
+  font-style: italic; margin-bottom: 1rem;
+}
