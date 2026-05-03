@@ -1,3 +1,13 @@
+import dfsBFS from "../images/dfsBFS.gif";
+import ucs from "../images/ucs.gif";
+import ASTAR from "../images/ASTAR.gif"
+import DLS from "../images/DLS.gif"
+import download from "../images/download.gif"
+import IDS from "../images/IDS.gif"
+import image from "../images/image.png"
+import image1 from "../images/image1.png"
+import minimax from "../images/minimax.gif"
+
 const topicos = [
   {
     id: 1,
@@ -186,7 +196,7 @@ Explora todos os vértices adjacentes ao estado inicial  e, em seguida, expande 
 — Ótimo: Apenas se os custos forem iguais.
 — Complexidade de Tempo: O(b<sup>s</sup>) 
 — Complexidade de Espaço: O(b<sup>s</sup>)`,
-    gif: "src/images/dfsBFS.gif",
+    gif: dfsBFS,
     gifLabel: "Exemplo: Busca em Profundidade (DFS) e Busca em Largura (BFS)",
   },
   {
@@ -199,7 +209,7 @@ Explora todos os vértices adjacentes ao estado inicial  e, em seguida, expande 
 — Complexidade de Tempo: O(b<sup>C*/ε</sup>)
 — Complexidade de Espaço: O(b<sup>C*/ε</sup>)
 
-<img src="src/images/ucs.gif" alt="Exemplo DFS" class="resumo__gif" />
+<img src="${ucs}" alt="Exemplo DFS" class="resumo__gif" />
 <p class="resumo__gif-label">Busca de Custo Uniforme (UCS)</p>
 
 <strong>Busca em Profundidade com Limite (DLS):</strong>
@@ -213,7 +223,7 @@ Nesse tipo de busca é imposto um limite máximo de profundidade. Para essa busc
 \t• Todos os nós mais profundos que d não são explorados
 \t• Evita ciclos e reduz a complexidade, pois evita caminhos longos uma vez que d < m.
 
-<img src="src/images/DLS.gif" alt="Exemplo DFS" class="resumo__gif" />
+<img src="${DLS}" alt="Exemplo DFS" class="resumo__gif" />
 <p class="resumo__gif-label">Profundidade com Limite (DLS)</p>
 
 <strong>Busca com Aprofundamento Iterativo (IDS):</strong>
@@ -224,7 +234,7 @@ Faz buscas em profundidade limitadas, as buscas são feitas aumentando o limite 
 — Complexidade de Tempo: O(b<sup>d</sup>) 
 — Complexidade de Espaço: O(bd)
 
-<img src="src/images/IDS.gif" alt="Exemplo DFS" class="resumo__gif"/>
+<img src="${IDS}" alt="Exemplo DFS" class="resumo__gif"/>
 <p class="resumo__gif-label">Busca com Aprofundamento Iterativo (IDS)</p>`,
   },
   {
@@ -256,7 +266,7 @@ Com uma boa heurística, a complexidade de tempo e espaço podem ser reduzidas s
 — Ótimo: Não, pois nem sempre irá encontrar o melhor caminho.
 — Complexidade de Tempo:  O(b<sup>m</sup>) 
 — Complexidade de Espaço: O(b<sup>m</sup>)`,
-    gif: "src/images/download.gif",
+    gif: download,
     gifLabel: "Exemplo: Greedy Search",
   },
 
@@ -276,12 +286,14 @@ f(n): Valor usado para escolher o próximo nó.
 
 O A* é o algoritmo que expande o menor número de caminhos se comparado a algoritmos de busca ótimos que partem do mesmo início e usam uma heurística admissível.
 O A* adiciona contornos gradualmente aos nos. 
+<img src="${image1}" alt="Exemplo dos cotornos que o A* adiciona durante a realização da busca" class="resumo__gif"/>
+<p class="resumo__gif-label">Exemplo dos cotornos que o A* adiciona durante a realização da busca</p>
 
 — Completo:  Sim
 — Ótimo: Sim, mas a heurística tem que ser aceitável e consistente
 — Complexidade de Tempo: Depende da heurística. No pior caso é O(b<sup>s</sup>)
 — Complexidade de Espaço: O(b<sup>s</sup>)`,
-    gif: "src/images/ASTAR.gif",
+    gif: ASTAR,
     gifLabel: "Exemplo: A* Search",
   },
 
@@ -298,6 +310,9 @@ Uma heurística pode ser considerada admissível se, para cada nó:
 
 onde h * (n) é o verdadeiro custo para o objetivo mais próximo. 
 Problema relaxado: É um problema com menos restrições que o problema original. Exemplo: No jogo 8-puzzle, considerando-se que é possível realizar qualquer movimento para resolver o quebra-cabeça, ou seja não temos restrições de movimentos, chegamos a um problema relaxado.
+<p class="resumo__gif-label">Exemplo de possibilidades que pode mover uma peça no 8-puzzle quando assume-se um problema relaxado</p>
+<img src="${image}" alt="Exemplo de possibilidades que pode mover uma peça no 8-puzzle quando assume-se um problema relaxado" class="resumo__gif"/>
+
 Uma heurística admissível é uma solução para um problema relaxado. Para criá-la é necessário resolver o problema relaxado sem utilizar busca.
 O custo obtido é uma solução ótima, isso é a heurística admissível para o problema original.
 É preferível heurísticas que forneçam diferentes valores para diferentes estados.
@@ -354,7 +369,7 @@ Resposta 1: Sim, se o humano jogar de forma ótimo(ou seja, previsível). O cami
 
 Resposta 2: Não, se o humano jogar de forma subótima, o resultado será imprevisível. O caminho previsto pode não ocorrer.
 O valor permanece válido como a melhor utilidade garantida, mas os movimentos reais podem ser diferentes.`,
-  gif: "src/images/minimax.gif",
+  gif: minimax,
   gifLabel: "Exemplo: Algoritmo MINIMAX",
   },
 ];
