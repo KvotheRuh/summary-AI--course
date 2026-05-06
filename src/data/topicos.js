@@ -49,7 +49,7 @@ Exemplo: Se bancos pedem COBOL e Jailson trabalha em um banco, então é possív
 Quando uma máquina reproduz uma habilidade humana, avaliamos por três critérios:
 — Comportamental: Se a máquina produz comportamento semelhante aos humanos, podemos dizer que a habilidade foi reproduzida
 — Funcionalidade: Não importa como o sistema realiza a função, apenas se foi realizada de forma eficaz.
-— Cognitiva:  Se a máquina não sente, não entende ou não tem consciência, entao nao ha reprodução genuína, apenas uma simulação superficial.`,
+— Cognitiva:  Se a máquina não sente, não entende ou não tem consciência, entao não há reprodução genuína, apenas uma simulação superficial.`,
   },
   {
     id: 4,
@@ -259,7 +259,7 @@ Para muitos problemas, o custo para alcançar o objetivo a partir de um estado e
 
 h(n): Estima o custo do caminho mais barato a partir do estado do nó n até o estado objetivo. Se o n for o objetivo então h(n) = 0.
 
-Semelhante a busca em profundidade a Greedy Search segue um caminho    do início ao fim. Por isso, ela não é ótima e nem completa, pois pode seguir um caminho infinito e não testar outras possibilidades.
+Semelhante a busca em profundidade a Greedy Search segue um caminho do início ao fim. Por isso, ela não é ótima e nem completa, pois pode seguir um caminho infinito e não testar outras possibilidades.
 Com uma boa heurística, a complexidade de tempo e espaço podem ser reduzidas substancialmente. O valor da redução dependerá do problema e da qualidade da função h.
 
 — Completo: Não, porque pode nunca encontrar uma solução. Se não lidar com estados repetidos, o sistema pode ficar preso.
@@ -322,7 +322,7 @@ Heurística Admissível: heurística estimada custo atual.
 
 Heurística Consistente(monotonicidade): A heurística estimada é menor ou igual ao custo real de alcançar o próximo estado + a estimativa desse sucessor(heurística estimada do vizinho). Esse tipo de heurística faz com que o valor f(n) nunca diminua,
 
-OBS:Toda heurística consistente é admissível, mas nem toda heurística admissível é consistente. `,
+OBS: Toda heurística consistente é admissível, mas nem toda heurística admissível é consistente. `,
   },
   {
     id: 16,

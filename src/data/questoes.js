@@ -733,10 +733,10 @@ const questoes = [
     topicoId: 11,
     question: "Qual a complexidade de espaço exigida pela Busca em Profundidade com Limite (DLS)?",
     options: [
-      "O(b^d)",
+      "O(b<sup>d</sup>)",
       "O(bd)",
-      "O(b^m)",
-      "O(b^(C*/ε))",
+      "O(b<sup>m</sup>)",
+      "O(b<sup>(C*/ε)</sup>)",
       "O(1)"
     ],
     correct: 1,
@@ -753,11 +753,11 @@ const questoes = [
     options: [
       "A busca informada explora apenas grafos contínuos.",
       "A busca informada não se importa com a performance do agente.",
-      "A busca informada utiliza estratégias e heurísticas para estimar a proximidade do objetivo.",
       "A busca informada visita todos os nós da árvore antes de parar.",
-      "A busca informada nunca é capaz de encontrar o menor caminho."
+      "A busca informada nunca é capaz de encontrar o menor caminho.",
+      "A busca informada utiliza estratégias e heurísticas para estimar a proximidade do objetivo."
     ],
-    correct: 2,
+    correct: 4,
     explanation: "Ela usa conhecimento adicional (a heurística) para 'mirar' em direção ao objetivo em vez de atirar no escuro."
   },
   {
@@ -765,13 +765,13 @@ const questoes = [
     topicoId: 12,
     question: "A função heurística h(n) em um algoritmo tem como finalidade principal:",
     options: [
-      "Superestimar os custos para evitar caminhos subótimos.",
       "Estimar o custo do estado atual 'n' até o estado objetivo.",
+      "Superestimar os custos para evitar caminhos subótimos.",
       "Contar o número de nós que já foram visitados pelo agente.",
       "Impedir que o agente entre em loops durante a DFS.",
       "Ignorar o objetivo principal e focar na utilidade secundária."
     ],
-    correct: 1,
+    correct: 0,
     explanation: "A função h(n) tenta adivinhar o quão perto ou quão barato é ir de onde você está agora (n) até a meta final."
   },
   {
@@ -781,7 +781,7 @@ const questoes = [
     options: [
       "Para um problema específico, só é possível criar uma única heurística válida.",
       "Elas tomam decisões absolutas e perfeitas para o caminho inteiro do começo ao fim.",
-      "A orientação fornecida por elas serve apenas para decisões locais entre sucessores imediatos.",
+      "A orientação fornecida por elas serve apenas para decisões locais.",
       "Elas obrigatoriamente aumentam a complexidade de tempo de qualquer busca.",
       "Não podem ser aplicadas em ambientes parcialmente observáveis."
     ],
@@ -809,11 +809,11 @@ const questoes = [
     options: [
       "Adicionar ao teste de Turing.",
       "Descartar completamente da memória local.",
-      "Expandir em seguida a partir da borda/fronteira (fringe).",
       "Converter em estado determinístico.",
-      "Dividir entre a busca episódica e sequencial."
+      "Dividir entre a busca episódica e sequencial.",
+      "Determinar quais nós fringe devem ser expandidos."
     ],
-    correct: 2,
+    correct: 4,
     explanation: "A heurística ajuda a ranquear a fronteira (fringe) para decidir qual nó é o mais promissor para ser aberto e explorado no próximo turno."
   },
 
@@ -869,11 +869,11 @@ const questoes = [
     options: [
       "Busca de Custo Uniforme (UCS)",
       "Busca em Largura (BFS)",
-      "Busca em Profundidade (DFS)",
       "Aprofundamento Iterativo (IDS)",
+      "Busca em Profundidade (DFS)",
       "Algoritmo A*"
     ],
-    correct: 2,
+    correct: 3,
     explanation: "Assim como a DFS, a Gulosa prefere ir se afundando rapidamente num único caminho que parece promissor até o final, em vez de tatear cuidadosamente os níveis (como o BFS faz)."
   },
   {
@@ -884,10 +884,10 @@ const questoes = [
       "O(bd)",
       "O(b<sup>s</sup>)",
       "O(1)",
-      "O(b<sup>m</sup>)",
-      "O(s<sup>m</sup>)"
+      "O(s<sup>m</sup>)",
+      "O(b<sup>m</sup>)"
     ],
-    correct: 3,
+    correct: 4,
     explanation: "Se a heurística for ruim, a busca gulosa se comporta de maneira ineficiente parecida com a de um DFS travado no limite máximo do grafo, custando O(b^m)."
   },
 
@@ -901,7 +901,7 @@ const questoes = [
     options: [
       "BFS e DFS",
       "DLS e IDS",
-      "UCS (Custo Uniforme) e Greedy Search",
+      "UCS e Greedy Search",
       "Greedy Search e BFS",
       "Busca Informada e Minimax"
     ],
@@ -1059,7 +1059,7 @@ const questoes = [
   {
     id: 77,
     topicoId: 16,
-    question: "No ambiente de jogos determinísticos, o que o agente agora tenta fazer em relação aos números da Função de Utilidade?",
+    question: "No ambiente de jogos determinísticos, o que o agente tenta fazer em relação aos números da Função de Utilidade?",
     options: [
       "Minimizar permanentemente a utilidade.",
       "Zerá-la a cada turno concluído.",
@@ -1076,7 +1076,7 @@ const questoes = [
     question: "O que caracteriza os cenários classificados como 'Zero-Sum Games' (Jogos de Soma Zero)?",
     options: [
       "As funções de utilidade entre os jogadores são opostas e conflitantes.",
-      "Os jogadores nunca fazem pontos; o placar será sempre zero.",
+      "A soma total do placar final deve ser diferente de 0.",
       "Os agentes cooperam independentes para chegar ao fim juntos.",
       "É um modelo onde a máquina Deep Blue não consegue jogar.",
       "Não ocorre competição, apenas indiferença estratégica."
@@ -1105,7 +1105,7 @@ const questoes = [
     options: [
       "O primeiro robô aspirador de pó com sensores avançados.",
       "O modelo LLM predecessor do ChatGPT desenvolvido para responder charadas.",
-      "A primeira máquina a ganhar um jogo de xadrez contra um humano campeão mundial usando busca competitiva.",
+      "A primeira máquina a ganhar um jogo de xadrez contra campeão mundial.",
       "A primeira interface a resolver labirintos com Greedy Search.",
       "Um algoritmo genético voltado para ambientes estocásticos marítimos."
     ],
@@ -1125,7 +1125,7 @@ const questoes = [
       "Minimizar sua utilidade para ceder o jogo ao oponente de forma ética.",
       "Atingir o nível mais baixo da árvore rapidamente.",
       "Buscar cooperar com o jogador MIN sempre que possível.",
-      "Maximizar a sua função de utilidade, ao mesmo tempo em que reduz ao máximo a utilidade do jogador MIN."
+      "Maximizar a sua função de utilidade."
     ],
     correct: 4,
     explanation: "O MAX fará de tudo para puxar a balança para cima (sucesso dele), sabendo que o MIN tentará o exato oposto no turno seguinte."
@@ -1135,13 +1135,13 @@ const questoes = [
     topicoId: 17,
     question: "A metodologia 'bottom-up' do MINIMAX aplicada em árvores de jogo significa que ele:",
     options: [
+      "Calcula as utilidades nas folhas do jogo e vai repassando esses valores de baixo para cima até a raiz.",
       "Apaga as folhas da árvore gradualmente para poupar a memória do sistema.",
       "Ignora os níveis MAX durante as ramificações inferiores.",
-      "Calcula as utilidades nas folhas do jogo (terminais) e vai repassando esses valores de baixo para cima até a raiz.",
       "Usa BFS apenas quando a busca atinge o limite episódico.",
       "Adiciona nós raízes artificiais na extremidade debaixo."
     ],
-    correct: 2,
+    correct: 0,
     explanation: "Ele olha para todos os fins de jogo lá embaixo (quem ganha, empata ou perde) e propaga essa 'certeza' de volta pelo caminho para a primeira jogada na raiz."
   },
   {
@@ -1181,7 +1181,7 @@ const questoes = [
       "O algoritmo é forçado a resetar o jogo de soma-zero.",
       "A utilidade garantida é perdida e o MAX sofrerá uma redução na pontuação terminal.",
       "A árvore de jogo entra em redundância episódica e crasha.",
-      "O resultado e os movimentos previstos diferem, mas o MAX ganhará uma 'pontuação/utilidade' ainda maior que o garantido."
+      "O MAX ganhará uma 'pontuação/utilidade' ainda maior que o garantido."
     ],
     correct: 4,
     explanation: "O caminho que o MINIMAX planejou contava com o humano fechando todas as portas. Se o humano erra e abre uma porta, o MAX abandona o plano modesto, pega a porta aberta e massacra os lucros."
@@ -1207,10 +1207,10 @@ const questoes = [
   {
     id: 87,
     topicoId: 3,
-    question: "Analise as afirmações sobre os critérios de avaliação de IA:\nI. O critério comportamental foca na eficácia do resultado final.\nII. A funcionalidade prioriza o 'como' o sistema realiza a função.\nIII. O critério cognitivo nega a reprodução genuína sem consciência.\n\nEstá(ão) correta(s):",
-    options: ["Apenas I", "Apenas III", "I e II", "II e III", "I, II e III"],
-    correct: 1,
-    explanation: "I está errada (funcionalidade foca no resultado). II está errada (funcionalidade ignora o método)."
+    question: "Analise as afirmações sobre os critérios de avaliação de IA:\nI. O critério comportamental foca na eficácia do resultado final.\nII. A funcionalidade prioriza o 'como' o sistema realiza a função.\nIII. O critério cognitivo nega a reprodução genuína sem consciência.\nIV. O critério funcional avalia apenas o resultado, independentemente do processo.\nV. O critério cognitivo busca reproduzir os processos mentais humanos.\n\nEstá(ão) correta(s):",
+    options: ["Apenas I", "Apenas III", "I e II", "II e III", "III, IV e V"],
+    correct: 4,
+    explanation: "I está incorreta (comportamental observa comportamento, não só resultado). II está incorreta (funcional ignora o 'como'). III, IV e V estão corretas."
   },
   {
     id: 88,
@@ -1237,21 +1237,21 @@ const questoes = [
   {
     id: 90,
     topicoId: 3,
-    question: "Analise as premissas:\nI. Conversar com uma máquina sem identificá-la é o cerne do Teste de Turing.\nII. A simulação superficial é aceita pelo critério de funcionalidade.\n\nAssinale a correta:",
+    question: "Analise as premissas:\nI. Conversar com uma máquina sem identificá-la é o cerne do Teste de Turing.\nII. A simulação superficial é aceita pelo critério de funcionalidade.\nIII. O Teste de Turing avalia o comportamento observável da máquina.\nIV. O critério cognitivo exige que a máquina pense exatamente como um humano.\nV. O critério funcional desconsidera os processos internos do sistema.\n\nAssinale a correta:",
     options: [
-      "I e II são verdadeiras.",
+      "I, II e III são verdadeiras.",
+      "I, II, III e V são verdadeiras.",
+      "Apenas IV e V são verdadeiras.",
       "I é verdadeira e II é falsa.",
-      "I é falsa e II é verdadeira.",
-      "Ambas são falsas.",
-      "II anula a validade de I."
+      "Todas são verdadeiras."
     ],
-    correct: 0,
-    explanation: "Ambas as premissas estão alinhadas com as definições de Turing e Funcionalidade."
+    correct: 1,
+    explanation: "I, II e III estão corretas. V também está correta, pois o critério funcional foca no resultado. IV está incorreta, pois o critério cognitivo busca semelhança com processos humanos, mas não exige ser exatamente igual."
   },
   {
     id: 91,
     topicoId: 3,
-    question: "Qual opção apresenta a relação correta entre o critério e sua exigência?",
+    question: "Qual opção apresenta a relação correta entre o critério -> exigência?",
     options: [
       "Cognitivo -> Comportamento externo.",
       "Funcionalidade -> Consciência plena.",
@@ -1281,11 +1281,11 @@ const questoes = [
     options: [
       "Eles percebem o ambiente através de sensores.",
       "Eles utilizam atuadores para realizar ações.",
-      "Sua meta é sempre agir conforme o comportamento esperado, independente do resultado.",
       "Buscam maximizar o valor esperado das medidas de desempenho.",
+      "Sua meta é sempre agir conforme o comportamento esperado, independente do resultado.",
       "São entidades que agem em prol de um objetivo pré-definido."
     ],
-    correct: 2,
+    correct: 3,
     explanation: "As medidas de desempenho focam no resultado esperado, não no comportamento esperado."
   },
   {
@@ -1294,15 +1294,7 @@ const questoes = [
     question: "Analise as afirmações sobre o modelo PEAS:\nI. O 'Environment' define onde o agente atua.\nII. 'Performance' avalia o sucesso do agente.\nIII. 'Sensors' são as ferramentas de ação.\n\nEstá(ão) correta(s):",
     options: ["Apenas I", "I e II", "Apenas III", "II e III", "I, II e III"],
     correct: 1,
-    explanation: "Sensors são para sentir, não para agir (Atuadores agem)."
-  },
-  {
-    id: 95,
-    topicoId: 4,
-    question: "Verdadeiro ou Falso: O ChatGPT é considerado um agente racional pleno porque consegue responder perguntas de forma autônoma sem intervenção.",
-    options: ["Verdadeiro", "Falso"],
-    correct: 1,
-    explanation: "O texto afirma que ele não é um agente pois depende de input/ordem do usuário para agir."
+    explanation: "Sensores são para sentir, não para agir (Atuadores agem)."
   },
   {
     id: 96,
@@ -1338,12 +1330,12 @@ const questoes = [
     question: "Analise as premissas:\nI. Um agente racional toma ações para atingir um objetivo.\nII. O sucesso do agente é medido pela 'Performance measure'.\n\nAssinale a opção correta:",
     options: [
       "Ambas são falsas.",
-      "I é verdadeira e II é falsa.",
       "I e II são verdadeiras.",
+      "I é verdadeira e II é falsa.",
       "II justifica a invalidez de I.",
       "I é exclusiva para humanos."
     ],
-    correct: 2,
+    correct: 1,
     explanation: "Ambas definem corretamente os pilares de um agente inteligente."
   },
   {
@@ -1389,10 +1381,10 @@ const questoes = [
   {
     id: 102,
     topicoId: 5,
-    question: "Verdadeiro ou Falso: Um carro autônomo opera em um ambiente discreto porque as regras de trânsito são enumeráveis.",
+    question: "Verdadeiro ou Falso: Um carro autônomo opera em um ambiente contínuo, pois os dados dos sensores e as ações no trânsito não podem ser totalmente enumerados.",
     options: ["Verdadeiro", "Falso"],
-    correct: 1,
-    explanation: "Carros autônomos operam em ambientes contínuos (sensores e ações não enumeráveis)."
+    correct: 0,
+    explanation: "Ambientes contínuos são aqueles onde não é possível enumerar as ações e percepções, como no caso de um carro autônomo no trânsito em constante mudança."
   },
   {
     id: 103,
@@ -1409,11 +1401,11 @@ const questoes = [
     options: [
       "Xadrez -> Contínuo.",
       "Xadrez -> Estocástico.",
-      "Xadrez -> Discreto.",
       "Xadrez -> Parcialmente observável.",
+      "Xadrez -> Discreto.",
       "Xadrez -> Dinâmico."
     ],
-    correct: 2,
+    correct: 3,
     explanation: "No xadrez, ações e percepções são enumeráveis (discreto)."
   },
   {
@@ -1453,10 +1445,10 @@ const questoes = [
   {
     id: 108,
     topicoId: 6,
-    question: "Analise os agentes:\nI. Reativo Simples: Baseado no estado atual.\nII. Baseado em Modelo: Entende como o ambiente evolui.\nIII. Baseado em Utilidade: Atribui valores aos estados.\n\nEstá(ão) correta(s):",
-    options: ["Apenas I", "I e III", "II e III", "Apenas II", "I, II e III"],
-    correct: 4,
-    explanation: "As três definições estão corretas."
+    question: "Analise as afirmações sobre os tipos de agentes:\nI. Reativo Simples: Atua apenas se o ambiente for parcialmente observável.\nII. Baseado em Modelo: Mantém um histórico para entender a evolução do ambiente.\nIII. Baseado em Objetivo: Toma decisões sem considerar o estado atual do mundo.\nIV. Baseado em Utilidade: Atribui valores aos estados para maximizar a qualidade do resultado.\nV. Reativo Simples: Toma decisões baseando-se exclusivamente na percepção do estado atual.",
+    options: ["I, II e IV", "II, III e V", "II, IV e V", "I, III e IV", "Todas estão corretas"],
+    correct: 2,
+    explanation: "II, IV e V estão corretas. A I está incorreta porque o agente reativo simples exige um ambiente totalmente observável. A III está incorreta porque o agente baseado em objetivo usa sim o estado atual junto com a meta para planejar suas ações."
   },
   {
     id: 109,
@@ -1471,13 +1463,13 @@ const questoes = [
     topicoId: 6,
     question: "Qual agente utiliza técnicas de busca e planejamento focadas exclusivamente em atingir um estado final específico?",
     options: [
-      "Agente reativo simples",
       "Agente baseado em objetivo",
+      "Agente reativo simples",
       "Agente baseado em utilidade",
       "Agente de ambiente dinâmico",
       "Agente de reflexo estocástico"
     ],
-    correct: 1,
+    correct: 0,
     explanation: "O foco do agente baseado em objetivo é usar busca para atingir a meta."
   },
   {
@@ -1487,11 +1479,11 @@ const questoes = [
     options: [
       "Agentes de reflexo simples.",
       "Agentes baseados em objetivo básico.",
-      "Agentes baseados em utilidade.",
       "Agentes puramente sequenciais.",
-      "Agentes de ambiente estático."
+      "Agentes de ambiente estático.",
+      "Agentes baseados em utilidade."
     ],
-    correct: 2,
+    correct: 4,
     explanation: "Agentes baseados em utilidade usam essas funções para avaliar estados."
   },
   {
@@ -1572,10 +1564,10 @@ const questoes = [
       "Função Sucessora",
       "Espaço de Estados",
       "Custo do Caminho",
+      "Estado Inicial",
       "Teste de Objetivo",
-      "Estado Inicial"
     ],
-    correct: 3,
+    correct: 4,
     explanation: "O Teste de Objetivo faz essa validação."
   },
   {
@@ -1584,12 +1576,12 @@ const questoes = [
     question: "Analise:\nI. O espaço de estados inclui apenas o ponto de partida e o de chegada.\nII. O custo do caminho é o somatório dos pesos das arestas percorridas.\n\nEstá(ão) correta(s):",
     options: [
       "Apenas I",
-      "Apenas II",
       "Ambas",
       "Nenhuma",
+      "Apenas II",
       "I justifica II"
     ],
-    correct: 1,
+    correct: 3,
     explanation: "Espaço de estados inclui TODOS os estados alcançáveis, não apenas início e fim."
   },
   {
@@ -1621,10 +1613,10 @@ const questoes = [
   {
     id: 122,
     topicoId: 8,
-    question: "Analise:\nI. No grafo, cada estado ocorre apenas uma vez.\nII. Na árvore, um estado pode aparecer em vários nós.\nIII. A árvore pode ser infinita em casos de repetição de estados.\n\nEstá(ão) correta(s):",
-    options: ["Apenas I", "I e II", "II e III", "Apenas III", "I, II e III"],
-    correct: 4,
-    explanation: "As três afirmações descrevem as diferenças fundamentais entre grafos e árvores de busca."
+    question: "Analise as afirmações sobre Grafos e Árvores de Busca:\nI. No grafo de espaço de estados, cada estado ocorre apenas uma vez.\nII. Na árvore de busca, um estado específico pode aparecer em múltiplos nós.\nIII. A árvore de busca é sempre finita, mesmo que haja repetição de estados.\nIV. Cada nó na árvore de busca representa um caminho único no grafo de estados.\nV. Grafos de estados são comumente construídos de forma integral na memória RAM.",
+    options: ["I, II e III", "II, IV e V", "I, II e IV", "I, III e V", "Todas estão corretas"],
+    correct: 2,
+    explanation: "I, II e IV estão corretas. A III está incorreta pois a árvore pode ser infinita em caso de ciclos. A V está incorreta pois o grafo raramente é construído totalmente na memória devido ao seu tamanho."
   },
   {
     id: 123,
@@ -1654,12 +1646,12 @@ const questoes = [
     question: "A repetição de estados é um fenômeno que afeta principalmente:",
     options: [
       "A definição do estado inicial.",
-      "A estrutura da Árvore de Busca.",
       "A validade do Teste de Objetivo.",
+      "A estrutura da Árvore de Busca.",
       "A construção matemática do Grafo estático.",
       "A função de utilidade do agente."
     ],
-    correct: 1,
+    correct: 2,
     explanation: "Na árvore, a repetição gera estrutura redundante e pode torná-la infinita."
   },
   {

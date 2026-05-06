@@ -27,7 +27,6 @@ export default function QuizEngine({
 
   function handleNext() {
     if (currentQ + 1 >= questions.length) {
-      // Notifica o pai para salvar no localStorage ANTES de mostrar a tela final
       onFinished?.(questions.map((q) => q.id));
       setFinished(true);
     } else {
@@ -44,7 +43,6 @@ export default function QuizEngine({
         <h2 className="quiz-result__title">Fim da rodada</h2>
         <p className="quiz-result__score">{score}/{questions.length}</p>
         <p className="quiz-result__pct">{pct}% de acerto</p>
-        
         <div className="quiz-result__dots">
           {answers.map((a, i) => (
             <div key={i} className={`quiz-result__dot quiz-result__dot--${a.correct ? "correct" : "wrong"}`}>
@@ -52,7 +50,6 @@ export default function QuizEngine({
             </div>
           ))}
         </div>
-
         <div className="quiz-result__actions">
           <button className="quiz-result__btn-back" onClick={() => onBack(null)}>Voltar</button>
           <button className="quiz-result__btn-retry" onClick={onMoreQuestions}>Mais 15 questões →</button>
@@ -77,7 +74,12 @@ export default function QuizEngine({
         </div>
 
         {topico && <div className="quiz-engine__badge">{topico.titulo}</div>}
-        <p className="quiz-engine__question-text">{question.question}</p>
+        
+        {/* Renderização com suporte a HTML */}
+        <p 
+          className="quiz-engine__question-text"
+          dangerouslySetInnerHTML={{ __html: question.question }}
+        />
 
         <div className="quiz-engine__options">
           {question.options.map((opt, idx) => (
@@ -88,14 +90,20 @@ export default function QuizEngine({
               disabled={selected !== null}
             >
               <span className="quiz-engine__option-dot" />
-              <span className="quiz-engine__option-text">{opt}</span>
+              <span 
+                className="quiz-engine__option-text"
+                dangerouslySetInnerHTML={{ __html: opt }}
+              />
             </button>
           ))}
         </div>
 
         {selected !== null && (
           <div className="quiz-engine__explanation">
-            <p className="quiz-engine__explanation-text">{question.explanation}</p>
+            <p 
+              className="quiz-engine__explanation-text"
+              dangerouslySetInnerHTML={{ __html: question.explanation }}
+            />
           </div>
         )}
       </div>
