@@ -33,7 +33,7 @@ Indutivo: Tira conclusões apenas analisando uma parte dos objetos ou eventos. A
 Nunca são absolutamente certas.
 Exemplo: Se é observado vários patos brancos, logo, todos os patos são brancos.
 
-Dedutivo:  Tira conclusões a partir de premissas conhecidas. A sentença criada é necessariamente verdadeira. Utiliza modusponens.Sempre está certa.
+Dedutivo:  Tira conclusões a partir de premissas conhecidas. A sentença criada é necessariamente verdadeira. Utiliza modusponens. Sempre está certa.
 Exemplo: Robert é sociólogo → Para ser sociólogo é preciso ser bacharel → Logo, Robert é bacharel em sociologia.
 
 Abdutivo:  A conclusões são tiradas a partir das informações disponíveis, mas que podem estar erradas. 
@@ -98,7 +98,7 @@ Performance measure (Medida de performance): Critério para medir o sucesso do a
   {
     id: 6,
     titulo: "Tipos de Agentes",
-    conteudo: `Agente reativo simples (por reflexo): Suas ações serão tomadas a partir da percepção do estado atual do ambiente. Esse tipo de agente não guarda um histórico de percepções, por isso é necessário que o ambiente seja totalmente observável.
+    conteudo: `<strong>Agente reativo simples (por reflexo):</strong> Suas ações serão tomadas a partir da percepção do estado atual do ambiente. Esse tipo de agente não guarda um histórico de percepções, por isso é necessário que o ambiente seja totalmente observável.
 
 <strong>Agente reativo baseado em modelo:</strong> Esse agente busca entender como o ambiente muda e evolui de acordo com suas ações, por isso é necessário que ele mantenha um histórico de percepções e ações tomadas no passado. Esse tipo de agente pode operar em ambientes parcialmente observáveis.
 
@@ -191,7 +191,7 @@ Explora o caminho todo até chegar ao final, depois volta explorando os vértice
 
 <strong>Busca em Largura (BFS):</strong>
 
-Explora todos os vértices adjacentes ao estado inicial  e, em seguida, expande os vértices do próximo nível, até encontrar o objetivo.Pode encontrar o caminho mais curto em termos de ações, mas sem considerar os pesos das arestas. Utiliza estrutura de fila(FIFO).
+Explora todos os vértices adjacentes ao estado inicial  e, em seguida, expande os vértices do próximo nível, até encontrar o objetivo.Pode encontrar o caminho mais curto em termos de ações, mas sem considerar os pesos das arestas. Utiliza estrutura de fila (FIFO).
 — Completo: Sim, se s for finito.
 — Ótimo: Apenas se os custos forem iguais.
 — Complexidade de Tempo: O(b<sup>s</sup>) 

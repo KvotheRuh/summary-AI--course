@@ -2,8 +2,8 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --rosa:          #F5B8C4;
-  --rosa-claro:    #FAE0E4;
+  --rosa:          #fa6d93;
+  --rosa-claro:    #fcbccd;
   --rosa-fundo:    #FDF0F2;
   --beige:         #F5EFE6;
   --beige-escuro:  #E8DDD0;
@@ -26,7 +26,7 @@
   --radius-xl: 18px;
 
   --sidebar-w:   230px;
-  --card-height: 600px;   /* fixed height for all content boxes */
+  --card-height: 600px;   
 }
 
 body {
@@ -173,6 +173,16 @@ button:disabled { cursor: default; }
   flex: 1;
   overflow-y: auto;
   padding: 1.4rem 1.8rem;
+  min-height: 0; /* ← adicionar isso */
+}
+
+.content-card__body--quiz {
+  flex: 1;
+  overflow: hidden;       /* ← QuizEngine gerencia o scroll internamente */
+  padding: 1.4rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
 }
 
 .content-card__footer {
@@ -216,8 +226,8 @@ button:disabled { cursor: default; }
 }
 
 .pagination__btn--primary:hover:not(:disabled) {
-  background: #f0a8b6;
-  border-color: #f0a8b6;
+  background: #f55877;
+  border-color: #dd6a81;
   color: #fff;
 }
 
