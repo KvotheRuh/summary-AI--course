@@ -14,12 +14,21 @@ function shuffle(arr) {
 }
 
 export default function FlashcardPage({ onNavigate }) {
-  const [deck] = useState(() => shuffle([...flashcards]));
+  const [deck, setDeck] = useState(() => shuffle([...flashcards]));
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
+  const [embaralhado, setEmbaralhado] = useState(false);
 
   function handleSidebarClick(id) {
     onNavigate(id);
+  }
+
+  function handleEmbaralhar() {
+    setDeck(shuffle([...flashcards]));
+    setIndex(0);
+    setFlipped(false);
+    setEmbaralhado(true);
+    setTimeout(() => setEmbaralhado(false), 2000);
   }
 
   function goTo(i) {
@@ -30,6 +39,7 @@ export default function FlashcardPage({ onNavigate }) {
   }
 
   const card = deck[index];
+  const pct = Math.round(((index + 1) / deck.length) * 100);
 
   return (
     <div className="app-shell">
@@ -45,53 +55,68 @@ export default function FlashcardPage({ onNavigate }) {
           <div className="content-card__body fc-main-container">
             {card ? (
               <>
-                {/* Cartão com design original mantido */}
+                {/* Texto agradável + botão embaralhar */}
+                <div className="fc-intro">
+                  <p className="fc-intro__text">
+                    {embaralhado
+                      ? "✨ Deck embaralhado! Boa revisão!"
+                      : "Clique no card para virar. Vá no seu ritmo — repetição é o caminho para fixar o conteúdo!"}
+                  </p>
+                  <button className="fc-intro__shuffle-btn" onClick={handleEmbaralhar}>
+                    {embaralhado ? "Embaralhado! 🎲" : "Embaralhar 🎲"}
+                  </button>
+                </div>
+
+                {/* Card */}
                 <div className="fc-scene" onClick={() => setFlipped(!flipped)}>
                   <div className={`fc-card${flipped ? " fc-card--flipped" : ""}`}>
                     <div className="fc-face fc-face--front">
                       <p className="fc-face__label">Pergunta</p>
-                      <p className="fc-face__text">{card.frente}</p>
+                      <p className="fc-face__text" dangerouslySetInnerHTML={{ __html: card.frente }} />
                       <p className="fc-face__hint">clique para revelar</p>
                     </div>
                     <div className="fc-face fc-face--back">
                       <p className="fc-face__label">Resposta</p>
-                      <p className="fc-face__text">{card.verso}</p>
+                      <p className="fc-face__text" dangerouslySetInnerHTML={{ __html: card.verso }} />
                     </div>
                   </div>
                 </div>
 
-                {/* Controles originais */}
+                {/* Controles */}
                 <div className="fc-controls">
-                  <button className="fc-controls__btn" onClick={(e) => { e.stopPropagation(); goTo(index - 1); }} disabled={index === 0}>←</button>
-                  <button className="fc-controls__flip-btn" onClick={(e) => { e.stopPropagation(); setFlipped(!flipped); }}>
+                  <button
+                    className="fc-controls__btn"
+                    onClick={(e) => { e.stopPropagation(); goTo(index - 1); }}
+                    disabled={index === 0}
+                  >←</button>
+
+                  <button
+                    className="fc-controls__flip-btn"
+                    onClick={(e) => { e.stopPropagation(); setFlipped(!flipped); }}
+                  >
                     {flipped ? "Ver Pergunta" : "Ver Resposta"}
                   </button>
-                  <button className="fc-controls__btn" onClick={(e) => { e.stopPropagation(); goTo(index + 1); }} disabled={index === deck.length - 1}>→</button>
+
+                  <button
+                    className="fc-controls__btn"
+                    onClick={(e) => { e.stopPropagation(); goTo(index + 1); }}
+                    disabled={index === deck.length - 1}
+                  >→</button>
                 </div>
 
-                {/* Barra de progresso estilo Quiz inserida abaixo */}
+                {/* Contagem bonita */}
                 <div className="fc-progress-container">
-                    <div className="quiz-engine__progress">
-                        <div className="quiz-engine__dots">
-                            {deck.map((_, i) => (
-                            <div
-                                key={i}
-                                className={`quiz-engine__dot ${
-                                i === index
-                                    ? "quiz-engine__dot--current"
-                                    : i < index
-                                    ? "quiz-engine__dot--done"
-                                    : "quiz-engine__dot--pending"
-                                }`}
-                                onClick={() => goTo(i)}
-                                style={{ cursor: "pointer" }}
-                            />
-                            ))}
-                        </div>
-                        <span className="quiz-engine__counter">
-                            {index + 1}/{deck.length}
-                        </span>
-                    </div>
+                  <div className="fc-progress-header">
+                    <span className="fc-progress-label">Progresso da sessão</span>
+                    <span className="fc-progress-counter">
+                      <strong>{index + 1}</strong> de {deck.length}
+                      <span className="fc-progress-pct"> · {pct}%</span>
+                    </span>
+                  </div>
+
+                  <div className="fc-progress-bar-track">
+                    <div className="fc-progress-bar-fill" style={{ width: `${pct}%` }} />
+                  </div>
                 </div>
               </>
             ) : (

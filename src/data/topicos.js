@@ -191,7 +191,7 @@ Explora o caminho todo até chegar ao final, depois volta explorando os vértice
 
 <strong>Busca em Largura (BFS):</strong>
 
-Explora todos os vértices adjacentes ao estado inicial  e, em seguida, expande os vértices do próximo nível, até encontrar o objetivo.Pode encontrar o caminho mais curto em termos de ações, mas sem considerar os pesos das arestas. Utiliza estrutura de fila (FIFO).
+Explora todos os vértices adjacentes ao estado inicial  e, em seguida, expande os vértices do próximo nível, até encontrar o objetivo. Pode encontrar o caminho mais curto em termos de ações, mas sem considerar os pesos das arestas. Utiliza estrutura de fila (FIFO).
 — Completo: Sim, se s for finito.
 — Ótimo: Apenas se os custos forem iguais.
 — Complexidade de Tempo: O(b<sup>s</sup>) 

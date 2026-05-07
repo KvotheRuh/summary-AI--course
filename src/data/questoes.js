@@ -22,7 +22,7 @@ const questoes = [
   // TÓPICO 2: Resolução Lógica
   // ----------------------------------------------------
   {
-    id: 6,
+    id: 2,
     topicoId: 2,
     question: "Qual tipo de raciocínio lógico tira conclusões que não são logicamente garantidas, apenas prováveis?",
     options: [
@@ -36,7 +36,7 @@ const questoes = [
     explanation: "O raciocínio indutivo baseia-se em analisar uma parte dos eventos, logo, suas conclusões nunca são absolutamente certas."
   },
   {
-    id: 7,
+    id: 3,
     topicoId: 2,
     question: "A afirmação 'Robert é sociólogo → Para ser sociólogo é preciso ser bacharel → Logo, Robert é bacharel' é um exemplo de qual raciocínio?",
     options: [
@@ -50,7 +50,7 @@ const questoes = [
     explanation: "Este é um clássico exemplo de dedução, que utiliza o modus ponens e parte de premissas conhecidas para gerar uma sentença necessariamente verdadeira."
   },
   {
-    id: 8,
+    id: 4,
     topicoId: 2,
     question: "Qual raciocínio trabalha com informações disponíveis para criar uma conclusão possível, mas que pode estar errada?",
     options: [
@@ -64,7 +64,7 @@ const questoes = [
     explanation: "A abdução (raciocínio abdutivo) usa a melhor informação disponível no momento para inferir uma conclusão que faz sentido, mas que não tem garantia de acerto."
   },
   {
-    id: 9,
+    id: 5,
     topicoId: 2,
     question: "Sobre o Raciocínio Dedutivo, é correto afirmar que:",
     options: [
@@ -78,7 +78,7 @@ const questoes = [
     explanation: "No dedutivo, as conclusões retiradas a partir de premissas conhecidas garantem uma sentença verdadeira."
   },
   {
-    id: 10,
+    id: 6,
     topicoId: 2,
     question: "Observar vários patos brancos e concluir que 'todos os patos são brancos' é uma falha característica de qual tipo de raciocínio?",
     options: [
@@ -96,7 +96,7 @@ const questoes = [
   // TÓPICO 3: O que é Inteligência Artificial?
   // ----------------------------------------------------
   {
-    id: 11,
+    id: 7,
     topicoId: 3,
     question: "O que é necessário para uma máquina passar no Teste de Turing?",
     options: [
@@ -110,7 +110,7 @@ const questoes = [
     explanation: "O teste consiste em o avaliador humano não conseguir distinguir se a entidade com quem ele conversa é uma máquina ou uma pessoa."
   },
   {
-    id: 12,
+    id: 8,
     topicoId: 3,
     question: "Quando avaliamos uma máquina pelo critério Comportamental, estamos focando em:",
     options: [
@@ -124,7 +124,7 @@ const questoes = [
     explanation: "O critério comportamental é focado estritamente na reprodução de comportamentos externos que se assemelham às ações humanas."
   },
   {
-    id: 13,
+    id: 9,
     topicoId: 3,
     question: "Segundo o critério de Funcionalidade, a reprodução de uma habilidade:",
     options: [
@@ -138,7 +138,7 @@ const questoes = [
     explanation: "Na funcionalidade, o resultado final eficaz é o que importa, ignorando o caminho ou o método utilizado para alcançá-lo."
   },
   {
-    id: 14,
+    id: 10,
     topicoId: 3,
     question: "O argumento que afirma que 'se a máquina não sente e não tem consciência, é apenas uma simulação superficial' baseia-se em qual critério?",
     options: [
@@ -152,7 +152,7 @@ const questoes = [
     explanation: "O critério cognitivo exige que haja entendimento, sentimento ou consciência para considerar a reprodução genuína."
   },
   {
-    id: 15,
+    id: 11,
     topicoId: 3,
     question: "A Inteligência Artificial pode ser definida como o campo que cria máquinas que:",
     options: [
@@ -170,7 +170,7 @@ const questoes = [
   // TÓPICO 4: Agentes Racionais e Inteligentes
   // ----------------------------------------------------
   {
-    id: 16,
+    id: 12,
     topicoId: 4,
     question: "Qual componente permite que um agente racional perceba o ambiente em que está inserido?",
     options: [
@@ -184,7 +184,7 @@ const questoes = [
     explanation: "Os Sensores são os meios pelos quais a entidade sente/percebe o mundo exterior."
   },
   {
-    id: 17,
+    id: 13,
     topicoId: 4,
     question: "Os Atuadores em um agente racional servem para:",
     options: [
@@ -198,7 +198,7 @@ const questoes = [
     explanation: "Atuadores são os meios de ação mecânica ou digital (ferramentas de ação) através dos quais o agente modifica ou atua no ambiente."
   },
   {
-    id: 18,
+    id: 14,
     topicoId: 4,
     question: "O que a 'Performance measure' (Medida de performance) avalia no modelo PEAS?",
     options: [
@@ -212,7 +212,7 @@ const questoes = [
     explanation: "As medidas de desempenho são critérios projetados para medir o sucesso com base nos resultados finais desejados, não apenas no comportamento no meio do caminho."
   },
   {
-    id: 19,
+    id: 15,
     topicoId: 4,
     question: "O modelo PEAS é uma sigla para:",
     options: [
@@ -227,7 +227,7 @@ const questoes = [
   },
   
   {
-  id: 20,
+  id: 16,
   topicoId: 4,
   question: "Por que o ChatGPT NÃO é classificado como um agente segundo o texto?",
   options: [
@@ -245,7 +245,7 @@ const questoes = [
   // TÓPICO 5: Tipos de Ambiente
   // ----------------------------------------------------
   {
-    id: 21,
+    id: 17,
     topicoId: 5,
     question: "Quando um agente tem acesso completo ao estado do ambiente a cada momento, esse ambiente é:",
     options: [
@@ -259,7 +259,7 @@ const questoes = [
     explanation: "Ambientes totalmente observáveis não possuem incertezas quanto ao estado atual, todos os dados necessários estão disponíveis aos sensores."
   },
   {
-    id: 22,
+    id: 18,
     topicoId: 5,
     question: "Qual a principal diferença de um ambiente Estocástico para um Determinístico?",
     options: [
@@ -273,7 +273,7 @@ const questoes = [
     explanation: "No ambiente determinístico, a ação causa um próximo estado previsível. No estocástico, fatores de incerteza (sorte, física complexa) impedem a previsão 100% precisa."
   },
   {
-    id: 23,
+    id: 19,
     topicoId: 5,
     question: "Se a ação atual que um agente toma afeta diretamente as opções das suas próximas ações no futuro, o ambiente é:",
     options: [
@@ -287,7 +287,7 @@ const questoes = [
     explanation: "No ambiente sequencial, as decisões de hoje impactam o ambiente de amanhã (diferente do episódico, onde as ações são contidas e isoladas)."
   },
   {
-    id: 24,
+    id: 20,
     topicoId: 5,
     question: "Um carro autônomo dirigindo em uma rodovia lida com um ambiente que está em constante mutação enquanto ele toma decisões. Este ambiente é classificado como:",
     options: [
@@ -301,7 +301,7 @@ const questoes = [
     explanation: "Se o ambiente muda enquanto o agente 'pensa' e toma sua decisão (como o movimento dos outros carros), ele é Dinâmico."
   },
   {
-    id: 25,
+    id: 21,
     topicoId: 5,
     question: "Um jogo de xadrez onde o tabuleiro possui 64 casas exatas e um número finito e contabilizável de ações possíveis é um exemplo de ambiente:",
     options: [
@@ -318,7 +318,7 @@ const questoes = [
   // TÓPICO 6: Tipos de Agentes
   // ----------------------------------------------------
   {
-    id: 26,
+    id: 22,
     topicoId: 6,
     question: "Qual agente age baseando-se apenas na percepção atual, sem guardar nenhum histórico do passado?",
     options: [
@@ -332,7 +332,7 @@ const questoes = [
     explanation: "O agente reativo simples toma decisões apenas pelo que vê agora (reflexo). Por não ter memória, o ambiente precisa ser totalmente observável."
   },
   {
-    id: 27,
+    id: 23,
     topicoId: 6,
     question: "Qual é a principal vantagem do Agente reativo baseado em modelo em relação ao simples?",
     options: [
@@ -346,7 +346,7 @@ const questoes = [
     explanation: "Por manter um histórico, ele consegue entender como o ambiente evolui, o que o torna capaz de funcionar mesmo quando não enxerga tudo."
   },
   {
-    id: 28,
+    id: 24,
     topicoId: 6,
     question: "Qual característica diferencia de forma marcante o 'Agente baseado em utilidade'?",
     options: [
@@ -360,7 +360,7 @@ const questoes = [
     explanation: "Enquanto o agente de objetivo só quer chegar lá, o agente de utilidade quer chegar lá da melhor forma possível (maximizando a utilidade)."
   },
   {
-    id: 29,
+    id: 25,
     topicoId: 6,
     question: "Qual agente usa o estado atual e o objetivo para planejar uma sequência de ações por meio de busca?",
     options: [
@@ -374,7 +374,7 @@ const questoes = [
     explanation: "O Agente baseado em objetivo foca as suas decisões e técnicas de busca na aproximação até alcançar o objetivo final."
   },
   {
-    id: 30,
+    id: 26,
     topicoId: 6,
     question: "Para que um agente reativo simples funcione adequadamente, o ambiente deve ser obrigatoriamente:",
     options: [
@@ -392,7 +392,7 @@ const questoes = [
   // TÓPICO 7: Problemas de Busca
   // ----------------------------------------------------
   {
-    id: 31,
+    id: 27,
     topicoId: 7,
     question: "Qual o tipo de ambiente ideal exigido para que problemas de busca tradicionais sejam aplicados?",
     options: [
@@ -406,7 +406,7 @@ const questoes = [
     explanation: "Os problemas de busca operam perfeitamente sob a premissa de um ambiente onde não há surpresas (totalmente observável e determinístico) e as opções são contáveis (discreto)."
   },
   {
-    id: 32,
+    id: 28,
     topicoId: 7,
     question: "Nos 5 elementos de um problema de busca, qual elemento informa as consequências que cada ação irá desencadear?",
     options: [
@@ -420,7 +420,7 @@ const questoes = [
     explanation: "A Função sucessora define o conjunto de ações disponíveis em um estado e as consequências (para qual estado aquilo te leva)."
   },
   {
-    id: 33,
+    id: 29,
     topicoId: 7,
     question: "Como é definida uma 'Solução' no contexto de problemas de busca?",
     options: [
@@ -434,7 +434,7 @@ const questoes = [
     explanation: "O objetivo da busca é encontrar o trajeto de ações do ponto A (estado inicial) ao ponto B (objetivo)."
   },
   {
-    id: 34,
+    id: 30,
     topicoId: 7,
     question: "O processo de remover detalhes da representação de um problema no mundo real é chamado de:",
     options: [
@@ -448,7 +448,7 @@ const questoes = [
     explanation: "A abstração permite equilibrar os detalhes: nem complexo demais (inviável de resolver), nem simples demais (não soluciona corretamente)."
   },
   {
-    id: 35,
+    id: 31,
     topicoId: 7,
     question: "O conjunto de todos os estados possíveis que podem ser alcançados a partir do começo do jogo é o:",
     options: [
@@ -466,7 +466,7 @@ const questoes = [
   // TÓPICO 8: Grafos e Árvores de Busca
   // ----------------------------------------------------
   {
-    id: 36,
+    id: 32,
     topicoId: 8,
     question: "No 'Grafo de espaço de estado', o que as arestas (edges) representam?",
     options: [
@@ -480,7 +480,7 @@ const questoes = [
     explanation: "Enquanto os nós são os estados, as arestas são as 'pontes' (funções sucessoras e seus custos) que ligam um estado ao outro."
   },
   {
-    id: 37,
+    id: 33,
     topicoId: 8,
     question: "Por que uma Árvore de Busca pode tornar-se infinita?",
     options: [
@@ -494,7 +494,7 @@ const questoes = [
     explanation: "Diferente do Grafo, na Árvore o mesmo estado pode ser explorado por caminhos diferentes, criando loops e estruturas repetidas infinitas."
   },
   {
-    id: 38,
+    id: 34,
     topicoId: 8,
     question: "Sobre o Grafo de espaço de estado, é correto afirmar que:",
     options: [
@@ -508,7 +508,7 @@ const questoes = [
     explanation: "Na matemática do grafo, um estado único é mapeado apenas uma vez, diferentemente da árvore de busca que desdobra o processo."
   },
   {
-    id: 39,
+    id: 35,
     topicoId: 8,
     question: "Na árvore de busca, um nó na árvore representa especificamente:",
     options: [
@@ -522,7 +522,7 @@ const questoes = [
     explanation: "Cada nó que aparece na árvore carrega o 'peso' da trajetória até ele, correspondendo a um caminho único para aquele estado."
   },
   {
-    id: 40,
+    id: 36,
     topicoId: 8,
     question: "O conjunto de nós que indica que a busca pode ser encerrada com sucesso no Grafo é chamado de:",
     options: [
@@ -540,7 +540,7 @@ const questoes = [
   // TÓPICO 9: Algoritmos Não Informados
   // ----------------------------------------------------
   {
-    id: 41,
+    id: 37,
     topicoId: 9,
     question: "Algoritmos não informados também são conhecidos como:",
     options: [
@@ -554,7 +554,7 @@ const questoes = [
     explanation: "Recebem esse nome porque exploram caminhos sem nenhuma informação extra de proximidade ao alvo, operando de forma 'cega'."
   },
   {
-    id: 42,
+    id: 38,
     topicoId: 9,
     question: "Na avaliação Big O, a propriedade 'Completo' avalia se o algoritmo:",
     options: [
@@ -568,7 +568,7 @@ const questoes = [
     explanation: "A completude garante que o programa não ficará travado se houver de fato uma resposta válida no problema."
   },
   {
-    id: 43,
+    id: 39,
     topicoId: 9,
     question: "Qual algoritmo é escolhido especificamente quando o objetivo é gastar MENOS memória?",
     options: [
@@ -582,7 +582,7 @@ const questoes = [
     explanation: "O DFS (Busca em Profundidade) possui a vantagem de usar complexidade espacial O(bm), o que gasta significativamente menos memória que as buscas em largura."
   },
   {
-    id: 45,
+    id: 40,
     topicoId: 9,
     question: "Um detalhe importante na aplicação da Busca em Profundidade (DFS) e Busca em Largura (BFS) é que ambas:",
     options: [
@@ -600,7 +600,7 @@ const questoes = [
   // TÓPICO 10: DFS e BFS
   // ----------------------------------------------------
  {
-  id: 46,
+  id: 41,
   topicoId: 10,
   question: "A Busca em Largura (BFS) utiliza qual estrutura de dados?",
   options: [
@@ -614,7 +614,7 @@ const questoes = [
   explanation: "A DFS explora os vizinhos mais recentes primeiro (mergulhando no caminho), o que caracteriza o comportamento de Pilha: o último a entrar é o primeiro a sair (LIFO)."
   },
   {
-    id: 47,
+    id: 42,
     topicoId: 10,
     question: "A Busca em Profundidade (DFS) é considerada ótima sob quais condições?",
     options: [
@@ -628,7 +628,7 @@ const questoes = [
     explanation: "A DFS mergulha no primeiro caminho que encontra e aceita a primeira solução achada (a mais à esquerda). Mesmo que exista uma rota mais curta ou barata em outro ramo, ela não a prioriza."
   },
   {
-    id: 48,
+    id: 43,
     topicoId: 10,
     question: "Qual é a notação de complexidade de tempo para a Busca em Largura (BFS), sendo 's' a profundidade da primeira solução?",
     options: [
@@ -642,7 +642,7 @@ const questoes = [
     explanation: "O BFS expande todos os nós do nível atual. Se a solução está no nível 's' e a ramificação é 'b', ele percorre O(b^s) no tempo e espaço."
   },
   {
-    id: 49,
+    id: 44,
     topicoId: 10,
     question: "A Busca em Profundidade (DFS) utiliza qual estrutura de dados?",
     options: [
@@ -656,7 +656,7 @@ const questoes = [
     explanation: "DFS explora os vizinhos mais recentes primeiro, usando o comportamento de pilha (Last In, First Out - LIFO)."
   },
   {
-    id: 50,
+    id: 45,
     topicoId: 10,
     question: "Sobre a optimalidade do algoritmo BFS (Busca em Largura), é correto afirmar:",
     options: [
@@ -673,7 +673,7 @@ const questoes = [
   // TÓPICO 11: UCS, DLS e IDS
   // ----------------------------------------------------
   {
-    id: 51,
+    id: 46,
     topicoId: 11,
     question: "A Busca de Custo Uniforme (UCS) utiliza qual estrutura de dados para expandir os vértices?",
     options: [
@@ -687,7 +687,7 @@ const questoes = [
     explanation: "Por focar no menor custo acumulado, a UCS utiliza uma fila de prioridades para garantir que o nó com o menor valor será o próximo a sair."
   },
   {
-    id: 52,
+    id: 47,
     topicoId: 11,
     question: "Para que a Busca de Custo Uniforme (UCS) seja considerada Completa, qual condição deve ser assumida?",
     options: [
@@ -701,7 +701,7 @@ const questoes = [
     explanation: "Se houver custos nulos ou negativos, a UCS pode ficar presa em um loop infinito que não aumenta o custo do caminho. Daí a exigência de ε > 0."
   },
   {
-    id: 53,
+    id: 48,
     topicoId: 11,
     question: "Qual o principal risco que faz com que a Busca em Profundidade com Limite (DLS) NÃO seja completa?",
     options: [
@@ -715,7 +715,7 @@ const questoes = [
     explanation: "Como a DLS corta a busca na profundidade máxima 'd', se o objetivo estiver no nível d+1 (ou mais fundo), ele nunca será encontrado."
   },
   {
-    id: 54,
+    id: 49,
     topicoId: 11,
     question: "O algoritmo IDS (Busca com Aprofundamento Iterativo) combina as vantagens de quais outras duas buscas?",
     options: [
@@ -729,7 +729,7 @@ const questoes = [
     explanation: "Ele traz a garantia de achar a melhor solução (ótimo/completo da BFS) e a economia radical de espaço/memória (da DFS)."
   },
   {
-    id: 55,
+    id: 50,
     topicoId: 11,
     question: "Qual a complexidade de espaço exigida pela Busca em Profundidade com Limite (DLS)?",
     options: [
@@ -747,7 +747,7 @@ const questoes = [
   // TÓPICO 12: Busca Informada
   // ----------------------------------------------------
   {
-    id: 56,
+    id: 51,
     topicoId: 12,
     question: "Qual é a principal diferença entre uma busca informada e uma busca cega (não informada)?",
     options: [
@@ -761,7 +761,7 @@ const questoes = [
     explanation: "Ela usa conhecimento adicional (a heurística) para 'mirar' em direção ao objetivo em vez de atirar no escuro."
   },
   {
-    id: 57,
+    id: 52,
     topicoId: 12,
     question: "A função heurística h(n) em um algoritmo tem como finalidade principal:",
     options: [
@@ -775,7 +775,7 @@ const questoes = [
     explanation: "A função h(n) tenta adivinhar o quão perto ou quão barato é ir de onde você está agora (n) até a meta final."
   },
   {
-    id: 58,
+    id: 53,
     topicoId: 12,
     question: "Sobre as funções heurísticas, assinale a alternativa verdadeira:",
     options: [
@@ -789,7 +789,7 @@ const questoes = [
     explanation: "A heurística é apenas uma dica que te ajuda a decidir qual é o melhor passo a ser dado a partir do local atual (decisão local), não prevendo o futuro completo com perfeição."
   },
   {
-    id: 59,
+    id: 54,
     topicoId: 12,
     question: "Qual é o principal ganho ao se implementar uma boa busca heurística?",
     options: [
@@ -803,7 +803,7 @@ const questoes = [
     explanation: "O objetivo de toda heurística é encurtar atalhos inteligentes, evitando varrer opções ruins e economizando processamento computacional."
   },
   {
-    id: 60,
+    id: 55,
     topicoId: 12,
     question: "Um dos usos primários da informação heurística em problemas de IA é guiar o algoritmo nas decisões de qual nós:",
     options: [
@@ -821,7 +821,7 @@ const questoes = [
   // TÓPICO 13: Greedy Search
   // ----------------------------------------------------
   {
-    id: 61,
+    id: 56,
     topicoId: 13,
     question: "O algoritmo Greedy Search (Busca Gulosa) decide qual nó expandir baseando-se EXCLUSIVAMENTE em:",
     options: [
@@ -835,7 +835,7 @@ const questoes = [
     explanation: "O foco único do Greedy Search é o quão 'perto' ele acha que está do fim (h(n)), ignorando completamente o quanto já custou chegar até ali."
   },
   {
-    id: 62,
+    id: 57,
     topicoId: 13,
     question: "O que significa dizer que h(n) = 0 em um problema avaliado pela Greedy Search?",
     options: [
@@ -849,7 +849,7 @@ const questoes = [
     explanation: "Se a estimativa de custo para chegar no alvo é zero, isso prova matematicamente que você já está pisando em cima do alvo (estado objetivo)."
   },
   {
-    id: 63,
+    id: 58,
     topicoId: 13,
     question: "Por que a Greedy Search NÃO é considerada Ótima nem Completa?",
     options: [
@@ -863,7 +863,7 @@ const questoes = [
     explanation: "O excesso de confiança na heurística local pode levá-la por becos sem saída infinitos (incompleta) ou caminhos desnecessariamente caros (não ótima)."
   },
   {
-    id: 64,
+    id: 59,
     topicoId: 13,
     question: "Qual algoritmo clássico não-informado possui comportamento estrutural semelhante à Greedy Search de 'seguir um caminho reto do início ao fim'?",
     options: [
@@ -877,7 +877,7 @@ const questoes = [
     explanation: "Assim como a DFS, a Gulosa prefere ir se afundando rapidamente num único caminho que parece promissor até o final, em vez de tatear cuidadosamente os níveis (como o BFS faz)."
   },
   {
-    id: 65,
+    id: 60,
     topicoId: 13,
     question: "Com uma heurística de péssima qualidade, qual é a complexidade de tempo do pior caso na Greedy Search?",
     options: [
@@ -895,7 +895,7 @@ const questoes = [
   // TÓPICO 14: A* Search
   // ----------------------------------------------------
   {
-    id: 66,
+    id: 61,
     topicoId: 14,
     question: "O algoritmo A* é fundamentalmente criado pela combinação de quais dois algoritmos de busca?",
     options: [
@@ -909,7 +909,7 @@ const questoes = [
     explanation: "O A* pega o controle de custo passado acumulado da UCS e mescla com a visão otimista de futuro da Greedy Search."
   },
   {
-    id: 67,
+    id: 62,
     topicoId: 14,
     question: "Na famosa equação de escolha do A* ( f(n) = g(n) + h(n) ), o que representa a função g(n)?",
     options: [
@@ -923,7 +923,7 @@ const questoes = [
     explanation: "g(n) garante que a A* não ignore quão caro foi o caminho que ela já percorreu até pisar no nó 'n'."
   },
   {
-    id: 68,
+    id: 63,
     topicoId: 14,
     question: "Se a heurística h(n) de um A* for admissível e consistente, qual destas afirmativas é verdadeira?",
     options: [
@@ -937,7 +937,7 @@ const questoes = [
     explanation: "As garantias matemáticas da admissibilidade e consistência fazem com que o A* nunca seja enganado, achando sempre a rota perfeitamente ótima."
   },
   {
-    id: 69,
+    id: 64,
     topicoId: 14,
     question: "Comparado a outros algoritmos de busca ótima que partem do mesmo início e usam a mesma heurística admissível, o A* se destaca por:",
     options: [
@@ -951,7 +951,7 @@ const questoes = [
     explanation: "Ele é extremamente eficiente; nenhum algoritmo genérico consegue achar a solução abrindo menos nós do que o A* quando ambos partilham a mesma visão/heurística do problema."
   },
   {
-    id: 70,
+    id: 65,
     topicoId: 14,
     question: "Qual o padrão de progressão no espaço que a busca A* realiza em problemas práticos?",
     options: [
@@ -969,7 +969,7 @@ const questoes = [
   // TÓPICO 15: Admissibilidade
   // ----------------------------------------------------
   {
-    id: 71,
+    id: 66,
     topicoId: 15,
     question: "O que acontece quando uma heurística é considerada 'Inadmissível' (pessimista)?",
     options: [
@@ -983,7 +983,7 @@ const questoes = [
     explanation: "Se a heurística chuta o valor para cima, o algoritmo desiste de caminhos que seriam muito bons por achar (erroneamente) que eles custam demais."
   },
   {
-    id: 72,
+    id: 67,
     topicoId: 15,
     question: "Qual é a equação matemática correta que comprova que uma heurística h(n) é Admissível em relação ao custo verdadeiro h*(n)?",
     options: [
@@ -997,7 +997,7 @@ const questoes = [
     explanation: "A heurística admissível deve ser positiva (maior ou igual a 0) e nunca chutar mais alto que o custo verdadeiro real h*(n)."
   },
   {
-    id: 73,
+    id: 68,
     topicoId: 15,
     question: "Uma técnica comum para criar boas heurísticas admissíveis é criar um 'Problema Relaxado'. O que é isso?",
     options: [
@@ -1011,7 +1011,7 @@ const questoes = [
     explanation: "Problemas relaxados permitem movimentos teóricos 'inválidos' (como atravessar paredes). Resolver o problema dessa forma gera um custo 'otimista', servindo como uma excelente heurística para o jogo real restrito."
   },
   {
-    id: 74,
+    id: 69,
     topicoId: 15,
     question: "Se há múltiplas heurísticas admissíveis criadas para resolver um mesmo problema, qual regra deve ser usada na escolha?",
     options: [
@@ -1025,7 +1025,7 @@ const questoes = [
     explanation: "Quanto mais alta a heurística estimar (desde que nunca passe do teto h*), melhor guiado será o algoritmo, cortando mais opções ruins da lista."
   },
   {
-    id: 75,
+    id: 70,
     topicoId: 15,
     question: "Qual destas afirmações define a regra sobre heurísticas Admissíveis e Consistentes (Monotonicidade)?",
     options: [
@@ -1043,7 +1043,7 @@ const questoes = [
   // TÓPICO 16: Game Theory e Adversarial Search
   // ----------------------------------------------------
   {
-    id: 76,
+    id: 71,
     topicoId: 16,
     question: "Qual das opções abaixo NÃO é um requisito base para conseguir representar um problema como um jogo?",
     options: [
@@ -1057,7 +1057,7 @@ const questoes = [
     explanation: "Modelar jogos matemáticos exige contornos finitos e lógicos (ações finitas, regras, decisões ótimas/racionais, e vitórias/derrotas claras)."
   },
   {
-    id: 77,
+    id: 72,
     topicoId: 16,
     question: "No ambiente de jogos determinísticos, o que o agente tenta fazer em relação aos números da Função de Utilidade?",
     options: [
@@ -1071,7 +1071,7 @@ const questoes = [
     explanation: "No mundo dos caminhos você queria gastar o menor 'custo' de gasolina. Nos jogos, você quer acumular os maiores 'pontos' de utilidade para ganhar o estado terminal."
   },
   {
-    id: 78,
+    id: 73,
     topicoId: 16,
     question: "O que caracteriza os cenários classificados como 'Zero-Sum Games' (Jogos de Soma Zero)?",
     options: [
@@ -1085,7 +1085,7 @@ const questoes = [
     explanation: "É uma competição pura. O +1 para você significa fatalmente o -1 para o oponente, anulando as somas e tornando as estratégias perfeitamente reversas."
   },
   {
-    id: 79,
+    id: 74,
     topicoId: 16,
     question: "Em 'General Games' (Jogos Gerais), como as utilidades dos agentes se comportam?",
     options: [
@@ -1099,7 +1099,7 @@ const questoes = [
     explanation: "Jogos gerais são realistas, espelhando dinâmicas onde alianças, traições ou focar apenas em si mesmo coexistem na matemática do tabuleiro."
   },
   {
-    id: 80,
+    id: 75,
     topicoId: 16,
     question: "No contexto da inteligência artificial aplicada em jogos, o que foi o projeto 'Deep Blue'?",
     options: [
@@ -1117,7 +1117,7 @@ const questoes = [
   // TÓPICO 17: Algoritmo MINIMAX
   // ----------------------------------------------------
   {
-    id: 81,
+    id: 76,
     topicoId: 17,
     question: "No algoritmo MINIMAX, o foco central das decisões do jogador MAX é:",
     options: [
@@ -1131,7 +1131,7 @@ const questoes = [
     explanation: "O MAX fará de tudo para puxar a balança para cima (sucesso dele), sabendo que o MIN tentará o exato oposto no turno seguinte."
   },
   {
-    id: 82,
+    id: 77,
     topicoId: 17,
     question: "A metodologia 'bottom-up' do MINIMAX aplicada em árvores de jogo significa que ele:",
     options: [
@@ -1145,7 +1145,7 @@ const questoes = [
     explanation: "Ele olha para todos os fins de jogo lá embaixo (quem ganha, empata ou perde) e propaga essa 'certeza' de volta pelo caminho para a primeira jogada na raiz."
   },
   {
-    id: 83,
+    id: 78,
     topicoId: 17,
     question: "Se a árvore de jogo do MINIMAX intercala as decisões entre o agente e o seu oponente, a 'raiz' da árvore sempre será de quem?",
     options: [
@@ -1159,7 +1159,7 @@ const questoes = [
     explanation: "Como a jogada atual (o presente no topo da árvore) é do nosso agente tentando achar o melhor caminho para ele, a raiz será um momento decisivo MAX."
   },
   {
-    id: 84,
+    id: 79,
     topicoId: 17,
     question: "O jogador MAX no sistema toma a sua decisão assumindo logicamente que o jogador MIN se comportará de que maneira?",
     options: [
@@ -1173,7 +1173,7 @@ const questoes = [
     explanation: "É um cálculo defensivamente seguro. O algoritmo prefere agir esperando o adversário mais inteligente possível (pior dano ao MAX) do que tentar a sorte."
   },
   {
-    id: 85,
+    id: 80,
     topicoId: 17,
     question: "O que ocorre quando um humano joga de forma 'subótima' (comete um erro desatento) contra o MINIMAX?",
     options: [
@@ -1191,7 +1191,7 @@ const questoes = [
   // TÓPICO 3: O que é Inteligência Artificial? (Adicionais)
   // ----------------------------------------------------
   {
-    id: 86,
+    id: 81,
     topicoId: 3,
     question: "Sobre o Teste de Turing, assinale a alternativa INCORRETA:",
     options: [
@@ -1205,7 +1205,7 @@ const questoes = [
     explanation: "O teste de Turing avalia apenas o comportamento externo (simulação), não exigindo consciência interna (critério cognitivo)."
   },
   {
-    id: 87,
+    id: 82,
     topicoId: 3,
     question: "Analise as afirmações sobre os critérios de avaliação de IA:\nI. O critério comportamental foca na eficácia do resultado final.\nII. A funcionalidade prioriza o 'como' o sistema realiza a função.\nIII. O critério cognitivo nega a reprodução genuína sem consciência.\nIV. O critério funcional avalia apenas o resultado, independentemente do processo.\nV. O critério cognitivo busca reproduzir os processos mentais humanos.\n\nEstá(ão) correta(s):",
     options: ["Apenas I", "Apenas III", "I e II", "II e III", "III, IV e V"],
@@ -1213,7 +1213,7 @@ const questoes = [
     explanation: "I está incorreta (comportamental observa comportamento, não só resultado). II está incorreta (funcional ignora o 'como'). III, IV e V estão corretas."
   },
   {
-    id: 88,
+    id: 83,
     topicoId: 3,
     question: "Verdadeiro ou Falso: O critério de Funcionalidade afirma que a eficácia da tarefa é o único fator determinante para validar uma habilidade reproduzida.",
     options: ["Verdadeiro", "Falso"],
@@ -1221,7 +1221,7 @@ const questoes = [
     explanation: "Na funcionalidade, importa apenas se a função foi realizada de forma eficaz."
   },
   {
-    id: 89,
+    id: 84,
     topicoId: 3,
     question: "Em relação ao campo da IA, qual das opções não condiz com as definições apresentadas?",
     options: [
@@ -1235,7 +1235,7 @@ const questoes = [
     explanation: "A IA visa agir e pensar como humanos, não sendo apenas uma calculadora estática."
   },
   {
-    id: 90,
+    id: 85,
     topicoId: 3,
     question: "Analise as premissas:\nI. Conversar com uma máquina sem identificá-la é o cerne do Teste de Turing.\nII. A simulação superficial é aceita pelo critério de funcionalidade.\nIII. O Teste de Turing avalia o comportamento observável da máquina.\nIV. O critério cognitivo exige que a máquina pense exatamente como um humano.\nV. O critério funcional desconsidera os processos internos do sistema.\n\nAssinale a correta:",
     options: [
@@ -1249,7 +1249,7 @@ const questoes = [
     explanation: "I, II e III estão corretas. V também está correta, pois o critério funcional foca no resultado. IV está incorreta, pois o critério cognitivo busca semelhança com processos humanos, mas não exige ser exatamente igual."
   },
   {
-    id: 91,
+    id: 86,
     topicoId: 3,
     question: "Qual opção apresenta a relação correta entre o critério -> exigência?",
     options: [
@@ -1263,7 +1263,7 @@ const questoes = [
     explanation: "O comportamental avalia se a máquina produz comportamento semelhante ao humano."
   },
   {
-    id: 92,
+    id: 87,
     topicoId: 3,
     question: "Verdadeiro ou Falso: Para o critério Cognitivo, uma máquina que resolve problemas complexos sem entender o que faz é considerada inteligente no nível máximo.",
     options: ["Verdadeiro", "Falso"],
@@ -1275,7 +1275,7 @@ const questoes = [
   // TÓPICO 4: Agentes Racionais e Inteligentes (Adicionais)
   // ----------------------------------------------------
   {
-    id: 93,
+    id: 88,
     topicoId: 4,
     question: "Sobre os Agentes Racionais, é INCORRETO afirmar que:",
     options: [
@@ -1289,7 +1289,7 @@ const questoes = [
     explanation: "As medidas de desempenho focam no resultado esperado, não no comportamento esperado."
   },
   {
-    id: 94,
+    id: 89,
     topicoId: 4,
     question: "Analise as afirmações sobre o modelo PEAS:\nI. O 'Environment' define onde o agente atua.\nII. 'Performance' avalia o sucesso do agente.\nIII. 'Sensors' são as ferramentas de ação.\n\nEstá(ão) correta(s):",
     options: ["Apenas I", "I e II", "Apenas III", "II e III", "I, II e III"],
@@ -1297,7 +1297,7 @@ const questoes = [
     explanation: "Sensores são para sentir, não para agir (Atuadores agem)."
   },
   {
-    id: 96,
+    id: 90,
     topicoId: 4,
     question: "A medida de performance de um agente inteligente deve ser projetada com base em:",
     options: [
@@ -1311,7 +1311,7 @@ const questoes = [
     explanation: "As medidas são projetadas conforme os resultados esperados."
   },
   {
-    id: 97,
+    id: 91,
     topicoId: 4,
     question: "Considere um robô aspirador. Qual das alternativas abaixo corresponde corretamente ao seu modelo PEAS?",
     options: [
@@ -1325,7 +1325,7 @@ const questoes = [
     explanation: "Escovas e sucção são meios de agir no ambiente (atuadores)."
   },
   {
-    id: 98,
+    id: 92,
     topicoId: 4,
     question: "Analise as premissas:\nI. Um agente racional toma ações para atingir um objetivo.\nII. O sucesso do agente é medido pela 'Performance measure'.\n\nAssinale a opção correta:",
     options: [
@@ -1339,7 +1339,7 @@ const questoes = [
     explanation: "Ambas definem corretamente os pilares de um agente inteligente."
   },
   {
-    id: 99,
+    id: 93,
     topicoId: 4,
     question: "O que diferencia um agente de uma simples ferramenta computacional (como uma LLM pura)?",
     options: [
@@ -1357,7 +1357,7 @@ const questoes = [
   // TÓPICO 5: Tipos de Ambiente (Adicionais)
   // ----------------------------------------------------
   {
-    id: 100,
+    id: 94,
     topicoId: 5,
     question: "Em relação aos tipos de ambiente, assinale a opção INCORRETA:",
     options: [
@@ -1371,7 +1371,7 @@ const questoes = [
     explanation: "Estocásticos possuem incertezas; determinísticos são previsíveis."
   },
   {
-    id: 101,
+    id: 95,
     topicoId: 5,
     question: "Analise as características:\nI. Experiência dividida em partes independentes.\nII. Ação atual não afeta o futuro distante.\n\nEssas características definem um ambiente:",
     options: ["Sequencial", "Contínuo", "Estocástico", "Episódico", "Dinâmico"],
@@ -1379,7 +1379,7 @@ const questoes = [
     explanation: "No episódico, as ações não dependem umas das outras."
   },
   {
-    id: 102,
+    id: 96,
     topicoId: 5,
     question: "Verdadeiro ou Falso: Um carro autônomo opera em um ambiente contínuo, pois os dados dos sensores e as ações no trânsito não podem ser totalmente enumerados.",
     options: ["Verdadeiro", "Falso"],
@@ -1387,7 +1387,7 @@ const questoes = [
     explanation: "Ambientes contínuos são aqueles onde não é possível enumerar as ações e percepções, como no caso de um carro autônomo no trânsito em constante mudança."
   },
   {
-    id: 103,
+    id: 97,
     topicoId: 5,
     question: "Se o ambiente sofre alterações externas enquanto o agente processa a informação, ele é:",
     options: ["Estático", "Dinâmico", "Determinístico", "Episódico", "Single-agent"],
@@ -1395,7 +1395,7 @@ const questoes = [
     explanation: "Ambientes dinâmicos mudam durante a decisão do agente."
   },
   {
-    id: 104,
+    id: 98,
     topicoId: 5,
     question: "Qual a relação correta entre o jogo de tabuleiro e seu ambiente?",
     options: [
@@ -1409,7 +1409,7 @@ const questoes = [
     explanation: "No xadrez, ações e percepções são enumeráveis (discreto)."
   },
   {
-    id: 105,
+    id: 99,
     topicoId: 5,
     question: "Analise as afirmações:\nI. No ambiente determinístico, o estado atual + ação define o próximo estado.\nII. No ambiente sequencial, a ação atual depende das anteriores.\n\nEstá(ão) correta(s):",
     options: ["Apenas I", "Apenas II", "Ambas as afirmações", "Nenhuma das afirmações", "I anula II"],
@@ -1417,7 +1417,7 @@ const questoes = [
     explanation: "Ambas as definições estão corretas segundo o texto."
   },
   {
-    id: 106,
+    id: 100,
     topicoId: 5,
     question: "Verdadeiro ou Falso: Em um ambiente parcialmente observável, o agente possui acesso completo ao estado do mundo via sensores.",
     options: ["Verdadeiro", "Falso"],
@@ -1429,7 +1429,7 @@ const questoes = [
   // TÓPICO 6: Tipos de Agentes (Adicionais)
   // ----------------------------------------------------
   {
-    id: 107,
+    id: 101,
     topicoId: 6,
     question: "Sobre os tipos de agentes, qual afirmação é INCORRETA?",
     options: [
@@ -1443,7 +1443,7 @@ const questoes = [
     explanation: "Agentes de objetivo apenas buscam o alvo. Quem busca 'mais barato' ou 'qualidade' é o de utilidade."
   },
   {
-    id: 108,
+    id: 102,
     topicoId: 6,
     question: "Analise as afirmações sobre os tipos de agentes:\nI. Reativo Simples: Atua apenas se o ambiente for parcialmente observável.\nII. Baseado em Modelo: Mantém um histórico para entender a evolução do ambiente.\nIII. Baseado em Objetivo: Toma decisões sem considerar o estado atual do mundo.\nIV. Baseado em Utilidade: Atribui valores aos estados para maximizar a qualidade do resultado.\nV. Reativo Simples: Toma decisões baseando-se exclusivamente na percepção do estado atual.",
     options: ["I, II e IV", "II, III e V", "II, IV e V", "I, III e IV", "Todas estão corretas"],
@@ -1451,7 +1451,7 @@ const questoes = [
     explanation: "II, IV e V estão corretas. A I está incorreta porque o agente reativo simples exige um ambiente totalmente observável. A III está incorreta porque o agente baseado em objetivo usa sim o estado atual junto com a meta para planejar suas ações."
   },
   {
-    id: 109,
+    id: 103,
     topicoId: 6,
     question: "Verdadeiro ou Falso: O agente reativo simples pode operar com sucesso em ambientes onde o estado não é totalmente visível.",
     options: ["Verdadeiro", "Falso"],
@@ -1459,7 +1459,7 @@ const questoes = [
     explanation: "Ele exige que o ambiente seja totalmente observável por não ter histórico."
   },
   {
-    id: 110,
+    id: 104,
     topicoId: 6,
     question: "Qual agente utiliza técnicas de busca e planejamento focadas exclusivamente em atingir um estado final específico?",
     options: [
@@ -1473,7 +1473,7 @@ const questoes = [
     explanation: "O foco do agente baseado em objetivo é usar busca para atingir a meta."
   },
   {
-    id: 111,
+    id: 105,
     topicoId: 6,
     question: "A função de utilidade é uma ferramenta essencial para:",
     options: [
@@ -1487,7 +1487,7 @@ const questoes = [
     explanation: "Agentes baseados em utilidade usam essas funções para avaliar estados."
   },
   {
-    id: 112,
+    id: 106,
     topicoId: 6,
     question: "Analise:\nI. O agente baseado em modelo mantém histórico de percepções.\nII. O agente de utilidade ignora a qualidade do resultado final.\n\nAssinale a correta:",
     options: [
@@ -1501,7 +1501,7 @@ const questoes = [
     explanation: "Agente de utilidade foca justamente na qualidade (maximização)."
   },
   {
-    id: 113,
+    id: 107,
     topicoId: 6,
     question: "Verdadeiro ou Falso: 'Agentes reativos baseados em modelo' operam tentando prever como o ambiente mudará de acordo com suas ações.",
     options: ["Verdadeiro", "Falso"],
@@ -1513,7 +1513,7 @@ const questoes = [
   // TÓPICO 7: Problemas de Busca (Adicionais)
   // ----------------------------------------------------
   {
-    id: 114,
+    id: 108,
     topicoId: 7,
     question: "Sobre os elementos de problemas de busca, a alternativa INCORRETA é:",
     options: [
@@ -1527,7 +1527,7 @@ const questoes = [
     explanation: "Teste de objetivo determina se o fim foi alcançado. Quem define ações é a Função Sucessora."
   },
   {
-    id: 115,
+    id: 109,
     topicoId: 7,
     question: "Analise as definições:\nI. A solução é a sequência de ações para chegar ao objetivo.\nII. Abstração demais pode impossibilitar a resolução.\nIII. Custo do caminho avalia a performance medida pelo sensor.\n\nEstá(ão) correta(s):",
     options: ["Apenas I", "I e II", "II e III", "Apenas III", "I, II e III"],
@@ -1535,7 +1535,7 @@ const questoes = [
     explanation: "Custo do caminho é a soma dos custos das ações, não uma medição de sensor direta."
   },
   {
-    id: 116,
+    id: 110,
     topicoId: 7,
     question: "Verdadeiro ou Falso: Um problema de busca detalhado demais é sempre preferível, pois garante uma solução perfeita e rápida.",
     options: ["Verdadeiro", "Falso"],
@@ -1543,7 +1543,7 @@ const questoes = [
     explanation: "Muito detalhe torna a resolução inviável computacionalmente."
   },
   {
-    id: 117,
+    id: 111,
     topicoId: 7,
     question: "A 'Abstração' em busca é necessária para:",
     options: [
@@ -1557,7 +1557,7 @@ const questoes = [
     explanation: "Abstração é o processo de remover detalhes para tornar o problema tratável."
   },
   {
-    id: 118,
+    id: 112,
     topicoId: 7,
     question: "Qual elemento é responsável por validar se o estado atual é o estado meta?",
     options: [
@@ -1571,7 +1571,7 @@ const questoes = [
     explanation: "O Teste de Objetivo faz essa validação."
   },
   {
-    id: 119,
+    id: 113,
     topicoId: 7,
     question: "Analise:\nI. O espaço de estados inclui apenas o ponto de partida e o de chegada.\nII. O custo do caminho é o somatório dos pesos das arestas percorridas.\n\nEstá(ão) correta(s):",
     options: [
@@ -1585,7 +1585,7 @@ const questoes = [
     explanation: "Espaço de estados inclui TODOS os estados alcançáveis, não apenas início e fim."
   },
   {
-    id: 120,
+    id: 114,
     topicoId: 7,
     question: "Verdadeiro ou Falso: Problemas de busca tradicionalmente assumem que o ambiente é estocástico para testar a robustez do agente.",
     options: ["Verdadeiro", "Falso"],
@@ -1597,7 +1597,7 @@ const questoes = [
   // TÓPICO 8: Grafos e Árvores de Busca (Adicionais)
   // ----------------------------------------------------
   {
-    id: 121,
+    id: 115,
     topicoId: 8,
     question: "Sobre Grafos e Árvores, assinale a opção INCORRETA:",
     options: [
@@ -1611,7 +1611,7 @@ const questoes = [
     explanation: "O grafo raramente é construído totalmente na memória devido ao seu tamanho."
   },
   {
-    id: 122,
+    id: 116,
     topicoId: 8,
     question: "Analise as afirmações sobre Grafos e Árvores de Busca:\nI. No grafo de espaço de estados, cada estado ocorre apenas uma vez.\nII. Na árvore de busca, um estado específico pode aparecer em múltiplos nós.\nIII. A árvore de busca é sempre finita, mesmo que haja repetição de estados.\nIV. Cada nó na árvore de busca representa um caminho único no grafo de estados.\nV. Grafos de estados são comumente construídos de forma integral na memória RAM.",
     options: ["I, II e III", "II, IV e V", "I, II e IV", "I, III e V", "Todas estão corretas"],
@@ -1619,7 +1619,7 @@ const questoes = [
     explanation: "I, II e IV estão corretas. A III está incorreta pois a árvore pode ser infinita em caso de ciclos. A V está incorreta pois o grafo raramente é construído totalmente na memória devido ao seu tamanho."
   },
   {
-    id: 123,
+    id: 117,
     topicoId: 8,
     question: "Verdadeiro ou Falso: Um nó na árvore de busca corresponde a um único estado do grafo, ignorando o trajeto feito para chegar até ele.",
     options: ["Verdadeiro", "Falso"],
@@ -1627,7 +1627,7 @@ const questoes = [
     explanation: "Cada nó na árvore corresponde a um caminho completo no grafo."
   },
   {
-    id: 124,
+    id: 118,
     topicoId: 8,
     question: "O que representam as arestas (edges) no contexto de grafos de estados?",
     options: [
@@ -1641,7 +1641,7 @@ const questoes = [
     explanation: "Arestas ligam estados através de ações e seus respectivos custos."
   },
   {
-    id: 125,
+    id: 119,
     topicoId: 8,
     question: "A repetição de estados é um fenômeno que afeta principalmente:",
     options: [
@@ -1655,7 +1655,7 @@ const questoes = [
     explanation: "Na árvore, a repetição gera estrutura redundante e pode torná-la infinita."
   },
   {
-    id: 126,
+    id: 120,
     topicoId: 8,
     question: "Analise:\nI. Árvores de busca mostram o processo de exploração.\nII. Grafos de estados mostram a representação do problema.\n\nEstá(ão) correta(s):",
     options: [
@@ -1669,7 +1669,7 @@ const questoes = [
     explanation: "Definições corretas das funções de cada estrutura."
   },
   {
-    id: 127,
+    id: 121,
     topicoId: 8,
     question: "Verdadeiro ou Falso: O teste de objetivo em um grafo é geralmente um conjunto de múltiplos nós distribuídos aleatoriamente.",
     options: ["Verdadeiro", "Falso"],
@@ -1681,7 +1681,7 @@ const questoes = [
   // TÓPICO 9: Algoritmos Não Informados (Adicionais)
   // ----------------------------------------------------
   {
-    id: 128,
+    id: 122,
     topicoId: 9,
     question: "Sobre algoritmos não informados, assinale a opção INCORRETA:",
     options: [
@@ -1692,18 +1692,10 @@ const questoes = [
       "Sem poda, os algoritmos podem entrar em busca infinita."
     ],
     correct: 2,
-    explanation: "Complexidade de tempo mede o tempo; memória é medida pela complexidade de espaço."
+    explanation: "Complexidade de tempo mede o tempo que o algoritmo leva para encontrar uma solução; memória é medida pela complexidade de espaço."
   },
   {
-    id: 129,
-    topicoId: 9,
-    question: "Analise as notações:\nI. 'b' é o fator de ramificação.\nII. 'm' é a profundidade máxima.\nIII. 'd' é a profundidade da solução.\n\nSegundo as definições, está(ão) correta(s):",
-    options: ["I e II", "II e III", "Apenas I", "Apenas II", "I, II e III"],
-    correct: 0,
-    explanation: "No texto, 'd' é o limite de profundidade (DLS/IDS) e 's' é a profundidade da primeira solução."
-  },
-  {
-    id: 130,
+    id: 123,
     topicoId: 9,
     question: "Verdadeiro ou Falso: A busca em profundidade (DFS) é preferível quando o recurso mais escasso no sistema é a memória RAM.",
     options: ["Verdadeiro", "Falso"],
@@ -1711,7 +1703,7 @@ const questoes = [
     explanation: "Correto. DFS visita menos nós e gasta menos memória (O(bm))."
   },
   {
-    id: 131,
+    id: 124,
     topicoId: 9,
     question: "A estratégia de busca 'Não Informada' baseia-se em:",
     options: [
@@ -1725,7 +1717,7 @@ const questoes = [
     explanation: "Buscas cegas usam apenas a informação dada na descrição do problema."
   },
   {
-    id: 132,
+    id: 125,
     topicoId: 9,
     question: "Para garantir o menor custo em uma busca cega, deve-se utilizar:",
     options: ["BFS", "DFS", "UCS", "IDS", "Greedy Search"],
@@ -1733,7 +1725,7 @@ const questoes = [
     explanation: "UCS (Busca de Custo Uniforme) é focada no menor custo."
   },
   {
-    id: 133,
+    id: 126,
     topicoId: 9,
     question: "Analise as premissas:\nI. A busca cega é eficiente em problemas de larga escala.\nII. Estratégias de exploração escolhem o próximo nó a expandir.\n\nAssinale a opção correta:",
     options: [
@@ -1747,7 +1739,7 @@ const questoes = [
     explanation: "Busca cega é INEFICIENTE em problemas de larga escala."
   },
   {
-    id: 134,
+    id: 127,
     topicoId: 9,
     question: "Verdadeiro ou Falso: A propriedade 'Ótimo' em busca garante que a solução encontrada é a que exige menos tempo de processamento.",
     options: ["Verdadeiro", "Falso"],
@@ -1759,7 +1751,7 @@ const questoes = [
   // TÓPICO 10: DFS e BFS (Adicionais)
   // ----------------------------------------------------
   {
-    id: 135,
+    id: 128,
     topicoId: 10,
     question: "Sobre DFS e BFS, assinale a afirmação INCORRETA:",
     options: [
@@ -1773,15 +1765,15 @@ const questoes = [
     explanation: "BFS só é ótima se os custos das arestas forem todos iguais."
   },
   {
-    id: 136,
+    id: 129,
     topicoId: 10,
-    question: "Analise:\nI. DFS encontra a solução mais à esquerda.\nII. BFS expande nível por nível.\nIII. DFS tem complexidade de tempo O(b^m).\n\nEstá(ão) correta(s):",
-    options: ["Apenas I", "Apenas II", "I e II", "II e III", "I, II e III"],
-    correct: 4,
-    explanation: "Todas as características listadas estão corretas para DFS e BFS."
+    question: "Analise as afirmações sobre os algoritmos DFS e BFS:\nI. A Busca em Profundidade (DFS) sempre garante encontrar a solução ótima em termos de custo.\nII. A Busca em Largura (BFS) expande todos os nós de um nível antes de passar para o próximo.\nIII. A DFS possui complexidade de tempo O(b<sup>m</sup>), onde 'm' é a profundidade máxima.\nIV. A BFS utiliza uma estrutura de Pilha (LIFO) para gerenciar a fronteira de busca.\nV. A DFS encontra a solução mais à esquerda da árvore, independente do custo ou profundidade.",
+    options: ["I, II e III", "II, III e V", "II, IV e V", "I, III e IV", "Todas estão corretas"],
+    correct: 1,
+    explanation: "II, III e V estão corretas. A afirmação I está incorreta porque a DFS não é ótima. A IV está incorreta porque a BFS utiliza uma Fila (FIFO), enquanto a Pilha é usada pela DFS."
   },
   {
-    id: 137,
+    id: 130,
     topicoId: 10,
     question: "Verdadeiro ou Falso: A Busca em Largura (BFS) é completa mesmo se a profundidade da solução 's' for infinita.",
     options: ["Verdadeiro", "Falso"],
@@ -1789,43 +1781,29 @@ const questoes = [
     explanation: "BFS é completa se 's' for FINITO."
   },
   {
-    id: 138,
+    id: 131,
     topicoId: 10,
-    question: "Qual algoritmo possui complexidade de espaço linear (O(bm)) em relação à profundidade?",
+    question: "Qual algoritmo possui complexidade de espaço (O(bm)) em relação à profundidade?",
     options: ["BFS", "UCS", "DFS", "IDS", "A*"],
     correct: 2,
     explanation: "A Busca em Profundidade (DFS) é a que economiza memória desta forma."
   },
   {
-    id: 139,
+    id: 132,
     topicoId: 10,
     question: "A principal falha da Busca em Profundidade (DFS) em termos de optimalidade é:",
     options: [
+      "Aceitar a primeira solução que encontra.",
       "Gastar memória demais.",
       "Não encontrar nenhuma solução.",
-      "Aceitar a primeira solução que encontra (mais à esquerda).",
       "Explorar todos os níveis antes de descer.",
       "Depender de heurísticas inconsistentes."
     ],
-    correct: 2,
+    correct: 0,
     explanation: "DFS para na primeira solução que acha, sem verificar se há outras melhores."
   },
   {
-    id: 140,
-    topicoId: 10,
-    question: "Analise:\nI. LIFO (Pilha) -> DFS.\nII. FIFO (Fila) -> BFS.\n\nAssinale a correta:",
-    options: [
-      "Ambas as correlações estão corretas.",
-      "Apenas I está correta.",
-      "Apenas II está correta.",
-      "Ambas estão invertidas.",
-      "As estruturas não se aplicam a estes algoritmos."
-    ],
-    correct: 0,
-    explanation: "Definição correta das estruturas de dados usadas."
-  },
-  {
-    id: 141,
+    id: 133,
     topicoId: 10,
     question: "Verdadeiro ou Falso: A Busca em Largura (BFS) pode encontrar o caminho mais curto em número de passos, mas ignora o peso financeiro das ações.",
     options: ["Verdadeiro", "Falso"],
@@ -1837,37 +1815,37 @@ const questoes = [
   // TÓPICO 11: UCS, DLS e IDS (Adicionais)
   // ----------------------------------------------------
   {
-    id: 142,
+    id: 134,
     topicoId: 11,
     question: "Sobre UCS, DLS e IDS, qual afirmação é INCORRETA?",
     options: [
       "UCS expande o vértice de menor custo acumulado.",
-      "DLS é completa se a solução estiver além do limite 'd'.",
       "IDS combina as vantagens de BFS e DFS.",
       "DLS evita ciclos reduzindo a complexidade.",
-      "UCS utiliza fila de prioridades."
+      "UCS utiliza fila de prioridades.",
+      "DLS é completa se a solução estiver além do limite 'd'."
     ],
-    correct: 1,
+    correct: 4,
     explanation: "DLS NÃO é completa se a solução estiver além do limite."
   },
   {
-    id: 143,
+    id: 135,
     topicoId: 11,
-    question: "Analise as propriedades:\nI. IDS é Ótima e Completa.\nII. UCS é Ótima e Completa (sob condições).\nIII. DLS gasta memória O(b^d).\n\nEstá(ão) correta(s):",
-    options: ["I e II", "II e III", "Apenas I", "Apenas II", "I, II e III"],
+    question: "Analise as propriedades dos algoritmos UCS, DLS e IDS:\nI. O algoritmo IDS é considerado Ótimo e Completo.\nII. O UCS é Ótimo e Completo, assumindo que os custos sejam positivos (ε > 0).\nIII. A complexidade de espaço (memória) da busca DLS é definida como O(b<sup>d</sup>).\nIV. O IDS combina a economia de memória da DFS com a garantia de solução da BFS.\nV. A DLS é sempre completa, mesmo que a solução esteja além do limite d definido.",
+    options: ["I, II e IV", "I, III e V", "II, IV e V", "I, II e III", "Todas estão corretas"],
     correct: 0,
-    explanation: "DLS gasta O(bd) de memória, não O(b^d). IDS/UCS são ótimas/completas."
+    explanation: "I, II e IV estão corretas. A afirmação III está incorreta pois a memória da DLS é O(bd), não exponencial. A V está incorreta pois a DLS falha se a solução estiver em profundidade maior que d."
   },
   {
-    id: 144,
+    id: 136,
     topicoId: 11,
     question: "Verdadeiro ou Falso: O algoritmo IDS é menos eficiente em memória que o BFS.",
     options: ["Verdadeiro", "Falso"],
     correct: 1,
-    explanation: "IDS é MAIS eficiente em memória (O(bd)) que o BFS (O(b^s))."
+    explanation: "IDS é MAIS eficiente em memória (O(bd)) que o BFS (O(b<sup>s</sup>))."
   },
   {
-    id: 145,
+    id: 137,
     topicoId: 11,
     question: "Qual algoritmo exige que o custo das arestas (ε) seja maior que zero para garantir completude?",
     options: ["BFS", "DFS", "UCS", "DLS", "Minimax"],
@@ -1875,7 +1853,7 @@ const questoes = [
     explanation: "UCS exige custos positivos (ε > 0) para não travar."
   },
   {
-    id: 146,
+    id: 138,
     topicoId: 11,
     question: "No algoritmo DLS, se o limite 'd' for menor que a profundidade máxima 'm', o que ocorre?",
     options: [
@@ -1889,7 +1867,7 @@ const questoes = [
     explanation: "DLS reduz a complexidade ao evitar caminhos além de 'd'."
   },
   {
-    id: 147,
+    id: 139,
     topicoId: 11,
     question: "Analise:\nI. IDS aumenta o limite de profundidade a cada iteração.\nII. UCS expande o nó com maior custo primeiro para economizar.\n\nAssinale a correta:",
     options: [
@@ -1903,7 +1881,7 @@ const questoes = [
     explanation: "UCS expande o de MENOR custo."
   },
   {
-    id: 148,
+    id: 140,
     topicoId: 11,
     question: "Verdadeiro ou Falso: A Busca de Custo Uniforme (UCS) é inspirada na lógica da busca em profundidade, mas com foco em custos.",
     options: ["Verdadeiro", "Falso"],
@@ -1915,29 +1893,29 @@ const questoes = [
   // TÓPICO 12: Busca Informada (Adicionais)
   // ----------------------------------------------------
   {
-    id: 149,
+    id: 141,
     topicoId: 12,
     question: "Em relação à Busca Informada, assinale a opção INCORRETA:",
     options: [
       "Usa informações adicionais para guiar o caminho.",
       "Heurísticas ajudam a reduzir o custo computacional.",
-      "A heurística fornece um planejamento global perfeito desde o início.",
       "h(n) estima a distância até o objetivo.",
+      "A heurística fornece um planejamento global perfeito desde o início.",
       "Diferentes heurísticas podem ser aplicadas ao mesmo problema."
     ],
-    correct: 2,
+    correct: 3,
     explanation: "A heurística fornece orientações apenas para decisões LOCAIS."
   },
   {
-    id: 150,
+    id: 142,
     topicoId: 12,
-    question: "Analise:\nI. Busca cega explora todas as direções aleatoriamente.\nII. Heurísticas são estratégias baseadas em conhecimento específico.\nIII. h(n) = 0 se n for o estado meta.\n\nEstá(ão) correta(s):",
-    options: ["I e II", "II e III", "Apenas I", "Apenas III", "I, II e III"],
-    correct: 4,
-    explanation: "Todas as premissas estão corretas conforme o material."
+    question: "Analise as afirmações sobre Busca Heurística e Informada:\nI. A busca cega explora opções em todas as direções por não ter informações de localização do objetivo.\nII. Heurísticas são estratégias que utilizam conhecimento específico do problema para guiar o algoritmo e reduzir o custo computacional.\nIII. O valor da função heurística h(n) será igual a zero se o nó 'n' for o estado objetivo.\nIV. Uma heurística fornece uma visão global e perfeita de todo o caminho do início ao fim do grafo.\nV. O principal objetivo da informação heurística é decidir qual nó da fronteira (fringe) deve ser expandido em seguida.",
+    options: ["I, II e IV", "II, III e V", "I, II, III e V", "I, III e IV", "Todas estão corretas"],
+    correct: 2,
+    explanation: "I, II, III e V estão corretas. A afirmação IV está incorreta pois a orientação de uma heurística serve apenas para decisões locais (escolha do próximo sucessor), sendo uma estimativa e não uma previsão perfeita do caminho completo."
   },
   {
-    id: 151,
+    id: 143,
     topicoId: 12,
     question: "Verdadeiro ou Falso: A orientação de uma heurística é usada exclusivamente para escolher a próxima ação sucessora a partir do estado atual.",
     options: ["Verdadeiro", "Falso"],
@@ -1945,7 +1923,7 @@ const questoes = [
     explanation: "Correto. Refere-se a decisões locais."
   },
   {
-    id: 152,
+    id: 144,
     topicoId: 12,
     question: "Qual o objetivo principal de utilizar uma função heurística em IA?",
     options: [
@@ -1959,35 +1937,21 @@ const questoes = [
     explanation: "Objetivo central da heurística."
   },
   {
-    id: 153,
+    id: 145,
     topicoId: 12,
     question: "Sobre a formulação de heurísticas, é correto dizer:",
     options: [
       "Só existe uma heurística correta para cada problema.",
-      "Elas são baseadas em busca não informada.",
       "Pode-se formular várias heurísticas para um único problema.",
+      "Elas são baseadas em busca não informada.",
       "Elas garantem completude em ambientes dinâmicos.",
       "Não utilizam conhecimento específico do domínio."
     ],
-    correct: 2,
+    correct: 1,
     explanation: "Pode-se criar várias estimativas (heurísticas) para o mesmo problema."
   },
   {
-    id: 154,
-    topicoId: 12,
-    question: "Analise:\nI. A busca informada é também chamada de busca heurística.\nII. h(n) estima o custo do estado 'n' até o objetivo.\n\nAssinale a correta:",
-    options: [
-      "I e II são verdadeiras.",
-      "I é verdadeira e II é falsa.",
-      "I é falsa e II é verdadeira.",
-      "Ambas são falsas.",
-      "II é o dobro de I."
-    ],
-    correct: 0,
-    explanation: "Definições básicas de busca informada e h(n)."
-  },
-  {
-    id: 155,
+    id: 146,
     topicoId: 12,
     question: "Verdadeiro ou Falso: Buscas heurísticas são classificadas como um subconjunto das buscas cegas.",
     options: ["Verdadeiro", "Falso"],
@@ -1999,7 +1963,7 @@ const questoes = [
   // TÓPICO 13: Greedy Search (Adicionais)
   // ----------------------------------------------------
   {
-    id: 156,
+    id: 147,
     topicoId: 13,
     question: "Sobre a Greedy Search, assinale a opção INCORRETA:",
     options: [
@@ -2013,15 +1977,7 @@ const questoes = [
     explanation: "Greedy Search pode NÃO ser completa se ficar presa em loops de estados repetidos."
   },
   {
-    id: 157,
-    topicoId: 13,
-    question: "Analise:\nI. h(n) estima o custo do caminho mais barato até o alvo.\nII. Na meta, h(n) = 0.\nIII. A qualidade da heurística afeta as complexidades de tempo e espaço.\n\nEstá(ão) correta(s):",
-    options: ["Apenas I", "I e II", "II e III", "Apenas III", "I, II e III"],
-    correct: 4,
-    explanation: "Todas as propriedades da função h(n) e do impacto da heurística estão corretas."
-  },
-  {
-    id: 158,
+    id: 148,
     topicoId: 13,
     question: "Verdadeiro ou Falso: A Greedy Search assemelha-se estruturalmente à busca em largura (BFS).",
     options: ["Verdadeiro", "Falso"],
@@ -2029,15 +1985,15 @@ const questoes = [
     explanation: "Ela assemelha-se à busca em PROFUNDIDADE (DFS) por seguir um caminho reto."
   },
   {
-    id: 159,
+    id: 149,
     topicoId: 13,
     question: "No pior cenário (heurística ruim), a complexidade de tempo da Greedy Search é:",
-    options: ["O(bd)", "O(bm)", "O(b^m)", "O(1)", "O(s)"],
+    options: ["O(bd)", "O(bm)", "O(b<sup>m</sup>)", "O(1)", "O(s)"],
     correct: 2,
-    explanation: "Pior caso é O(b^m), similar a uma DFS cega."
+    explanation: "Pior caso é O(b<sup>m</sup>), similar a uma DFS cega."
   },
   {
-    id: 160,
+    id: 150,
     topicoId: 13,
     question: "O que acontece se a Greedy Search não possuir controle de estados repetidos?",
     options: [
@@ -2051,21 +2007,7 @@ const questoes = [
     explanation: "Loops são o grande risco da falta de controle de estados na Greedy Search."
   },
   {
-    id: 161,
-    topicoId: 13,
-    question: "Analise:\nI. A busca gulosa expande os nós vizinhos (fringe).\nII. Estimativas de custo podem não ser precisas.\n\nAssinale a correta:",
-    options: [
-      "I e II são verdadeiras.",
-      "I é verdadeira e II é falsa.",
-      "I é falsa e II é verdadeira.",
-      "Ambas são falsas.",
-      "I depende de II ser falso."
-    ],
-    correct: 0,
-    explanation: "Definição de operação e admissão de erro na estimativa."
-  },
-  {
-    id: 162,
+    id: 151,
     topicoId: 13,
     question: "Verdadeiro ou Falso: Greedy Search garante encontrar a solução ótima se o espaço de estados for finito.",
     options: ["Verdadeiro", "Falso"],
@@ -2077,37 +2019,29 @@ const questoes = [
   // TÓPICO 14: A* Search (Adicionais)
   // ----------------------------------------------------
   {
-    id: 163,
+    id: 152,
     topicoId: 14,
     question: "Sobre o algoritmo A*, assinale a opção INCORRETA:",
     options: [
       "Utiliza a fórmula f(n) = g(n) + h(n).",
       "Combina a lógica de UCS e Greedy Search.",
-      "Expande o maior número de caminhos para garantir a solução.",
       "Adiciona contornos gradualmente aos nós.",
-      "É ótimo se a heurística for admissível e consistente."
+      "É ótimo se a heurística for admissível e consistente.",
+      "Expande o maior número de caminhos para garantir a solução."
     ],
-    correct: 2,
+    correct: 4,
     explanation: "A* expande o MENOR número de caminhos comparado a outros algoritmos ótimos."
   },
   {
-    id: 164,
+    id: 153,
     topicoId: 14,
-    question: "Analise a fórmula f(n) = g(n) + h(n):\nI. g(n) é o custo acumulado até o estado atual.\nII. h(n) é a estimativa até o objetivo.\nIII. f(n) é o valor usado para escolher o nó.\n\nEstá(ão) correta(s):",
-    options: ["Apenas I", "I e II", "II e III", "Apenas III", "I, II e III"],
-    correct: 4,
-    explanation: "Divisão exata dos componentes da função de avaliação do A*."
-  },
-  {
-    id: 165,
-    topicoId: 14,
-    question: "Verdadeiro ou Falso: No pior caso, a complexidade de tempo do A* é O(b^s).",
+    question: "Verdadeiro ou Falso: No pior caso, a complexidade de tempo do A* é O(b<sup>s</sup>).",
     options: ["Verdadeiro", "Falso"],
     correct: 0,
     explanation: "Correto. Depende da qualidade da heurística, mas o pior caso é exponencial na profundidade da solução."
   },
   {
-    id: 166,
+    id: 154,
     topicoId: 14,
     question: "O que o g(n) garante no algoritmo A*?",
     options: [
@@ -2121,15 +2055,7 @@ const questoes = [
     explanation: "g(n) traz a componente de custo real (UFS/UCS) para a decisão."
   },
   {
-    id: 167,
-    topicoId: 14,
-    question: "A* Search é considerado um algoritmo:",
-    options: ["Não Informado", "Cego", "Informado", "Puramente Aleatório", "Episódico"],
-    correct: 2,
-    explanation: "Utiliza heurística (informação adicional)."
-  },
-  {
-    id: 168,
+    id: 155,
     topicoId: 14,
     question: "Analise:\nI. A* utiliza o custo acumulado da UFS.\nII. A* utiliza a heurística da Greedy Search.\n\nAssinale a correta:",
     options: [
@@ -2142,86 +2068,40 @@ const questoes = [
     correct: 0,
     explanation: "A* é a fusão dessas duas lógicas."
   },
-  {
-    id: 169,
-    topicoId: 14,
-    question: "Verdadeiro ou Falso: Heurísticas admissíveis podem tornar o A* subótimo se g(n) for muito alto.",
-    options: ["Verdadeiro", "Falso"],
-    correct: 1,
-    explanation: "Heurísticas admissíveis (+ consistência) GARANTEM que o A* seja ótimo."
-  },
 
   // ----------------------------------------------------
   // TÓPICO 15: Admissibilidade (Adicionais)
   // ----------------------------------------------------
   {
-    id: 170,
+    id: 156,
     topicoId: 15,
     question: "Sobre Admissibilidade e Consistência, assinale a opção INCORRETA:",
     options: [
       "Heurísticas admissíveis nunca superestimam o custo real.",
-      "Uma heurística consistente faz com que o valor f(n) nunca diminua.",
       "Toda heurística admissível é obrigatoriamente consistente.",
+      "Uma heurística consistente faz com que o valor f(n) nunca diminua.",
       "A admissibilidade exige que 0 ≤ h(n) ≤ h*(n).",
       "Heurísticas inadmissíveis podem ignorar caminhos ótimos."
     ],
-    correct: 2,
-    explanation: "O texto diz: 'Toda heurística consistente é admissível, mas nem toda heurística admissível é consistente'."
+    correct: 1,
+    explanation: "Toda heurística consistente é admissível, mas nem toda heurística admissível é consistente."
   },
   {
-    id: 171,
-    topicoId: 15,
-    question: "Analise:\nI. Heurística otimista = Admissível.\nII. Heurística pessimista = Inadmissível.\nIII. Heurística admissível pode levar a caminhos ruins.\n\nEstá(ão) correta(s):",
-    options: ["I e II", "II e III", "Apenas I", "Apenas III", "I, II e III"],
-    correct: 4,
-    explanation: "Definições e observações corretas sobre tipos de heurísticas."
-  },
-  {
-    id: 172,
-    topicoId: 15,
-    question: "Verdadeiro ou Falso: Para criar uma heurística admissível, pode-se resolver um 'problema relaxado' sem utilizar busca.",
-    options: ["Verdadeiro", "Falso"],
-    correct: 0,
-    explanation: "Correto. O custo da solução ótima do problema relaxado é a heurística admissível."
-  },
-  {
-    id: 173,
-    topicoId: 15,
-    question: "Considere h*(n) = 15. Qual das seguintes heurísticas h(n) é admissível?",
-    options: ["20", "25", "16", "10", "15.1"],
-    correct: 3,
-    explanation: "Admissível deve ser ≤ h*(n). 10 é a única opção menor que 15."
-  },
-  {
-    id: 174,
+    id: 157,
     topicoId: 15,
     question: "A consistência (monotonicidade) de uma heurística garante que:",
     options: [
-      "A solução será encontrada em O(1).",
       "O valor f(n) nunca diminui ao longo do caminho.",
+      "A solução será encontrada em O(1).",
       "O custo do caminho seja sempre zero.",
       "O ambiente mude de determinístico para estocástico.",
       "A função sucessora seja removida."
     ],
-    correct: 1,
+    correct: 0,
     explanation: "Definição de heurística consistente."
   },
   {
-    id: 175,
-    topicoId: 15,
-    question: "Analise:\nI. Heurísticas que superestimam o custo podem levar a soluções não ótimas.\nII. Deve-se escolher a heurística com maior valor (≤ h*) entre múltiplas admissíveis.\n\nAssinale a correta:",
-    options: [
-      "I e II são verdadeiras.",
-      "I é verdadeira e II é falsa.",
-      "I é falsa e II é verdadeira.",
-      "Ambas são falsas.",
-      "II torna I irrelevante."
-    ],
-    correct: 0,
-    explanation: "Ambas as premissas estão no material sobre admissibilidade."
-  },
-  {
-    id: 176,
+    id: 158,
     topicoId: 15,
     question: "Verdadeiro ou Falso: No jogo 8-puzzle, permitir qualquer movimento sem restrições é um exemplo de problema relaxado.",
     options: ["Verdadeiro", "Falso"],
@@ -2233,7 +2113,7 @@ const questoes = [
   // TÓPICO 16: Game Theory e Adversarial Search (Adicionais)
   // ----------------------------------------------------
   {
-    id: 177,
+    id: 159,
     topicoId: 16,
     question: "Sobre jogos e busca adversarial, assinale a opção INCORRETA:",
     options: [
@@ -2247,23 +2127,15 @@ const questoes = [
     explanation: "Em jogos de soma-zero (Zero-Sum), as utilidades são OPOSTAS, não independentes."
   },
   {
-    id: 178,
+    id: 160,
     topicoId: 16,
-    question: "Analise:\nI. General Games: Agentes podem cooperar ou competir.\nII. Zero-Sum Games: Competição pura (Adversarial).\nIII. Jogos possuem definições determinísticas.\n\nEstá(ão) correta(s):",
-    options: ["Apenas I", "I e II", "II e III", "Apenas III", "I, II e III"],
-    correct: 4,
-    explanation: "Todas as classificações de jogos apresentadas estão corretas."
-  },
-  {
-    id: 179,
-    topicoId: 16,
-    question: "Verdadeiro ou Falso: Na função de utilidade, o agente deve focar em minimizar o custo do caminho até o estado terminal.",
+    question: "Verdadeiro ou Falso: Ao utilizar uma função de utilidade em jogos, o agente deixa de focar na minimização de custos e passa a buscar a maximização de sua própria pontuação.",
     options: ["Verdadeiro", "Falso"],
-    correct: 1,
-    explanation: "O agente deve focar em MAXIMIZAR sua pontuação/utilidade."
+    correct: 0,
+    explanation: "Nos jogos, o objetivo do agente é maximizar o valor numérico (utilidade) do estado terminal para garantir a vitória, em vez de apenas reduzir o custo das ações."
   },
   {
-    id: 180,
+    id: 161,
     topicoId: 16,
     question: "O que caracteriza os 'General Games'?",
     options: [
@@ -2277,7 +2149,7 @@ const questoes = [
     explanation: "Definição de jogos gerais conforme o texto."
   },
   {
-    id: 181,
+    id: 162,
     topicoId: 16,
     question: "No contexto de jogos, o 'Espaço Inicial' identifica:",
     options: [
@@ -2290,34 +2162,12 @@ const questoes = [
     correct: 1,
     explanation: "Definição de estado/espaço inicial em jogos."
   },
-  {
-    id: 182,
-    topicoId: 16,
-    question: "Analise:\nI. Busca Adversarial é também conhecida como busca competitiva.\nII. Xadrez é um exemplo de jogo com definições determinísticas.\n\nAssinale a correta:",
-    options: [
-      "I e II são verdadeiras.",
-      "I é verdadeira e II é falsa.",
-      "I é falsa e II é verdadeira.",
-      "Ambas são falsas.",
-      "I é o oposto de II."
-    ],
-    correct: 0,
-    explanation: "Ambas as premissas estão corretas."
-  },
-  {
-    id: 183,
-    topicoId: 16,
-    question: "Verdadeiro ou Falso: Um jogo cooperativo puro é classificado como um Zero-Sum Game.",
-    options: ["Verdadeiro", "Falso"],
-    correct: 1,
-    explanation: "Zero-sum é competição pura/oposta."
-  },
 
   // ----------------------------------------------------
   // TÓPICO 17: Algoritmo MINIMAX (Adicionais)
   // ----------------------------------------------------
   {
-    id: 184,
+    id: 163,
     topicoId: 17,
     question: "Sobre o algoritmo MINIMAX, assinale a opção INCORRETA:",
     options: [
@@ -2331,7 +2181,7 @@ const questoes = [
     explanation: "O algoritmo utiliza o método bottom-up (de baixo para cima) para retornar valores das folhas até a raiz."
   },
   {
-    id: 185,
+    id: 164,
     topicoId: 17,
     question: "Analise as premissas:\nI. No nível MIN, escolhe-se o menor valor entre os filhos.\nII. No nível MAX, escolhe-se o maior valor entre os filhos.\nIII. A raiz da árvore sempre representa o jogador MIN.\n\nEstá(ão) correta(s):",
     options: ["I e II", "II e III", "Apenas I", "Apenas II", "I, II e III"],
@@ -2339,7 +2189,7 @@ const questoes = [
     explanation: "O primeiro nível (raiz) sempre será MAX."
   },
   {
-    id: 186,
+    id: 165,
     topicoId: 17,
     question: "Verdadeiro ou Falso: Se o oponente humano jogar de forma subótima (cometer erros), o MINIMAX obterá uma utilidade menor que a prevista.",
     options: ["Verdadeiro", "Falso"],
@@ -2347,7 +2197,7 @@ const questoes = [
     explanation: "Se o oponente erra, o MAX recebe uma 'pontuação' MAIOR."
   },
   {
-    id: 187,
+    id: 166,
     topicoId: 17,
     question: "O valor MINIMAX pode ser definido como:",
     options: [
@@ -2361,13 +2211,13 @@ const questoes = [
     explanation: "Definição de valor Minimax presente no texto."
   },
   {
-    id: 188,
+    id: 167,
     topicoId: 17,
     question: "O uso de funções heurísticas no MINIMAX ocorre quando:",
     options: [
       "O estado do jogo é terminal.",
       "O jogador MIN decide cooperar.",
-      "Um estado não é terminal (não se pode atingir as folhas).",
+      "Um estado não é terminal.",
       "O ambiente é episódico e single-agent.",
       "A árvore de jogo é nula."
     ],
@@ -2375,21 +2225,7 @@ const questoes = [
     explanation: "Heurísticas substituem valores terminais quando a busca é limitada."
   },
   {
-    id: 189,
-    topicoId: 17,
-    question: "Analise:\nI. MINIMAX não comete erros contra adversários imperfeitos.\nII. Retornar o caminho previsto é útil se o humano for imprevisível.\n\nAssinale a correta:",
-    options: [
-      "I é verdadeira e II é falsa.",
-      "I é falsa e II é verdadeira.",
-      "Ambas são verdadeiras.",
-      "Ambas são falsas.",
-      "II justifica I."
-    ],
-    correct: 0,
-    explanation: "Se o humano é imprevisível (subótimo), o caminho previsto perde a utilidade (não faz sentido retornar)."
-  },
-  {
-    id: 190,
+    id: 168,
     topicoId: 17,
     question: "Verdadeiro ou Falso: No algoritmo MINIMAX, as arestas da árvore representam as jogadas possíveis de ambos os jogadores.",
     options: ["Verdadeiro", "Falso"],

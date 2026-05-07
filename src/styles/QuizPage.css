@@ -40,3 +40,30 @@
   font-size: 14px; font-weight: 600; transition: opacity 0.15s;
 }
 .quiz-topic__start-btn:hover { opacity: 0.88; }
+
+.quiz-topic__intro {
+  font-size: 13px;
+  color: var(--texto-fraco);
+  line-height: 1.65;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.quiz-topic__shuffle-btn {
+  width: 100%;
+  background: none;
+  border: 1.5px dashed var(--beige-escuro);
+  border-radius: var(--radius-md);
+  color: var(--texto-medio);
+  font-size: 13px;
+  padding: 0.6rem;
+  margin-top: 0.8rem;
+  transition: all 0.18s;
+  cursor: pointer;
+}
+
+.quiz-topic__shuffle-btn:hover {
+  border-color: var(--rosa);
+  color: var(--rosa);
+  background: var(--rosa-fundo);
+}
