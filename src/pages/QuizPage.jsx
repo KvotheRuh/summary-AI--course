@@ -37,9 +37,13 @@ export default function QuizPage() {
     setQuizKey(k => k + 1);
   }
 
-  function handleBack(cp) {
+  function handleBack() {
     setQuestions(null);
     setCheckpoint(null);
+    if (mode === "random") {
+      setMode(null); // volta para seleção de modo
+    }
+    // no modo tópico, questions=null já mostra o preview do tópico
   }
 
   function handleMore() {
