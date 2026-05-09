@@ -36,7 +36,6 @@
   animation: slideIn 0.3s ease-out;
 }
 
-/* Linha com imagem + setas sobrepostas */
 .slide-img-row {
   position: relative;
   width: 100%;
@@ -45,7 +44,6 @@
   justify-content: center;
 }
 
-/* Imagem do slide */
 .slide-system .resumo__gif {
   width: 100%;
   max-width: 100%;
@@ -56,12 +54,11 @@
   border-radius: var(--radius-lg);
 }
 
-/* Setas sobrepostas — aparecem só no hover da linha */
 .slide-arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: var(--branco);
+  background: rgba(255, 255, 255, 0.6);
   border: 1px solid var(--beige-escuro);
   border-radius: 50%;
   width: 40px;
@@ -77,14 +74,14 @@
   line-height: 1;
   z-index: 2;
   padding: 0;
+  backdrop-filter: blur(2px);
 }
 .slide-arrow.left  { left: 8px; }
 .slide-arrow.right { right: 8px; }
-.slide-arrow:hover { background: var(--beige-claro); }
+.slide-arrow:hover { background: rgba(255, 255, 255, 0.85); }
 .slide-arrow:disabled { pointer-events: none; }
-.slide-img-row:hover .slide-arrow:not(:disabled) { opacity: 1; }
+.slide-img-row:hover .slide-arrow:not(:disabled) { opacity: 0.75; }
 
-/* Bolinhas de progresso */
 .slide-dots {
   display: flex;
   gap: 6px;
@@ -105,7 +102,6 @@
   transform: scale(1.3);
 }
 
-/* Legenda */
 .slide-system__caption {
   padding: 0.70rem;
   border-left: 4px solid var(--rosa);
@@ -116,4 +112,22 @@
 @keyframes slideIn {
   from { opacity: 0; transform: translateX(10px); }
   to   { opacity: 1; transform: translateX(0); }
+}
+
+/* ── Responsivo ───────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .resumo__paragrafo { font-size: 13px; line-height: 1.75; }
+
+  .resumo__gif {
+    max-width: 100%;
+    max-height: 260px;
+    object-fit: contain;
+  }
+
+  .slide-system .resumo__gif { max-height: 280px; }
+
+  /* Setas sempre visíveis no touch (sem hover) */
+  .slide-img-row .slide-arrow:not(:disabled) { opacity: 0.7; }
+
+  .slide-arrow { width: 34px; height: 34px; font-size: 18px; }
 }

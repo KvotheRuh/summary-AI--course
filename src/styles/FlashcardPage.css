@@ -76,7 +76,7 @@
 .fc-progress-bar-track { width: 100%; height: 4px; background: var(--beige-escuro); border-radius: 99px; overflow: hidden; }
 .fc-progress-bar-fill { height: 100%; background: var(--rosa); border-radius: 99px; transition: width 0.3s ease; }
 
-/* Botão voltar discreto */
+/* Botão voltar */
 .fc-back-link {
   display: block; margin-top: 1rem;
   background: none; border: none;
@@ -88,38 +88,23 @@
 
 /* ── Seleção de modo ──────────────────────────────────────── */
 .fc-mode-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
   gap: 1.8rem;
 }
 
-.fc-mode-intro {
-  text-align: center;
-  max-width: 380px;
-}
+.fc-mode-intro { text-align: center; max-width: 380px; }
 
 .fc-mode-intro__title {
-  font-family: var(--font-serif);
-  font-size: 18px;
-  font-weight: 400;
-  color: var(--texto);
-  margin-bottom: 0.5rem;
+  font-family: var(--font-serif); font-size: 18px;
+  font-weight: 400; color: var(--texto); margin-bottom: 0.5rem;
 }
 
-.fc-mode-intro__text {
-  font-size: 13px;
-  color: var(--texto-fraco);
-  line-height: 1.75;
-}
+.fc-mode-intro__text { font-size: 13px; color: var(--texto-fraco); line-height: 1.75; }
 
 .fc-mode-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  width: 100%;
-  max-width: 480px;
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 16px; width: 100%; max-width: 480px;
 }
 
 .fc-mode-card {
@@ -130,21 +115,35 @@
   transition: all 0.18s; cursor: pointer;
 }
 .fc-mode-card:hover { border-color: var(--rosa); background: var(--rosa-fundo); }
+.fc-mode-card__icon  { font-size: 28px; margin-bottom: 0.3rem; }
+.fc-mode-card__title { font-size: 15px; font-weight: 500; color: var(--texto); font-family: var(--font-serif); }
+.fc-mode-card__desc  { font-size: 12px; color: var(--texto-fraco); line-height: 1.6; flex: 1; }
+.fc-mode-card__btn   { font-size: 12px; color: var(--rosa); font-weight: 500; margin-top: 0.4rem; }
 
-.fc-mode-card__icon { font-size: 28px; margin-bottom: 0.3rem; }
-
-.fc-mode-card__title {
-  font-size: 15px; font-weight: 500; color: var(--texto);
-  font-family: var(--font-serif);
-}
-
-.fc-mode-card__desc {
-  font-size: 12px; color: var(--texto-fraco); line-height: 1.6; flex: 1;
-}
-
-.fc-mode-card__btn {
-  font-size: 12px; color: var(--rosa); font-weight: 500; margin-top: 0.4rem;
-}
-
-/* Stats e preview (reutilizados do QuizPage) */
 .fc-main-container { display: flex; flex-direction: column; }
+
+/* ── Responsivo ───────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .fc-scene { height: 170px; }
+  .fc-face  { padding: 1.2rem 1.4rem; }
+  .fc-face__text { font-size: 14px; }
+  .fc-face--back .fc-face__text { font-size: 12.5px; }
+
+  .fc-intro { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .fc-intro__shuffle-btn { align-self: flex-end; }
+
+  .fc-mode-grid { gap: 10px; }
+  .fc-mode-card { padding: 1rem 0.9rem; }
+  .fc-mode-card__icon  { font-size: 22px; }
+  .fc-mode-card__title { font-size: 13.5px; }
+  .fc-mode-card__desc  { font-size: 11px; }
+  .fc-mode-intro__title { font-size: 16px; }
+  .fc-mode-intro__text  { font-size: 12px; }
+
+  .fc-controls__flip-btn { padding: 0.45rem 1rem; font-size: 12px; }
+}
+
+@media (max-width: 480px) {
+  .fc-mode-grid { grid-template-columns: 1fr; }
+  .fc-scene { height: 155px; }
+}
