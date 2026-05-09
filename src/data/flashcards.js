@@ -165,7 +165,29 @@ const flashcards = [
   { id: 126, topicoId: 17, frente: "Enquanto o agente principal do Minimax (o jogador MAX) foca em maximizar seus ganhos de utilidade, como ele aborda o adversário (MIN)?", verso: "Ele cria lógicas ativas para sufocar e minimizar completamente as opções de utilidade do inimigo no tabuleiro." },
   { id: 127, topicoId: 17, frente: "O MINIMAX faz um trajeto defensivo, isso porque ele assume que o oponente MIN se comportará de qual maneira no futuro?", verso: "O MINIMAX teme o pior. Ele assume que o MIN é inteligente e jogará sempre da forma perfeita e mais dolorosa para o próprio MAX." },
   { id: 128, topicoId: 17, frente: "De acordo com o funcionamento 'bottom-up' do algoritmo Minimax, de onde ele extrai seus valores numéricos reais?", verso: "Diretamente das 'folhas' da árvore (finais do jogo) e vai retornando esses números de vitória ou derrota para cima até chegar ao estado/raiz do turno atual." },
-  { id: 129, topicoId: 17, frente: "Se um humano cometer um erro contra um bot Minimax, a pontuação programada dele diminui ou é perdida?", verso: "Pelo contrário. Como ele não comete erros, a pontuação que estava predefinida será jogada ainda mais para cima, explorando a falha subótima humana."}
+  { id: 129, topicoId: 17, frente: "Se um humano cometer um erro contra um bot Minimax, a pontuação programada dele diminui ou é perdida?", verso: "Pelo contrário. Como ele não comete erros, a pontuação que estava predefinida será jogada ainda mais para cima, explorando a falha subótima humana."},
+
+
+  // Tópico 19 – Poda Alfa-Beta
+  { id: 130, topicoId: 18, frente: "Qual o objetivo principal da <b>Poda Alfa-Beta</b> no algoritmo Minimax?", verso: "Evitar a expansão de nós que <b>não afetarão a decisão final</b>, reduzindo o número de estados explorados em árvores muito extensas." },
+  { id: 131, topicoId: 18, frente: "Defina o <b>Valor Alfa (α)</b> e seu valor inicial.", verso: "É o melhor valor (maior) encontrado pelo <b>MAX</b> até o momento. Nunca diminui. Inicialmente é <b>-<span style='font-size: 1.2em;'>∞</span></b>." },
+  { id: 132, topicoId: 18, frente: "Defina o <b>Valor Beta (β)</b> e seu valor inicial.", verso: "É o melhor valor (menor) encontrado pelo <b>MIN</b> até o momento. Nunca aumenta. Inicialmente é <b>+<span style='font-size: 1.2em;'>∞</span></b>." },
+  { id: 133, topicoId: 18, frente: "Qual a condição matemática para ocorrer uma <b>Poda Alfa</b>?", verso: "Ocorre em um nó <b>MIN</b> quando seu valor Beta se torna menor ou igual ao Alfa de um ancestral: <b>β(n) ≤ α(i)</b>." },
+  { id: 134, topicoId: 18, frente: "Qual a condição matemática para ocorrer uma <b>Poda Beta</b>?", verso: "Ocorre em um nó <b>MAX</b> quando seu valor Alfa se torna maior ou igual ao Beta de um ancestral: <b>α(n) ≥ β(i)</b>." },
+  { id: 135, topicoId: 18, frente: "Verdadeiro ou Falso: A poda Alfa-Beta altera o resultado final da busca em comparação ao Minimax puro.", verso: "<b>Falso.</b> A poda não afeta o resultado final da busca; ela apenas economiza tempo computacional." },
+  { id: 136, topicoId: 18, frente: "Como a <b>ordem de busca</b> dos nós afeta o algoritmo?", verso: "A quantidade de podas depende da ordem. Uma boa ordenação pode <b>dobrar a profundidade</b> da pesquisa, reduzindo a complexidade de tempo para <b>O(b<sup>m/2</sup>)</b>." },
+  { id: 137, topicoId: 18, frente: "Por que a utilidade dos estados é calculada <b>dinamicamente</b> e não pré-armazenada?", verso: "Porque o número de combinações cresce exponencialmente, tornando <b>inviável</b> armazenar a utilidade de todos os estados possíveis na memória." },
+  
+  /* ── DECISÕES IMPERFEITAS ── */
+  { id: 138, topicoId: 20, frente: "Qual a principal limitação do algoritmo <b>MINIMAX puro</b> em jogos reais?", verso: "A necessidade de expandir a árvore até os <b>estados terminais</b>, o que consome tempo excessivo em jogos complexos (como o Xadrez)." },
+  { id: 139, topicoId: 20, frente: "O que caracteriza uma <b>Decisão Imperfeita</b> na busca competitiva?", verso: "A interrupção da pesquisa em uma <b>profundidade limitada (d)</b>, sem atingir obrigatoriamente os nós folha terminais." },
+  { id: 140, topicoId: 20, frente: "O que substitui a função de utilidade em buscas de profundidade limitada?", verso: "A <b>Função de Avaliação (Heurística)</b>, que estima a utilidade esperada de um nó que ainda não é terminal." },
+  { id: 141, topicoId: 20, frente: "Qual a consequência de usar <b>Decisões Imperfeitas</b> quanto à qualidade da jogada?", verso: "A <b>garantia de jogo ótimo desaparece</b>, uma vez que o algoritmo passa a trabalhar com estimativas heurísticas."},
+
+  /* ── FUNÇÃO DE AVALIAÇÃO ── */
+  { id: 142, topicoId: 20, frente: "Explique o <b>Trade-off</b> na escolha de funções de avaliação.", verso: "Funções <b>precisas</b> são lentas (menos tempo para buscar fundo na árvore); funções <b>rápidas</b> permitem buscas em níveis mais profundos." },
+  { id: 143, topicoId: 20, frente: "Como a escala de valores funciona em <b>Estados Intermediários</b>?", verso: "Diferente dos terminais (fixos), podem ter <b>qualquer valor</b> (ex: 5, 20, 100), onde valores maiores beneficiam o MAX e menores o MIN." },
+  { id: 144, topicoId: 20, frente: "O <b>Teste de Objetivo</b> deve ser alterado ao usar funções de avaliação?", verso: "<b>Não.</b> Ele deve ser sempre baseado nas <b>regras do jogo</b> (ex: vitória real), independentemente da pontuação heurística calculada." }
 ];
 
 export default flashcards;

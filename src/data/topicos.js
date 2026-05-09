@@ -7,6 +7,19 @@ import IDS from "../images/IDS.gif"
 import image from "../images/image.png"
 import image1 from "../images/image1.png"
 import minimax from "../images/minimax.gif"
+import passo1 from "../images/1.png"
+import passo2 from "../images/2.png"
+import passo3 from "../images/3.png"
+import passo4 from "../images/4.png"
+import passo5 from "../images/5.png"
+import passo6 from "../images/6.png"
+import passo7 from "../images/7.png"
+import passo8 from "../images/8.png"
+import passo9 from "../images/9.png"
+import passo10 from "../images/10.png"
+import passo11 from "../images/11.png"
+import ticTac from "../images/tic-tac.png"
+
 
 const topicos = [
   {
@@ -29,14 +42,14 @@ const topicos = [
     titulo: "Resolução Lógica",
     conteudo: `Existem três tipos de raciocínio lógico:
 
-Indutivo: Tira conclusões apenas analisando uma parte dos objetos ou eventos. As conclusões são prováveis, e logicamente não garantidas.
+<Strong>Indutivo:</strong> Tira conclusões apenas analisando uma parte dos objetos ou eventos. As conclusões são prováveis, e logicamente não garantidas.
 Nunca são absolutamente certas.
 Exemplo: Se é observado vários patos brancos, logo, todos os patos são brancos.
 
-Dedutivo:  Tira conclusões a partir de premissas conhecidas. A sentença criada é necessariamente verdadeira. Utiliza modusponens. Sempre está certa.
+<Strong>Dedutivo:</strong>  Tira conclusões a partir de premissas conhecidas. A sentença criada é necessariamente verdadeira. Utiliza modusponens. Sempre está certa.
 Exemplo: Robert é sociólogo → Para ser sociólogo é preciso ser bacharel → Logo, Robert é bacharel em sociologia.
 
-Abdutivo:  A conclusões são tiradas a partir das informações disponíveis, mas que podem estar erradas. 
+<Strong>Abdutivo:</strong>  A conclusões são tiradas a partir das informações disponíveis, mas que podem estar erradas. 
 Exemplo: Se bancos pedem COBOL e Jailson trabalha em um banco, então é possível que Jailson programe em COBOL.`,
   },
   {
@@ -372,6 +385,128 @@ O valor permanece válido como a melhor utilidade garantida, mas os movimentos r
   gif: minimax,
   gifLabel: "Exemplo: Algoritmo MINIMAX",
   },
+
+  {
+    id: 18,
+    titulo: "Poda Alfa-beta",
+    conteudo: `Devido ao grande número de estados, a árvore construída pelo algoritmo MINIMAX pode ser muito extensa.  Para evitar que todos os nós da árvore sejam expandidos, é feito uma poda em nós que não afetarão a decisão final do algoritmo. Um tipo de poda é a Alfa-Beta, ela consiste em utilizar dois tipos de valores para decidir quais nos serão podados, o alfa e o beta.
+
+<strong>- Valor Alfa(𝛼)</strong>: É o melhor valor encontrado pelo MAX (maior valor) até o momento em que a busca se encontra. Esse nunca irá diminuir. Inicialmente o alfa possui o valor de -<span style='font-size: 1.3em; font-weight: bold; vertical-align: middle;'>∞</span>. 
+<strong>- Valor Beta(𝛽)</strong>: É o melhor valor encontrado pelo MIN (menor valor) até o momento em que a busca se encontra. Esse valor nunca irá aumentar. Inicialmente o beta possui o valor de +<span style='font-size: 1.3em; font-weight: bold; vertical-align: middle;'>∞</span>.
+
+Existem dois tipos de poda alfa-beta:
+
+<strong>- Poda Alfa(𝛼): Dado um nó MIN n, efetue a poda se 𝛽(n) ⩽ 𝛼(i) para algum nó ancestral i do nó n.</strong>
+<strong>- Poda Beta(𝛽): Dado um nó MAX n, efetue a poda se 𝛼(n) ⩾  𝛽(i) para algum nó ancestral i do nó n.</strong>
+
+<span style="color: red;">Importante: Ao ocorrer uma poda, observe em qual tipo de nó ela aconteceu.
+- Se a poda ocorrer em um nó <strong>MIN</strong>, ela é chamada de <strong>Poda Alfa</strong>.
+- Se ocorrer em um nó <strong>MAX</strong>, ela é chamada de <strong>Poda Beta</strong>.
+</span>
+
+Propriedades: 
+- A poda não afeta o resultado final da busca
+- A quantidade de podas depende da ordem dos nodes terminais
+- Uma boa ordem de busca pode dobrar a profundidade da pesquisa, ou seja, permite uma busca mais profunda dentro de um limite de tempo.
+    - A complexidade de tempo cai de O(bm) para O(b<sup>m/2</sup>).
+    - Uma possível estratégia é ordenar a ordem de visita aos nodes.
+
+Não é viável armazenar a utilidade de todos os estados possíveis, pois a quantidade de combinações cresce rapidamente. Por isso, a utilidade normalmente é calculada dinamicamente durante a execução do algoritmo, a cada interação ou expansão da árvore.
+
+<span style="color:red;">Existe um passo-a-passo da execução da Poda Alfa-beta no tópico 19.</span>
+<span style="color:red;">No módulo questões(está no tópico 18 das questões) tem exercicios práticos, em que vocês terão que executar a poda alfa-beta em uma árvore MiniMax. Todavia, se quiserem criar a sua própria árvore e executarem a poda alfa-beta nela, podem utilizar esse site https://raphsilva.github.io/utilities/minimax_simulator/#</span>`,
+  },
+
+  {
+    id: 19,
+    titulo: "Passo-a-Passo Poda Alfa-beta",
+    slides: [
+      {legenda:"Inicializar a raiz com valores de [-INF, +INF], alfa e beta, respectivamente",
+        img: passo1},
+
+      {legenda:"Ir para os nós folhas. Coloque Alfa e Beta do nó que está sendo visitadas.",
+        img: passo2},
+
+      {legenda:"Como o nivel é MAX só será atualizado o Alfa com o maior valor que ele encontrou até agora. Nesse caso é o 8",
+        img: passo3},
+
+      {legenda:"Devido a recursão, volte um nível. Ele será atualizado com o valor conhecido até agora. Mas lembre-se de sempre verificar se o nível é MIN ou MAX. Nesse caso, é MIN então é o Beta que será atualizado. OBS: Ainda NÃO volta o valor conhecido até a RAIZ.",
+        img: passo4},
+
+      {legenda:"Agora vá novamente para as folhas. Como voltamos ao nível MAX o Alfa que será atualizado. Contudo, como o beta já possui um valor ele continuará armazenado",
+        img: passo5},
+
+      {legenda:"O lgoritmo irá verificar o 10 e atualizar o Alfa com esse valor. Antes de expandir o 5, será verificado a seguinte condição: Alfa ⩾ Beta, nesse caso é verdadeiro, logo os nós 5, 110 e 300 serão podados. A poda será caracterizada como Poda Beta, por estar em um nível Max e cumprir com os requisitos da Poda Beta.",
+        img: passo6},
+
+      {legenda:"Voltando um nível o Beta e nem o Alfa serão atualizados, pois o valor do nó não é o menor conhecido e o nível é MIN. Em seguida, o algoritmo irá para a raiz e atualizará o Alfa na propria raiz, com o maior valor que ele conhece, nesse caso o 8.",
+        img: passo7},
+
+      {legenda:"Como agora o algoritmo já conhece o Alfa ele levará ele para o próximo nível, mas não até as folhas.",
+        img: passo8},
+
+      {legenda:"Repete-se a comparação, agora como estamos no MAX o alfa que será atualizado com o maior valor, nesse caso é o 3.",
+        img: passo9},
+
+      {legenda:"Voltando um nível o valor de Beta será atualizado, pois estamos no MIN. Antes de seguir até as folhas, o algoritmo irá verificar os valores do alfa e do beta. Nesse caso, ele concluirá que beta =< alfa e haverá uma poda. Essa poda ocorre pois cumpre com o requisito da Poda Alfa. Dessa forma, os outros nós e suas folhas não serão expandidos, mesmo que tenha um valor maior nas folhas.",
+        img: passo10}
+        ,
+      {legenda:"Por fim, o algoritmo irá fazer uma ultima verificação para ver qual é o maior valor que ele conhece, nesse caso é o 8. Vale ressaltar que se não houvesse nenhuma poda o resultado ainda seria o 8.",
+        img: passo11}
+        ,
+    ],
+  },
+  {
+    id: 20,
+    titulo: "Decisões Imperfeitas e Função de Avaliação",
+    conteudo: `<strong>Decisões imperfeitas</strong>
+Limitações do MINIMAX:
+- O algoritmo requer que a árvore seja expandida até os estados terminais(nós folhas com utilidades).
+- Consome muito tempo para jogos que demandam de muitos “passos” para chegar aos estados terminais (mesmo com poda).
+    - No geral, nós temos uma limitação de tempo para tomar as decisões. 
+    - Impraticável em jogos reais que requerem interações em tempo real.
+
+A solução para essas limitações é: Decisões Imperfeitas
+- Em vez de pesquisar até os nós terminais, pesquisamos apenas até uma profundidade limitada(ou seja, olhamos para frente apenas d movimentos)
+- Para isso, é necessário trocar a função de utilidade por uma função de evolução (heurística), que estima a utilidade esperada do nó não terminal
+- A garantia de jogo ótimo desaparece.
+- Mecanismo de parada: Podemos usar IDS limitada pelo tempo disponível para uma movimentação ou considerar uma profundidade máxima
+
+<strong>Função de Avaliação</strong>
+Mesmo princípio das heurísticas usadas pelos algoritmos de busca informada
+Estima a pontuação para nós não terminais 
+São sempre imperfeitas, e designar boas funções é a chave.
+
+Trade-off:
+- Funções precisas podem ser computacionalmente caras. Menos tempo para realizar a busca
+- Funções imprecisas podem ser computacionalmente rápidas - mais tempo para realizar a busca.
+
+A função de avaliação é uma fórmula usada para estimar quão vantajoso um estado do jogo é para um jogador, sem precisar explorar toda a árvore de possibilidades até o final da partida.
+Mas como isso funciona na prática?
+No jogo da velha, por exemplo, uma heurística simples pode contar quantas possibilidades de vitória ainda existem para cada jogador. Assim, a função de avaliação pode ser definida como:
+
+Eval(s) = possibilidades do jogador X ganhar - possibilidades do jogador O ganhar
+
+Olhe o exemplo: 
+
+<img src="${ticTac}" alt="Exemplo da aplicação da função de avaliação no jogo Tic-Tac Toe" class="resumo__gif"/>
+
+O jogador X só conseguirá vencer pelas seguintes linhas: 1ª linha, 3ª linha, 1ª coluna e 3ª coluna. Por sua vez, o jogador O poderá vencer pela 1ª linha, 3ª linha, 2ª coluna, 3ª coluna, diagonal principal e diagonal secundária.
+O resultado da função pode ser interpretado da seguinte maneira: se o valor for negativo, significa que o jogador O possui mais possibilidades de vitória do que X. Contudo, se o valor for positivo, significa que X possui mais chances de vencer. Já se o valor for 0, significa que ambos possuem a mesma quantidade de possibilidades de vitória.
+
+Propriedades:
+- Estados Terminais: Possui apenas valores representando vitória/empate/derrota.
+- Estados Intermediários: 
+    - Podem ter qualquer valor (2,5,100)
+    - A escala precisa preservar a lógica
+    - valores maiores -> melhores para o MAX
+    - valores menores -> melhores para o MIN
+- Teste de objetivo: 
+    - Deve sempre ser baseado nas regras do jogo, não
+    na função de avaliação.
+    - Exemplo (jogo da velha): "3 em linha" encerra o jogo 
+    independentemente da pontuação heurística`,
+  }
 ];
 
 export default topicos;

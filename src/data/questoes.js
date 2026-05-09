@@ -1,3 +1,9 @@
+import PruningQuestion1 from "../images/PruningQuestion1.png"
+import PruningQuestionrResult from "../images/PruningQuestionrResult.png"
+import PruningQuestion2 from "../images/PruningQuestion2.png"
+import PruningQuestionrResult2 from "../images/PruningQuestionrResult2.png"
+
+
 // topicoId links each question to a topic in topicos.js
 const questoes = [
   // ----------------------------------------------------
@@ -1207,7 +1213,7 @@ const questoes = [
   {
     id: 82,
     topicoId: 3,
-    question: "Analise as afirmações sobre os critérios de avaliação de IA:\nI. O critério comportamental foca na eficácia do resultado final.\nII. A funcionalidade prioriza o 'como' o sistema realiza a função.\nIII. O critério cognitivo nega a reprodução genuína sem consciência.\nIV. O critério funcional avalia apenas o resultado, independentemente do processo.\nV. O critério cognitivo busca reproduzir os processos mentais humanos.\n\nEstá(ão) correta(s):",
+    question: "Analise as afirmações sobre os critérios de avaliação de IA:\nI. O critério comportamental foca na eficácia do resultado final.\nII. A funcionalidade prioriza o 'como' o sistema realiza a função.\nIII. O critério cognitivo nega a reprodução genuína sem consciência.\nIV. O critério funcional avalia apenas o resultado, independentemente do processo.\nV. O critério cognitivo busca reproduzir os processos mentais humanos.\nEstá(ão) correta(s):",
     options: ["Apenas I", "Apenas III", "I e II", "II e III", "III, IV e V"],
     correct: 4,
     explanation: "I está incorreta (comportamental observa comportamento, não só resultado). II está incorreta (funcional ignora o 'como'). III, IV e V estão corretas."
@@ -1237,7 +1243,7 @@ const questoes = [
   {
     id: 85,
     topicoId: 3,
-    question: "Analise as premissas:\nI. Conversar com uma máquina sem identificá-la é o cerne do Teste de Turing.\nII. A simulação superficial é aceita pelo critério de funcionalidade.\nIII. O Teste de Turing avalia o comportamento observável da máquina.\nIV. O critério cognitivo exige que a máquina pense exatamente como um humano.\nV. O critério funcional desconsidera os processos internos do sistema.\n\nAssinale a correta:",
+    question: "Analise as premissas:\nI. Conversar com uma máquina sem identificá-la é o cerne do Teste de Turing.\nII. A simulação superficial é aceita pelo critério de funcionalidade.\nIII. O Teste de Turing avalia o comportamento observável da máquina.\nIV. O critério cognitivo exige que a máquina pense exatamente como um humano.\nV. O critério funcional desconsidera os processos internos do sistema.\nAssinale a correta:",
     options: [
       "I, II e III são verdadeiras.",
       "I, II, III e V são verdadeiras.",
@@ -2231,7 +2237,207 @@ const questoes = [
     options: ["Verdadeiro", "Falso"],
     correct: 0,
     explanation: "Correto. Nós são estados, arestas são jogadas."
-  }
+  },
+  {
+    id: 169,
+    topicoId: 18,
+    question: "Sobre os valores de controle da Poda Alfa-Beta, assinale a alternativa correta:",
+    options: [
+      "O valor Alfa representa o melhor valor encontrado pelo jogador MIN.",
+      "O valor Beta é inicializado com -∞ e o Alfa com +∞.",
+      "Ambos os valores Alfa e Beta são reiniciados em zero a cada novo nível da árvore.",
+      "O valor Alfa (α) nunca diminui e o valor Beta (β) nunca aumenta durante a busca.",
+      "O valor Beta representa o maior valor encontrado pelo jogador MAX."
+    ],
+    correct: 3,
+    explanation: "Conforme a definição, Alfa (melhor para MAX) nunca diminui e Beta (melhor para MIN) nunca aumenta."
+  },
+  {
+    id: 170,
+    topicoId: 18,
+    question: "Analise as condições para a ocorrência das podas:\nI. A Poda Alfa ocorre especificamente em um nó do tipo MIN.\nII. A Poda Beta ocorre em um nó MAX quando α(n) ≥ β(i) para um ancestral i.\nIII. Ocorre Poda Alfa em um nó MIN quando β(n) ≤ α(i) para um ancestral i.\nIV. Ao ocorrer uma poda em um nó MAX, ela é tecnicamente chamada de Poda Alfa.\nV. A poda altera o resultado final que seria obtido pelo Minimax convencional.\nEstá(ão) correta(s):",
+    options: ["I, II e III", "II, IV e V", "I, II e IV", "III e V", "Todas estão corretas"],
+    correct: 0,
+    explanation: "As afirmações I, II e III seguem as definições técnicas. A IV está incorreta (em MAX chama-se Poda Beta) e a V está incorreta (a poda não afeta o resultado final)."
+  },
+  {
+    id: 171,
+    topicoId: 18,
+    question: "Qual o impacto de uma 'boa ordenação' dos nós na eficiência da Poda Alfa-Beta?",
+    options: [
+      "Permite que o algoritmo ignore o valor Alfa na raiz.",
+      "Pode dobrar a profundidade da pesquisa dentro de um mesmo limite de tempo.",
+      "Inviabiliza a utilização de funções heurísticas dinâmicas.",
+      "Faz com que a complexidade de tempo suba para O(b^m).",
+      "Garante que o jogador MIN sempre vença a partida."
+    ],
+    correct: 1,
+    explanation: "Uma boa ordem de busca permite podar mais ramos precocemente, possibilitando explorar o dobro da profundidade."
+  },
+  {
+    id: 172,
+    topicoId: 18,
+    question: "Sobre a complexidade de tempo e viabilidade do algoritmo, analise:\nI. Com a poda perfeita, a complexidade cai para O(b<sup>m/2</sup>).\nII. É necessário armazenar a utilidade de todos os estados possíveis em disco.\nIII. A utilidade é normalmente calculada dinamicamente durante a execução.\nIV. A poda Alfa-Beta é uma forma de evitar a expansão de nós irrelevantes.\nV. A quantidade de podas é independente da ordem de visita aos nós.\nEstá(ão) correta(s):",
+    options: ["I, II e III", "I, III e IV", "II, IV e V", "Apenas I e IV", "I, II, III, IV e V"],
+    correct: 1,
+    explanation: "I, III e IV estão corretas. II é falsa (inviável armazenar tudo) e V é falsa (depende da ordem de visita)."
+  },
+  {
+    id: 173,
+    topicoId: 18,
+    question: "Observe a árvore abaixo e execute o algoritmo Minimax com Poda Alfa-Beta. Ao final da execução, determine quantas podas ocorrerão e classifique cada uma delas como Poda Alfa ou Poda Beta.",
+    
+    image: PruningQuestion1,
+    explanationImage: PruningQuestionrResult ,
+
+    options: [
+      "Ocorrerão 2 podas: 1 Poda Alfa e 1 Poda Beta.",
+      "Ocorrerão 2 podas: ambas serão Podas Alfa.",
+      "Ocorrerá apenas 1 poda, do tipo Poda Beta.",
+      "Ocorrerão 4 podas: 2 Podas Beta e 2 Poda Alfa.",
+      "Não ocorrerá nenhuma poda."
+    ],
+
+    correct: 3,
+
+    explanation: "Durante a execução do algoritmo ocorrem quatro podas. Duas delas acontece em um nó MAX (Poda Beta) e a outra em um nó MIN (Poda Alfa). As demais alternativas apresentam quantidade ou classificação incorreta das podas."
+  },
+  {
+    id: 174,
+    topicoId: 18,
+    question: "O cálculo dinâmico da utilidade durante a expansão da árvore é preferido porque:",
+    options: [
+      "A quantidade de combinações de estados cresce rapidamente.",
+      "Reduz a complexidade de tempo para O(1).",
+      "É impossível calcular utilidade em estados terminais.",
+      "A poda Alfa-Beta não funciona com valores pré-calculados.",
+      "O jogador MAX exige que os valores sejam recalculados a cada turno."
+    ],
+    correct: 0,
+    explanation: "Não é viável armazenar a utilidade de todos os estados possíveis devido ao crescimento exponencial das combinações."
+  },
+  {
+    id: 175,
+    topicoId: 18,
+    question: "Analise a lógica de atualização dos valores de controle:\nI. No nível MAX, busca-se atualizar o valor de Alfa.\nII. No nível MIN, busca-se atualizar o valor de Beta.\nIII. Alfa é o melhor valor (maior) encontrado pelo MAX até o momento.\nIV. Beta é o melhor valor (menor) encontrado pelo MIN até o momento.\nV. Ambos os valores iniciam em zero e crescem conforme a profundidade.\nEstá(ão) correta(s):",
+    options: ["I, II e III", "II, III e IV", "I, II, III e IV", "III e V", "Todas estão corretas"],
+    correct: 2,
+    explanation: "I, II, III e IV descrevem corretamente o funcionamento. V está incorreta pois iniciam em -∞ e +∞."
+  },
+  {
+    id: 176,
+    topicoId: 18,
+    question: "Ao executar o algoritmo MINIMAXA com poda Alfa-Beta na árvore abaixo, qual dessas alternativas está correta: \nPara facilitar o entedimento os nós folhas são: 8,3,6,9,4,7,5,2,14,11,1,0,13,10,2,4,9,12,7,5, respectivamente.",
+    image: PruningQuestion2,
+    explanationImage: PruningQuestionrResult2,
+    options: [
+        "A poda ocorrerá no nó 14 e será uma Poda Beta.",
+        "A poda ocorrerá no nó 1 e será uma Poda Alfa.",
+        "A poda ocorrerá no nó 12 e será uma Poda Beta.",
+        "A poda ocorrerá no nó 5 e será uma Poda Alfa.",
+        "Não ocorrerá nenhuma poda."
+    ],
+    correct: 2,
+    explanation: "Durante a execução do algoritmo, a poda ocorre no nó 1, que pertence a um nível MIN. Como a condição de poda é satisfeita nesse nível, ela é caracterizada como uma Poda Alfa. Dessa forma, os próximos ramos desse nó não precisam ser expandidos."
+  },
+
+  {
+    id: 177,
+    topicoId: 20,
+    question: "Qual é a principal motivação para a utilização de 'Decisões Imperfeitas' em jogos reais?",
+    options: [
+      "Aumentar a garantia de jogo ótimo em 100% das partidas.",
+      "A impossibilidade do MINIMAX de lidar com adversários humanos.",
+      "A limitação de tempo para tomar decisões em interações de tempo real.",
+      "A necessidade de expandir a árvore sempre até os nós terminais.",
+      "Reduzir a complexidade de espaço de O(b) para O(1)."
+    ],
+    correct: 2,
+    explanation: "Jogos reais exigem respostas rápidas, tornando impraticável esperar que o MINIMAX explore até o estado terminal."
+  },
+  {
+    id: 178,
+    topicoId: 20,
+    question: "Analise as premissas sobre a implementação de Decisões Imperfeitas:\nI. A função de utilidade é substituída por uma função de avaliação (heurística).\nII. A pesquisa é realizada apenas até uma profundidade limitada 'd'.\nIII. A garantia de jogo ótimo é mantida mesmo com a profundidade limitada.\nIV. O mecanismo de parada pode ser baseado no tempo disponível (IDS limitada).\nEstá(ão) correta(s):",
+    options: ["I, II e IV", "I, III e IV", "II e III", "Apenas I e II", "Todas estão corretas"],
+    correct: 0,
+    explanation: "A premissa III está incorreta: ao limitar a busca e usar heurísticas, a garantia de jogo ótimo desaparece."
+  },
+  {
+    id: 179,
+    topicoId: 20,
+    question: "Verdadeiro ou Falso: Ao utilizar decisões imperfeitas, o algoritmo 'olha para frente' apenas um número fixo de movimentos em vez de buscar o fim do jogo.",
+    options: ["Verdadeiro", "Falso"],
+    correct: 0,
+    explanation: "Correto. Essa profundidade limitada permite tomar decisões dentro do limite de tempo disponível."
+  },
+  {
+    id: 180,
+    topicoId: 20,
+    question: "Sobre o mecanismo de parada em buscas limitadas, é correto afirmar que:",
+    options: [
+      "Pode-se usar uma Iterative Deepening Search interrompida pelo tempo.",
+      "Deve-se sempre esperar o estado terminal para encerrar a busca.",
+      "A profundidade máxima é o único critério aceito pela literatura.",
+      "O teste de objetivo deve ser substituído pela função de avaliação.",
+      "A poda alfa-beta torna-se inútil em buscas de profundidade limitada."
+    ],
+    correct: 0,
+    explanation: "O uso de IDS limitada pelo tempo permite que o algoritmo use o máximo de profundidade possível no tempo que lhe foi dado."
+  },
+  {
+    id: 181,
+    topicoId: 20,
+    question: "Uma consequência direta de não pesquisar até os nós terminais é:",
+    options: [
+      "A árvore de busca torna-se infinita.",
+      "O desaparecimento da garantia de jogo ótimo.",
+      "A obrigatoriedade de usar a poda alfa-beta para funcionar.",
+      "O aumento do tempo de processamento por jogada.",
+      "A vitória garantida do jogador MAX."
+    ],
+    correct: 1,
+    explanation: "Como a função de avaliação é apenas uma estimativa, o algoritmo pode tomar decisões subótimas."
+  },
+
+  {
+    id: 182,
+    topicoId: 20,
+    question: "Sobre o Trade-off (equilíbrio) na escolha de uma função de avaliação, analise:\nI. Funções precisas são computacionalmente baratas.\nII. Funções imprecisas permitem uma busca mais profunda no mesmo tempo.\nIII. Funções complexas deixam menos tempo para realizar a busca na árvore.\nIV. Funções rápidas/imprecisas sempre garantem resultados melhores que funções lentas/precisas.\nEstá(ão) correta(s):",
+    options: ["I e II", "II e III", "III e IV", "Apenas II", "I, II e III"],
+    correct: 1,
+    explanation: "Funções precisas costumam ser caras (lentas). O equilíbrio é entre precisão da heurística vs. profundidade da árvore."
+  },
+  {
+    id: 183,
+    topicoId: 20,
+    question: "Verdadeiro ou Falso: O teste de objetivo (verificar se o jogo acabou) deve ser baseado exclusivamente nos valores retornados pela função de avaliação.",
+    options: ["Verdadeiro", "Falso"],
+    correct: 1,
+    explanation: "Falso. O teste de objetivo deve ser baseado nas regras do jogo (ex: 3 em linha), não na heurística."
+  },
+  {
+    id: 184,
+    topicoId: 20,
+    question: "Qual característica define um Estado Intermediário em uma busca limitada?",
+    options: [
+      "Possui apenas os valores fixos de 1, 0 ou -1.",
+      "Não pode ser avaliado por funções heurísticas.",
+      "Pode assumir qualquer valor de pontuação que preserve a lógica de vantagem.",
+      "Sempre encerra a execução do algoritmo imediatamente.",
+      "Representa obrigatoriamente uma situação de empate."
+    ],
+    correct: 2,
+    explanation: "Estados intermediários usam a função de avaliação para estimar vantagem através de pontuações variadas (ex: 5, 10, 100)."
+  },
+  {
+    id: 185,
+    topicoId: 20,
+    question: "Analise as afirmações sobre a Função de Avaliação:\nI. Elas estimam a pontuação para nós não terminais.\nII. São sempre imperfeitas.\nIII. Designar boas funções é a chave para o sucesso do algoritmo.\nIV. Devem obrigatoriamente expandir a árvore até o final para calcular a utilidade.\nV. Devem atribuir valores maiores para estados que favorecem o jogador MIN.\n\nEstá(ão) correta(s):",
+    options: ["I, II e III", "II, III e IV", "I e III", "III, IV e V", "Todas estão corretas"],
+    correct: 0,
+    explanation: "IV é falsa (heurísticas evitam ir até o fim) e V é falsa (valores maiores favorecem o MAX)."
+  },
 ];
 
 export default questoes;
