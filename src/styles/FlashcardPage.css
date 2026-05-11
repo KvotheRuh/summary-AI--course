@@ -34,8 +34,8 @@
 
 /* Controls */
 .fc-controls {
-  display: flex; align-items: center; justify-content: space-between;
-  gap: 10px; margin-bottom: 1rem;
+  display: flex; align-items: center; justify-content: center;
+  gap: 6px; margin-bottom: 1rem;
 }
 .fc-controls__btn {
   padding: 0.45rem 0.9rem; background: none;
@@ -51,6 +51,21 @@
   font-size: 13px; font-weight: 600; transition: opacity 0.15s;
 }
 .fc-controls__flip-btn:hover { opacity: 0.88; }
+
+/* Teclado hint */
+.fc-kbd {
+  display: inline-block;
+  padding: 0.05em 0.4em;
+  font-size: 10px;
+  font-family: var(--font-sans);
+  background: var(--beige);
+  border: 1px solid var(--beige-escuro);
+  border-bottom-width: 2px;
+  border-radius: 4px;
+  color: var(--texto-medio);
+  line-height: 1.5;
+  vertical-align: baseline;
+}
 
 /* Intro */
 .fc-intro {

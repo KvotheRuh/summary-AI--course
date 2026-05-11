@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Sidebar from "../components/Sidebar";
 import "../styles/FlashcardPage.css";
 import flashcards from "../data/flashcards";
@@ -34,6 +34,19 @@ function CardViewer({ deck, onBack }) {
     }
   }
 
+  const handleFlip = useCallback(() => setFlipped(f => !f), []);
+
+  useEffect(() => {
+    function onKey(e) {
+      if (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA") return;
+      if (e.code === "Space")      { e.preventDefault(); handleFlip(); }
+      if (e.code === "ArrowLeft")  { e.preventDefault(); goTo(index - 1); }
+      if (e.code === "ArrowRight") { e.preventDefault(); goTo(index + 1); }
+    }
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [handleFlip, index, currentDeck.length]);
+
   const card = currentDeck[index];
   const pct = Math.round(((index + 1) / currentDeck.length) * 100);
 
@@ -43,19 +56,19 @@ function CardViewer({ deck, onBack }) {
         <p className="fc-intro__text">
           {embaralhado
             ? "✨ Deck embaralhado! Boa revisão!"
-            : "Clique no card para virar. Vá no seu ritmo — repetição é o caminho!"}
+            : <>Clique ou pressione <kbd className="fc-kbd">Espaço</kbd> para virar · <kbd className="fc-kbd">←</kbd> <kbd className="fc-kbd">→</kbd> para navegar</>}
         </p>
         <button className="fc-intro__shuffle-btn" onClick={handleEmbaralhar}>
           {embaralhado ? "Embaralhado! 🎲" : "Embaralhar 🎲"}
         </button>
       </div>
 
-      <div className="fc-scene" onClick={() => setFlipped(!flipped)}>
+      <div className="fc-scene" onClick={handleFlip}>
         <div className={`fc-card${flipped ? " fc-card--flipped" : ""}`}>
           <div className="fc-face fc-face--front">
             <p className="fc-face__label">Pergunta</p>
             <p className="fc-face__text" dangerouslySetInnerHTML={{ __html: card.frente }} />
-            <p className="fc-face__hint">clique para revelar</p>
+            <p className="fc-face__hint">espaço ou clique para revelar</p>
           </div>
           <div className="fc-face fc-face--back">
             <p className="fc-face__label">Resposta</p>
@@ -69,11 +82,13 @@ function CardViewer({ deck, onBack }) {
           className="fc-controls__btn"
           onClick={(e) => { e.stopPropagation(); goTo(index - 1); }}
           disabled={index === 0}
+          title="Anterior (←)"
         >←</button>
 
         <button
           className="fc-controls__flip-btn"
-          onClick={(e) => { e.stopPropagation(); setFlipped(!flipped); }}
+          onClick={(e) => { e.stopPropagation(); handleFlip(); }}
+          title="Virar (Espaço)"
         >
           {flipped ? "Ver Pergunta" : "Ver Resposta"}
         </button>
@@ -82,6 +97,7 @@ function CardViewer({ deck, onBack }) {
           className="fc-controls__btn"
           onClick={(e) => { e.stopPropagation(); goTo(index + 1); }}
           disabled={index === currentDeck.length - 1}
+          title="Próximo (→)"
         >→</button>
       </div>
 
