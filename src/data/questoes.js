@@ -2058,12 +2058,12 @@ const questoes = [
       "A alternância entre MIN e MAX."
     ],
     correct: 1,
-    explanation: "g(n) traz a componente de custo real (UFS/UCS) para a decisão."
+    explanation: "g(n) traz a componente de custo real (UCS) para a decisão."
   },
   {
     id: 155,
     topicoId: 14,
-    question: "Analise:\nI. A* utiliza o custo acumulado da UFS.\nII. A* utiliza a heurística da Greedy Search.\n\nAssinale a correta:",
+    question: "Analise:\nI. A* utiliza o custo acumulado da UCS.\nII. A* utiliza a heurística da Greedy Search.\n\nAssinale a correta:",
     options: [
       "Ambas as afirmações",
       "Apenas I",

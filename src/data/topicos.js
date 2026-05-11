@@ -288,7 +288,7 @@ Com uma boa heurística, a complexidade de tempo e espaço podem ser reduzidas s
     titulo: "A* Search",
     conteudo: `A* Search:
 
-É a combinação da UFS e da Greedy Search. Ela utiliza a heurística da Greedy e o custo acumulado da UFS.
+É a combinação da UCS e da Greedy Search. Ela utiliza a heurística da Greedy e o custo acumulado da UCS.
 O A* irá utilizar a seguinte fórmula para escolher qual nó será expandido:
 
 f(n) = g(n) + h(n)	
