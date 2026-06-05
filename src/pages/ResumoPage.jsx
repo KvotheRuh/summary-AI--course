@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
 import Sidebar from "../components/Sidebar";
 import "../styles/ResumoPage.css";
-import topicos from "../data/topicos";
+import topicosData from "../data/topicos";
 
 const PER_PAGE = 4;
 
-export default function ResumoPage({ activeId, onSelectTopic }) {
+export default function ResumoPage({ activeId, onSelectTopic, topicos: topicosProva }) {
+  const topicos = topicosProva ?? topicosData;
   const [page, setPage] = useState(0);
   const [currentSlide, setCurrentSlide] = useState(0);
 

@@ -32,6 +32,38 @@
   font-family: var(--font-serif);
 }
 
+.header__prova-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--rosa-fundo);
+  border: 1px solid var(--beige-escuro);
+  border-radius: var(--radius-md);
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.header__prova-btn:hover {
+  border-color: var(--rosa);
+  background: var(--rosa-claro);
+}
+
+.header__prova-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--texto);
+  font-family: var(--font-sans);
+}
+
+.header__prova-trocar {
+  font-size: 10.5px;
+  color: var(--rosa);
+  font-weight: 500;
+  border-left: 1px solid var(--beige-escuro);
+  padding-left: 6px;
+}
+
 /* ── Tab navigation ───────────────────────────────────────── */
 .tab-nav {
   background: var(--branco);

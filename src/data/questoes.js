@@ -12,6 +12,7 @@ const questoes = [
   {
     id: 1,
     topicoId: 1,
+    provaId: 1,
     question: "Como o texto define a Inteligência?",
     options: [
       "A capacidade de armazenar informações estáticas sem esquecê-las.",
@@ -30,6 +31,7 @@ const questoes = [
   {
     id: 2,
     topicoId: 2,
+    provaId: 1,
     question: "Qual tipo de raciocínio lógico tira conclusões que não são logicamente garantidas, apenas prováveis?",
     options: [
       "Raciocínio Indutivo",
@@ -44,6 +46,7 @@ const questoes = [
   {
     id: 3,
     topicoId: 2,
+    provaId: 1,
     question: "A afirmação 'Robert é sociólogo → Para ser sociólogo é preciso ser bacharel → Logo, Robert é bacharel' é um exemplo de qual raciocínio?",
     options: [
       "Indutivo",
@@ -58,6 +61,7 @@ const questoes = [
   {
     id: 4,
     topicoId: 2,
+    provaId: 1,
     question: "Qual raciocínio trabalha com informações disponíveis para criar uma conclusão possível, mas que pode estar errada?",
     options: [
       "Dedutivo",
@@ -72,6 +76,7 @@ const questoes = [
   {
     id: 5,
     topicoId: 2,
+    provaId: 1,
     question: "Sobre o Raciocínio Dedutivo, é correto afirmar que:",
     options: [
       "Ele utiliza apenas a observação de uma amostra isolada.",
@@ -86,6 +91,7 @@ const questoes = [
   {
     id: 6,
     topicoId: 2,
+    provaId: 1,
     question: "Observar vários patos brancos e concluir que 'todos os patos são brancos' é uma falha característica de qual tipo de raciocínio?",
     options: [
       "Raciocínio Dedutivo",
@@ -104,6 +110,7 @@ const questoes = [
   {
     id: 7,
     topicoId: 3,
+    provaId: 1,
     question: "O que é necessário para uma máquina passar no Teste de Turing?",
     options: [
       "Vencer o campeão mundial em uma partida de xadrez.",
@@ -118,6 +125,7 @@ const questoes = [
   {
     id: 8,
     topicoId: 3,
+    provaId: 1,
     question: "Quando avaliamos uma máquina pelo critério Comportamental, estamos focando em:",
     options: [
       "Como o sistema internamente processa o código.",
@@ -132,6 +140,7 @@ const questoes = [
   {
     id: 9,
     topicoId: 3,
+    provaId: 1,
     question: "Segundo o critério de Funcionalidade, a reprodução de uma habilidade:",
     options: [
       "Só é válida se a máquina tiver autoconsciência.",
@@ -146,6 +155,7 @@ const questoes = [
   {
     id: 10,
     topicoId: 3,
+    provaId: 1,
     question: "O argumento que afirma que 'se a máquina não sente e não tem consciência, é apenas uma simulação superficial' baseia-se em qual critério?",
     options: [
       "Critério de Funcionalidade",
@@ -160,6 +170,7 @@ const questoes = [
   {
     id: 11,
     topicoId: 3,
+    provaId: 1,
     question: "A Inteligência Artificial pode ser definida como o campo que cria máquinas que:",
     options: [
       "Pensam e agem igual ou semelhante aos humanos.",
@@ -178,6 +189,7 @@ const questoes = [
   {
     id: 12,
     topicoId: 4,
+    provaId: 1,
     question: "Qual componente permite que um agente racional perceba o ambiente em que está inserido?",
     options: [
       "Atuadores",
@@ -192,6 +204,7 @@ const questoes = [
   {
     id: 13,
     topicoId: 4,
+    provaId: 1,
     question: "Os Atuadores em um agente racional servem para:",
     options: [
       "Perceber mudanças climáticas no ambiente.",
@@ -206,6 +219,7 @@ const questoes = [
   {
     id: 14,
     topicoId: 4,
+    provaId: 1,
     question: "O que a 'Performance measure' (Medida de performance) avalia no modelo PEAS?",
     options: [
       "O comportamento real que o agente demonstrou durante toda a tarefa.",
@@ -220,6 +234,7 @@ const questoes = [
   {
     id: 15,
     topicoId: 4,
+    provaId: 1,
     question: "O modelo PEAS é uma sigla para:",
     options: [
       "Performance, Environment, Actuators, Sensors",
@@ -235,6 +250,7 @@ const questoes = [
   {
   id: 16,
   topicoId: 4,
+    provaId: 1,
   question: "Por que o ChatGPT NÃO é classificado como um agente segundo o texto?",
   options: [
     "Porque carece de uma métrica de desempenho PEAS definida.",
@@ -253,6 +269,7 @@ const questoes = [
   {
     id: 17,
     topicoId: 5,
+    provaId: 1,
     question: "Quando um agente tem acesso completo ao estado do ambiente a cada momento, esse ambiente é:",
     options: [
       "Parcialmente observável",
@@ -267,6 +284,7 @@ const questoes = [
   {
     id: 18,
     topicoId: 5,
+    provaId: 1,
     question: "Qual a principal diferença de um ambiente Estocástico para um Determinístico?",
     options: [
       "O Estocástico não permite o uso de sensores.",
@@ -281,6 +299,7 @@ const questoes = [
   {
     id: 19,
     topicoId: 5,
+    provaId: 1,
     question: "Se a ação atual que um agente toma afeta diretamente as opções das suas próximas ações no futuro, o ambiente é:",
     options: [
       "Episódico",
@@ -295,6 +314,7 @@ const questoes = [
   {
     id: 20,
     topicoId: 5,
+    provaId: 1,
     question: "Um carro autônomo dirigindo em uma rodovia lida com um ambiente que está em constante mutação enquanto ele toma decisões. Este ambiente é classificado como:",
     options: [
       "Estático",
@@ -309,6 +329,7 @@ const questoes = [
   {
     id: 21,
     topicoId: 5,
+    provaId: 1,
     question: "Um jogo de xadrez onde o tabuleiro possui 64 casas exatas e um número finito e contabilizável de ações possíveis é um exemplo de ambiente:",
     options: [
       "Discreto",
@@ -326,6 +347,7 @@ const questoes = [
   {
     id: 22,
     topicoId: 6,
+    provaId: 1,
     question: "Qual agente age baseando-se apenas na percepção atual, sem guardar nenhum histórico do passado?",
     options: [
       "Agente reativo baseado em modelo",
@@ -340,6 +362,7 @@ const questoes = [
   {
     id: 23,
     topicoId: 6,
+    provaId: 1,
     question: "Qual é a principal vantagem do Agente reativo baseado em modelo em relação ao simples?",
     options: [
       "Ele não usa sensores, focando apenas em atuadores.",
@@ -354,6 +377,7 @@ const questoes = [
   {
     id: 24,
     topicoId: 6,
+    provaId: 1,
     question: "Qual característica diferencia de forma marcante o 'Agente baseado em utilidade'?",
     options: [
       "Ele busca qualquer objetivo, não se importando com o tempo.",
@@ -368,6 +392,7 @@ const questoes = [
   {
     id: 25,
     topicoId: 6,
+    provaId: 1,
     question: "Qual agente usa o estado atual e o objetivo para planejar uma sequência de ações por meio de busca?",
     options: [
       "Agente de ambiente dinâmico",
@@ -382,6 +407,7 @@ const questoes = [
   {
     id: 26,
     topicoId: 6,
+    provaId: 1,
     question: "Para que um agente reativo simples funcione adequadamente, o ambiente deve ser obrigatoriamente:",
     options: [
       "Totalmente observável",
@@ -400,6 +426,7 @@ const questoes = [
   {
     id: 27,
     topicoId: 7,
+    provaId: 1,
     question: "Qual o tipo de ambiente ideal exigido para que problemas de busca tradicionais sejam aplicados?",
     options: [
       "Parcialmente observável, contínuo e episódico",
@@ -414,6 +441,7 @@ const questoes = [
   {
     id: 28,
     topicoId: 7,
+    provaId: 1,
     question: "Nos 5 elementos de um problema de busca, qual elemento informa as consequências que cada ação irá desencadear?",
     options: [
       "Estado inicial",
@@ -428,6 +456,7 @@ const questoes = [
   {
     id: 29,
     topicoId: 7,
+    provaId: 1,
     question: "Como é definida uma 'Solução' no contexto de problemas de busca?",
     options: [
       "O uso do menor tempo de processamento possível de um algoritmo.",
@@ -442,6 +471,7 @@ const questoes = [
   {
     id: 30,
     topicoId: 7,
+    provaId: 1,
     question: "O processo de remover detalhes da representação de um problema no mundo real é chamado de:",
     options: [
       "Abstração",
@@ -456,6 +486,7 @@ const questoes = [
   {
     id: 31,
     topicoId: 7,
+    provaId: 1,
     question: "O conjunto de todos os estados possíveis que podem ser alcançados a partir do começo do jogo é o:",
     options: [
       "Custo acumulado",
@@ -474,6 +505,7 @@ const questoes = [
   {
     id: 32,
     topicoId: 8,
+    provaId: 1,
     question: "No 'Grafo de espaço de estado', o que as arestas (edges) representam?",
     options: [
       "Os estados estáticos do tabuleiro.",
@@ -488,6 +520,7 @@ const questoes = [
   {
     id: 33,
     topicoId: 8,
+    provaId: 1,
     question: "Por que uma Árvore de Busca pode tornar-se infinita?",
     options: [
       "Porque o ambiente é sempre estático e não permite ações.",
@@ -502,6 +535,7 @@ const questoes = [
   {
     id: 34,
     topicoId: 8,
+    provaId: 1,
     question: "Sobre o Grafo de espaço de estado, é correto afirmar que:",
     options: [
       "Ele sempre é construído 100% na memória do computador, independentemente do tamanho.",
@@ -516,6 +550,7 @@ const questoes = [
   {
     id: 35,
     topicoId: 8,
+    provaId: 1,
     question: "Na árvore de busca, um nó na árvore representa especificamente:",
     options: [
       "Uma ação física isolada que não afeta o estado.",
@@ -530,6 +565,7 @@ const questoes = [
   {
     id: 36,
     topicoId: 8,
+    provaId: 1,
     question: "O conjunto de nós que indica que a busca pode ser encerrada com sucesso no Grafo é chamado de:",
     options: [
       "Fringe",
@@ -548,6 +584,7 @@ const questoes = [
   {
     id: 37,
     topicoId: 9,
+    provaId: 1,
     question: "Algoritmos não informados também são conhecidos como:",
     options: [
       "Buscas Heurísticas",
@@ -562,6 +599,7 @@ const questoes = [
   {
     id: 38,
     topicoId: 9,
+    provaId: 1,
     question: "Na avaliação Big O, a propriedade 'Completo' avalia se o algoritmo:",
     options: [
       "Varre todo o espaço de memória do computador.",
@@ -576,6 +614,7 @@ const questoes = [
   {
     id: 39,
     topicoId: 9,
+    provaId: 1,
     question: "Qual algoritmo é escolhido especificamente quando o objetivo é gastar MENOS memória?",
     options: [
       "BFS (Busca em Largura)",
@@ -590,6 +629,7 @@ const questoes = [
   {
     id: 40,
     topicoId: 9,
+    provaId: 1,
     question: "Um detalhe importante na aplicação da Busca em Profundidade (DFS) e Busca em Largura (BFS) é que ambas:",
     options: [
       "Não consideram o custo das ações ao formar os caminhos.",
@@ -608,6 +648,7 @@ const questoes = [
  {
   id: 41,
   topicoId: 10,
+    provaId: 1,
   question: "A Busca em Largura (BFS) utiliza qual estrutura de dados?",
   options: [
     "Fila de Prioridades (Heurística)",
@@ -622,6 +663,7 @@ const questoes = [
   {
     id: 42,
     topicoId: 10,
+    provaId: 1,
     question: "A Busca em Profundidade (DFS) é considerada ótima sob quais condições?",
     options: [
       "Sempre que o ambiente de busca não apresentar ciclos.",
@@ -636,6 +678,7 @@ const questoes = [
   {
     id: 43,
     topicoId: 10,
+    provaId: 1,
     question: "Qual é a notação de complexidade de tempo para a Busca em Largura (BFS), sendo 's' a profundidade da primeira solução?",
     options: [
       "O(b<sup>m</sup>)",
@@ -650,6 +693,7 @@ const questoes = [
   {
     id: 44,
     topicoId: 10,
+    provaId: 1,
     question: "A Busca em Profundidade (DFS) utiliza qual estrutura de dados?",
     options: [
       "Fila de Prioridades baseada em heurísticas",
@@ -664,6 +708,7 @@ const questoes = [
   {
     id: 45,
     topicoId: 10,
+    provaId: 1,
     question: "Sobre a optimalidade do algoritmo BFS (Busca em Largura), é correto afirmar:",
     options: [
       "É ótimo em qualquer cenário computacional.",
@@ -681,6 +726,7 @@ const questoes = [
   {
     id: 46,
     topicoId: 11,
+    provaId: 1,
     question: "A Busca de Custo Uniforme (UCS) utiliza qual estrutura de dados para expandir os vértices?",
     options: [
       "Fila (FIFO) simples",
@@ -695,6 +741,7 @@ const questoes = [
   {
     id: 47,
     topicoId: 11,
+    provaId: 1,
     question: "Para que a Busca de Custo Uniforme (UCS) seja considerada Completa, qual condição deve ser assumida?",
     options: [
       "O ambiente deve possuir múltiplos agentes operando.",
@@ -709,6 +756,7 @@ const questoes = [
   {
     id: 48,
     topicoId: 11,
+    provaId: 1,
     question: "Qual o principal risco que faz com que a Busca em Profundidade com Limite (DLS) NÃO seja completa?",
     options: [
       "Se houver muitos empates nos custos dos nós.",
@@ -723,6 +771,7 @@ const questoes = [
   {
     id: 49,
     topicoId: 11,
+    provaId: 1,
     question: "O algoritmo IDS (Busca com Aprofundamento Iterativo) combina as vantagens de quais outras duas buscas?",
     options: [
       "Greedy Search e A*",
@@ -737,6 +786,7 @@ const questoes = [
   {
     id: 50,
     topicoId: 11,
+    provaId: 1,
     question: "Qual a complexidade de espaço exigida pela Busca em Profundidade com Limite (DLS)?",
     options: [
       "O(b<sup>d</sup>)",
@@ -755,6 +805,7 @@ const questoes = [
   {
     id: 51,
     topicoId: 12,
+    provaId: 1,
     question: "Qual é a principal diferença entre uma busca informada e uma busca cega (não informada)?",
     options: [
       "A busca informada explora apenas grafos contínuos.",
@@ -769,6 +820,7 @@ const questoes = [
   {
     id: 52,
     topicoId: 12,
+    provaId: 1,
     question: "A função heurística h(n) em um algoritmo tem como finalidade principal:",
     options: [
       "Estimar o custo do estado atual 'n' até o estado objetivo.",
@@ -783,6 +835,7 @@ const questoes = [
   {
     id: 53,
     topicoId: 12,
+    provaId: 1,
     question: "Sobre as funções heurísticas, assinale a alternativa verdadeira:",
     options: [
       "Para um problema específico, só é possível criar uma única heurística válida.",
@@ -797,6 +850,7 @@ const questoes = [
   {
     id: 54,
     topicoId: 12,
+    provaId: 1,
     question: "Qual é o principal ganho ao se implementar uma boa busca heurística?",
     options: [
       "Aumentar o gasto de memória em troca de respostas instantâneas.",
@@ -811,6 +865,7 @@ const questoes = [
   {
     id: 55,
     topicoId: 12,
+    provaId: 1,
     question: "Um dos usos primários da informação heurística em problemas de IA é guiar o algoritmo nas decisões de qual nós:",
     options: [
       "Adicionar ao teste de Turing.",
@@ -829,6 +884,7 @@ const questoes = [
   {
     id: 56,
     topicoId: 13,
+    provaId: 1,
     question: "O algoritmo Greedy Search (Busca Gulosa) decide qual nó expandir baseando-se EXCLUSIVAMENTE em:",
     options: [
       "No custo real percorrido do início até o momento: g(n).",
@@ -843,6 +899,7 @@ const questoes = [
   {
     id: 57,
     topicoId: 13,
+    provaId: 1,
     question: "O que significa dizer que h(n) = 0 em um problema avaliado pela Greedy Search?",
     options: [
       "Que o algoritmo encontrou um ciclo sem saída.",
@@ -857,6 +914,7 @@ const questoes = [
   {
     id: 58,
     topicoId: 13,
+    provaId: 1,
     question: "Por que a Greedy Search NÃO é considerada Ótima nem Completa?",
     options: [
       "Porque o fator de ramificação dela é infinito em todos os cenários.",
@@ -871,6 +929,7 @@ const questoes = [
   {
     id: 59,
     topicoId: 13,
+    provaId: 1,
     question: "Qual algoritmo clássico não-informado possui comportamento estrutural semelhante à Greedy Search de 'seguir um caminho reto do início ao fim'?",
     options: [
       "Busca de Custo Uniforme (UCS)",
@@ -885,6 +944,7 @@ const questoes = [
   {
     id: 60,
     topicoId: 13,
+    provaId: 1,
     question: "Com uma heurística de péssima qualidade, qual é a complexidade de tempo do pior caso na Greedy Search?",
     options: [
       "O(bd)",
@@ -903,6 +963,7 @@ const questoes = [
   {
     id: 61,
     topicoId: 14,
+    provaId: 1,
     question: "O algoritmo A* é fundamentalmente criado pela combinação de quais dois algoritmos de busca?",
     options: [
       "BFS e DFS",
@@ -917,6 +978,7 @@ const questoes = [
   {
     id: 62,
     topicoId: 14,
+    provaId: 1,
     question: "Na famosa equação de escolha do A* ( f(n) = g(n) + h(n) ), o que representa a função g(n)?",
     options: [
       "O valor constante atribuído a ambientes dinâmicos.",
@@ -931,6 +993,7 @@ const questoes = [
   {
     id: 63,
     topicoId: 14,
+    provaId: 1,
     question: "Se a heurística h(n) de um A* for admissível e consistente, qual destas afirmativas é verdadeira?",
     options: [
       "Ele deixa de ser completo.",
@@ -945,6 +1008,7 @@ const questoes = [
   {
     id: 64,
     topicoId: 14,
+    provaId: 1,
     question: "Comparado a outros algoritmos de busca ótima que partem do mesmo início e usam a mesma heurística admissível, o A* se destaca por:",
     options: [
       "Expandir o menor número de caminhos possíveis.",
@@ -959,6 +1023,7 @@ const questoes = [
   {
     id: 65,
     topicoId: 14,
+    provaId: 1,
     question: "Qual o padrão de progressão no espaço que a busca A* realiza em problemas práticos?",
     options: [
       "Avança de forma retilínea única.",
@@ -977,6 +1042,7 @@ const questoes = [
   {
     id: 66,
     topicoId: 15,
+    provaId: 1,
     question: "O que acontece quando uma heurística é considerada 'Inadmissível' (pessimista)?",
     options: [
       "Ela não usa estimativas no A*.",
@@ -991,6 +1057,7 @@ const questoes = [
   {
     id: 67,
     topicoId: 15,
+    provaId: 1,
     question: "Qual é a equação matemática correta que comprova que uma heurística h(n) é Admissível em relação ao custo verdadeiro h*(n)?",
     options: [
       "h(n) > h*(n) + 1",
@@ -1005,6 +1072,7 @@ const questoes = [
   {
     id: 68,
     topicoId: 15,
+    provaId: 1,
     question: "Uma técnica comum para criar boas heurísticas admissíveis é criar um 'Problema Relaxado'. O que é isso?",
     options: [
       "Um problema onde a máquina reduz o poder de processamento pela metade.",
@@ -1019,6 +1087,7 @@ const questoes = [
   {
     id: 69,
     topicoId: 15,
+    provaId: 1,
     question: "Se há múltiplas heurísticas admissíveis criadas para resolver um mesmo problema, qual regra deve ser usada na escolha?",
     options: [
       "Escolher a que fornece o menor valor numérico sempre.",
@@ -1033,6 +1102,7 @@ const questoes = [
   {
     id: 70,
     topicoId: 15,
+    provaId: 1,
     question: "Qual destas afirmações define a regra sobre heurísticas Admissíveis e Consistentes (Monotonicidade)?",
     options: [
       "Toda heurística admissível é consistente, mas nem toda consistente é admissível.",
@@ -1051,6 +1121,7 @@ const questoes = [
   {
     id: 71,
     topicoId: 16,
+    provaId: 1,
     question: "Qual das opções abaixo NÃO é um requisito base para conseguir representar um problema como um jogo?",
     options: [
       "Regras claramente definidas.",
@@ -1065,6 +1136,7 @@ const questoes = [
   {
     id: 72,
     topicoId: 16,
+    provaId: 1,
     question: "No ambiente de jogos determinísticos, o que o agente tenta fazer em relação aos números da Função de Utilidade?",
     options: [
       "Minimizar permanentemente a utilidade.",
@@ -1079,6 +1151,7 @@ const questoes = [
   {
     id: 73,
     topicoId: 16,
+    provaId: 1,
     question: "O que caracteriza os cenários classificados como 'Zero-Sum Games' (Jogos de Soma Zero)?",
     options: [
       "As funções de utilidade entre os jogadores são opostas e conflitantes.",
@@ -1093,6 +1166,7 @@ const questoes = [
   {
     id: 74,
     topicoId: 16,
+    provaId: 1,
     question: "Em 'General Games' (Jogos Gerais), como as utilidades dos agentes se comportam?",
     options: [
       "Elas são espelhadas perfeitamente para resultar sempre em empate.",
@@ -1107,6 +1181,7 @@ const questoes = [
   {
     id: 75,
     topicoId: 16,
+    provaId: 1,
     question: "No contexto da inteligência artificial aplicada em jogos, o que foi o projeto 'Deep Blue'?",
     options: [
       "O primeiro robô aspirador de pó com sensores avançados.",
@@ -1125,6 +1200,7 @@ const questoes = [
   {
     id: 76,
     topicoId: 17,
+    provaId: 1,
     question: "No algoritmo MINIMAX, o foco central das decisões do jogador MAX é:",
     options: [
       "Maximizar a velocidade de processamento.",
@@ -1139,6 +1215,7 @@ const questoes = [
   {
     id: 77,
     topicoId: 17,
+    provaId: 1,
     question: "A metodologia 'bottom-up' do MINIMAX aplicada em árvores de jogo significa que ele:",
     options: [
       "Calcula as utilidades nas folhas do jogo e vai repassando esses valores de baixo para cima até a raiz.",
@@ -1153,6 +1230,7 @@ const questoes = [
   {
     id: 78,
     topicoId: 17,
+    provaId: 1,
     question: "Se a árvore de jogo do MINIMAX intercala as decisões entre o agente e o seu oponente, a 'raiz' da árvore sempre será de quem?",
     options: [
       "Do jogador MAX.",
@@ -1167,6 +1245,7 @@ const questoes = [
   {
     id: 79,
     topicoId: 17,
+    provaId: 1,
     question: "O jogador MAX no sistema toma a sua decisão assumindo logicamente que o jogador MIN se comportará de que maneira?",
     options: [
       "MIN vai errar a cada 3 movimentos devido a fatores de indução heurística.",
@@ -1181,6 +1260,7 @@ const questoes = [
   {
     id: 80,
     topicoId: 17,
+    provaId: 1,
     question: "O que ocorre quando um humano joga de forma 'subótima' (comete um erro desatento) contra o MINIMAX?",
     options: [
       "O MINIMAX empata a partida instantaneamente, pois só sabe jogar contra perfeição.",
@@ -1199,6 +1279,7 @@ const questoes = [
   {
     id: 81,
     topicoId: 3,
+    provaId: 1,
     question: "Sobre o Teste de Turing, assinale a alternativa INCORRETA:",
     options: [
       "Baseia-se na capacidade de um sistema computacional mimetizar o comportamento humano em diálogo.",
@@ -1213,6 +1294,7 @@ const questoes = [
   {
     id: 82,
     topicoId: 3,
+    provaId: 1,
     question: "Analise as afirmações sobre os critérios de avaliação de IA:\nI. O critério comportamental foca na eficácia do resultado final.\nII. A funcionalidade prioriza o 'como' o sistema realiza a função.\nIII. O critério cognitivo nega a reprodução genuína sem consciência.\nIV. O critério funcional avalia apenas o resultado, independentemente do processo.\nV. O critério cognitivo busca reproduzir os processos mentais humanos.\nEstá(ão) correta(s):",
     options: ["Apenas I", "Apenas III", "I e II", "II e III", "III, IV e V"],
     correct: 4,
@@ -1221,6 +1303,7 @@ const questoes = [
   {
     id: 83,
     topicoId: 3,
+    provaId: 1,
     question: "Verdadeiro ou Falso: O critério de Funcionalidade afirma que a eficácia da tarefa é o único fator determinante para validar uma habilidade reproduzida.",
     options: ["Verdadeiro", "Falso"],
     correct: 0,
@@ -1229,6 +1312,7 @@ const questoes = [
   {
     id: 84,
     topicoId: 3,
+    provaId: 1,
     question: "Em relação ao campo da IA, qual das opções não condiz com as definições apresentadas?",
     options: [
       "Busca criar sistemas que agem de forma semelhante aos humanos.",
@@ -1243,6 +1327,7 @@ const questoes = [
   {
     id: 85,
     topicoId: 3,
+    provaId: 1,
     question: "Analise as premissas:\nI. Conversar com uma máquina sem identificá-la é o cerne do Teste de Turing.\nII. A simulação superficial é aceita pelo critério de funcionalidade.\nIII. O Teste de Turing avalia o comportamento observável da máquina.\nIV. O critério cognitivo exige que a máquina pense exatamente como um humano.\nV. O critério funcional desconsidera os processos internos do sistema.\nAssinale a correta:",
     options: [
       "I, II e III são verdadeiras.",
@@ -1257,6 +1342,7 @@ const questoes = [
   {
     id: 86,
     topicoId: 3,
+    provaId: 1,
     question: "Qual opção apresenta a relação correta entre o critério -> exigência?",
     options: [
       "Cognitivo -> Comportamento externo.",
@@ -1271,6 +1357,7 @@ const questoes = [
   {
     id: 87,
     topicoId: 3,
+    provaId: 1,
     question: "Verdadeiro ou Falso: Para o critério Cognitivo, uma máquina que resolve problemas complexos sem entender o que faz é considerada inteligente no nível máximo.",
     options: ["Verdadeiro", "Falso"],
     correct: 1,
@@ -1283,6 +1370,7 @@ const questoes = [
   {
     id: 88,
     topicoId: 4,
+    provaId: 1,
     question: "Sobre os Agentes Racionais, é INCORRETO afirmar que:",
     options: [
       "Eles percebem o ambiente através de sensores.",
@@ -1297,6 +1385,7 @@ const questoes = [
   {
     id: 89,
     topicoId: 4,
+    provaId: 1,
     question: "Analise as afirmações sobre o modelo PEAS:\nI. O 'Environment' define onde o agente atua.\nII. 'Performance' avalia o sucesso do agente.\nIII. 'Sensors' são as ferramentas de ação.\n\nEstá(ão) correta(s):",
     options: ["Apenas I", "I e II", "Apenas III", "II e III", "I, II e III"],
     correct: 1,
@@ -1305,6 +1394,7 @@ const questoes = [
   {
     id: 90,
     topicoId: 4,
+    provaId: 1,
     question: "A medida de performance de um agente inteligente deve ser projetada com base em:",
     options: [
       "Comportamentos predeterminados pelo programador.",
@@ -1319,6 +1409,7 @@ const questoes = [
   {
     id: 91,
     topicoId: 4,
+    provaId: 1,
     question: "Considere um robô aspirador. Qual das alternativas abaixo corresponde corretamente ao seu modelo PEAS?",
     options: [
       "Performance: Sensores de colisão.",
@@ -1333,6 +1424,7 @@ const questoes = [
   {
     id: 92,
     topicoId: 4,
+    provaId: 1,
     question: "Analise as premissas:\nI. Um agente racional toma ações para atingir um objetivo.\nII. O sucesso do agente é medido pela 'Performance measure'.\n\nAssinale a opção correta:",
     options: [
       "Ambas são falsas.",
@@ -1347,6 +1439,7 @@ const questoes = [
   {
     id: 93,
     topicoId: 4,
+    provaId: 1,
     question: "O que diferencia um agente de uma simples ferramenta computacional (como uma LLM pura)?",
     options: [
       "A habilidade de processar linguagem natural.",
@@ -1365,6 +1458,7 @@ const questoes = [
   {
     id: 94,
     topicoId: 5,
+    provaId: 1,
     question: "Em relação aos tipos de ambiente, assinale a opção INCORRETA:",
     options: [
       "No ambiente estático, o mundo não muda enquanto o agente pensa.",
@@ -1379,6 +1473,7 @@ const questoes = [
   {
     id: 95,
     topicoId: 5,
+    provaId: 1,
     question: "Analise as características:\nI. Experiência dividida em partes independentes.\nII. Ação atual não afeta o futuro distante.\n\nEssas características definem um ambiente:",
     options: ["Sequencial", "Contínuo", "Estocástico", "Episódico", "Dinâmico"],
     correct: 3,
@@ -1387,6 +1482,7 @@ const questoes = [
   {
     id: 96,
     topicoId: 5,
+    provaId: 1,
     question: "Verdadeiro ou Falso: Um carro autônomo opera em um ambiente contínuo, pois os dados dos sensores e as ações no trânsito não podem ser totalmente enumerados.",
     options: ["Verdadeiro", "Falso"],
     correct: 0,
@@ -1395,6 +1491,7 @@ const questoes = [
   {
     id: 97,
     topicoId: 5,
+    provaId: 1,
     question: "Se o ambiente sofre alterações externas enquanto o agente processa a informação, ele é:",
     options: ["Estático", "Dinâmico", "Determinístico", "Episódico", "Single-agent"],
     correct: 1,
@@ -1403,6 +1500,7 @@ const questoes = [
   {
     id: 98,
     topicoId: 5,
+    provaId: 1,
     question: "Qual a relação correta entre o jogo de tabuleiro e seu ambiente?",
     options: [
       "Xadrez -> Contínuo.",
@@ -1417,6 +1515,7 @@ const questoes = [
   {
     id: 99,
     topicoId: 5,
+    provaId: 1,
     question: "Analise as afirmações:\nI. No ambiente determinístico, o estado atual + ação define o próximo estado.\nII. No ambiente sequencial, a ação atual depende das anteriores.\n\nEstá(ão) correta(s):",
     options: ["Apenas I", "Apenas II", "Ambas as afirmações", "Nenhuma das afirmações", "I anula II"],
     correct: 2,
@@ -1425,6 +1524,7 @@ const questoes = [
   {
     id: 100,
     topicoId: 5,
+    provaId: 1,
     question: "Verdadeiro ou Falso: Em um ambiente parcialmente observável, o agente possui acesso completo ao estado do mundo via sensores.",
     options: ["Verdadeiro", "Falso"],
     correct: 1,
@@ -1437,6 +1537,7 @@ const questoes = [
   {
     id: 101,
     topicoId: 6,
+    provaId: 1,
     question: "Sobre os tipos de agentes, qual afirmação é INCORRETA?",
     options: [
       "Agentes reativos simples não guardam histórico.",
@@ -1451,6 +1552,7 @@ const questoes = [
   {
     id: 102,
     topicoId: 6,
+    provaId: 1,
     question: "Analise as afirmações sobre os tipos de agentes:\nI. Reativo Simples: Atua apenas se o ambiente for parcialmente observável.\nII. Baseado em Modelo: Mantém um histórico para entender a evolução do ambiente.\nIII. Baseado em Objetivo: Toma decisões sem considerar o estado atual do mundo.\nIV. Baseado em Utilidade: Atribui valores aos estados para maximizar a qualidade do resultado.\nV. Reativo Simples: Toma decisões baseando-se exclusivamente na percepção do estado atual.",
     options: ["I, II e IV", "II, III e V", "II, IV e V", "I, III e IV", "Todas estão corretas"],
     correct: 2,
@@ -1459,6 +1561,7 @@ const questoes = [
   {
     id: 103,
     topicoId: 6,
+    provaId: 1,
     question: "Verdadeiro ou Falso: O agente reativo simples pode operar com sucesso em ambientes onde o estado não é totalmente visível.",
     options: ["Verdadeiro", "Falso"],
     correct: 1,
@@ -1467,6 +1570,7 @@ const questoes = [
   {
     id: 104,
     topicoId: 6,
+    provaId: 1,
     question: "Qual agente utiliza técnicas de busca e planejamento focadas exclusivamente em atingir um estado final específico?",
     options: [
       "Agente baseado em objetivo",
@@ -1481,6 +1585,7 @@ const questoes = [
   {
     id: 105,
     topicoId: 6,
+    provaId: 1,
     question: "A função de utilidade é uma ferramenta essencial para:",
     options: [
       "Agentes de reflexo simples.",
@@ -1495,6 +1600,7 @@ const questoes = [
   {
     id: 106,
     topicoId: 6,
+    provaId: 1,
     question: "Analise:\nI. O agente baseado em modelo mantém histórico de percepções.\nII. O agente de utilidade ignora a qualidade do resultado final.\n\nAssinale a correta:",
     options: [
       "I e II são verdadeiras.",
@@ -1509,6 +1615,7 @@ const questoes = [
   {
     id: 107,
     topicoId: 6,
+    provaId: 1,
     question: "Verdadeiro ou Falso: 'Agentes reativos baseados em modelo' operam tentando prever como o ambiente mudará de acordo com suas ações.",
     options: ["Verdadeiro", "Falso"],
     correct: 0,
@@ -1521,6 +1628,7 @@ const questoes = [
   {
     id: 108,
     topicoId: 7,
+    provaId: 1,
     question: "Sobre os elementos de problemas de busca, a alternativa INCORRETA é:",
     options: [
       "Estado Inicial: Onde a busca começa.",
@@ -1535,6 +1643,7 @@ const questoes = [
   {
     id: 109,
     topicoId: 7,
+    provaId: 1,
     question: "Analise as definições:\nI. A solução é a sequência de ações para chegar ao objetivo.\nII. Abstração demais pode impossibilitar a resolução.\nIII. Custo do caminho avalia a performance medida pelo sensor.\n\nEstá(ão) correta(s):",
     options: ["Apenas I", "I e II", "II e III", "Apenas III", "I, II e III"],
     correct: 1,
@@ -1543,6 +1652,7 @@ const questoes = [
   {
     id: 110,
     topicoId: 7,
+    provaId: 1,
     question: "Verdadeiro ou Falso: Um problema de busca detalhado demais é sempre preferível, pois garante uma solução perfeita e rápida.",
     options: ["Verdadeiro", "Falso"],
     correct: 1,
@@ -1551,6 +1661,7 @@ const questoes = [
   {
     id: 111,
     topicoId: 7,
+    provaId: 1,
     question: "A 'Abstração' em busca é necessária para:",
     options: [
       "Aumentar o número de estados no espaço.",
@@ -1565,6 +1676,7 @@ const questoes = [
   {
     id: 112,
     topicoId: 7,
+    provaId: 1,
     question: "Qual elemento é responsável por validar se o estado atual é o estado meta?",
     options: [
       "Função Sucessora",
@@ -1579,6 +1691,7 @@ const questoes = [
   {
     id: 113,
     topicoId: 7,
+    provaId: 1,
     question: "Analise:\nI. O espaço de estados inclui apenas o ponto de partida e o de chegada.\nII. O custo do caminho é o somatório dos pesos das arestas percorridas.\n\nEstá(ão) correta(s):",
     options: [
       "Apenas I",
@@ -1593,6 +1706,7 @@ const questoes = [
   {
     id: 114,
     topicoId: 7,
+    provaId: 1,
     question: "Verdadeiro ou Falso: Problemas de busca tradicionalmente assumem que o ambiente é estocástico para testar a robustez do agente.",
     options: ["Verdadeiro", "Falso"],
     correct: 1,
@@ -1605,6 +1719,7 @@ const questoes = [
   {
     id: 115,
     topicoId: 8,
+    provaId: 1,
     question: "Sobre Grafos e Árvores, assinale a opção INCORRETA:",
     options: [
       "Em um grafo, os nós representam os estados.",
@@ -1619,6 +1734,7 @@ const questoes = [
   {
     id: 116,
     topicoId: 8,
+    provaId: 1,
     question: "Analise as afirmações sobre Grafos e Árvores de Busca:\nI. No grafo de espaço de estados, cada estado ocorre apenas uma vez.\nII. Na árvore de busca, um estado específico pode aparecer em múltiplos nós.\nIII. A árvore de busca é sempre finita, mesmo que haja repetição de estados.\nIV. Cada nó na árvore de busca representa um caminho único no grafo de estados.\nV. Grafos de estados são comumente construídos de forma integral na memória RAM.",
     options: ["I, II e III", "II, IV e V", "I, II e IV", "I, III e V", "Todas estão corretas"],
     correct: 2,
@@ -1627,6 +1743,7 @@ const questoes = [
   {
     id: 117,
     topicoId: 8,
+    provaId: 1,
     question: "Verdadeiro ou Falso: Um nó na árvore de busca corresponde a um único estado do grafo, ignorando o trajeto feito para chegar até ele.",
     options: ["Verdadeiro", "Falso"],
     correct: 1,
@@ -1635,6 +1752,7 @@ const questoes = [
   {
     id: 118,
     topicoId: 8,
+    provaId: 1,
     question: "O que representam as arestas (edges) no contexto de grafos de estados?",
     options: [
       "A pontuação final do agente.",
@@ -1649,6 +1767,7 @@ const questoes = [
   {
     id: 119,
     topicoId: 8,
+    provaId: 1,
     question: "A repetição de estados é um fenômeno que afeta principalmente:",
     options: [
       "A definição do estado inicial.",
@@ -1663,6 +1782,7 @@ const questoes = [
   {
     id: 120,
     topicoId: 8,
+    provaId: 1,
     question: "Analise:\nI. Árvores de busca mostram o processo de exploração.\nII. Grafos de estados mostram a representação do problema.\n\nEstá(ão) correta(s):",
     options: [
       "Ambas as afirmações",
@@ -1677,6 +1797,7 @@ const questoes = [
   {
     id: 121,
     topicoId: 8,
+    provaId: 1,
     question: "Verdadeiro ou Falso: O teste de objetivo em um grafo é geralmente um conjunto de múltiplos nós distribuídos aleatoriamente.",
     options: ["Verdadeiro", "Falso"],
     correct: 1,
@@ -1689,6 +1810,7 @@ const questoes = [
   {
     id: 122,
     topicoId: 9,
+    provaId: 1,
     question: "Sobre algoritmos não informados, assinale a opção INCORRETA:",
     options: [
       "Busca cega não possui informações sobre a localização do objetivo.",
@@ -1703,6 +1825,7 @@ const questoes = [
   {
     id: 123,
     topicoId: 9,
+    provaId: 1,
     question: "Verdadeiro ou Falso: A busca em profundidade (DFS) é preferível quando o recurso mais escasso no sistema é a memória RAM.",
     options: ["Verdadeiro", "Falso"],
     correct: 0,
@@ -1711,6 +1834,7 @@ const questoes = [
   {
     id: 124,
     topicoId: 9,
+    provaId: 1,
     question: "A estratégia de busca 'Não Informada' baseia-se em:",
     options: [
       "Estimativas heurísticas de proximidade.",
@@ -1725,6 +1849,7 @@ const questoes = [
   {
     id: 125,
     topicoId: 9,
+    provaId: 1,
     question: "Para garantir o menor custo em uma busca cega, deve-se utilizar:",
     options: ["BFS", "DFS", "UCS", "IDS", "Greedy Search"],
     correct: 2,
@@ -1733,6 +1858,7 @@ const questoes = [
   {
     id: 126,
     topicoId: 9,
+    provaId: 1,
     question: "Analise as premissas:\nI. A busca cega é eficiente em problemas de larga escala.\nII. Estratégias de exploração escolhem o próximo nó a expandir.\n\nAssinale a opção correta:",
     options: [
       "I e II são verdadeiras.",
@@ -1747,6 +1873,7 @@ const questoes = [
   {
     id: 127,
     topicoId: 9,
+    provaId: 1,
     question: "Verdadeiro ou Falso: A propriedade 'Ótimo' em busca garante que a solução encontrada é a que exige menos tempo de processamento.",
     options: ["Verdadeiro", "Falso"],
     correct: 1,
@@ -1759,6 +1886,7 @@ const questoes = [
   {
     id: 128,
     topicoId: 10,
+    provaId: 1,
     question: "Sobre DFS e BFS, assinale a afirmação INCORRETA:",
     options: [
       "DFS utiliza uma Pilha (LIFO).",
@@ -1773,6 +1901,7 @@ const questoes = [
   {
     id: 129,
     topicoId: 10,
+    provaId: 1,
     question: "Analise as afirmações sobre os algoritmos DFS e BFS:\nI. A Busca em Profundidade (DFS) sempre garante encontrar a solução ótima em termos de custo.\nII. A Busca em Largura (BFS) expande todos os nós de um nível antes de passar para o próximo.\nIII. A DFS possui complexidade de tempo O(b<sup>m</sup>), onde 'm' é a profundidade máxima.\nIV. A BFS utiliza uma estrutura de Pilha (LIFO) para gerenciar a fronteira de busca.\nV. A DFS encontra a solução mais à esquerda da árvore, independente do custo ou profundidade.",
     options: ["I, II e III", "II, III e V", "II, IV e V", "I, III e IV", "Todas estão corretas"],
     correct: 1,
@@ -1781,6 +1910,7 @@ const questoes = [
   {
     id: 130,
     topicoId: 10,
+    provaId: 1,
     question: "Verdadeiro ou Falso: A Busca em Largura (BFS) é completa mesmo se a profundidade da solução 's' for infinita.",
     options: ["Verdadeiro", "Falso"],
     correct: 1,
@@ -1789,6 +1919,7 @@ const questoes = [
   {
     id: 131,
     topicoId: 10,
+    provaId: 1,
     question: "Qual algoritmo possui complexidade de espaço (O(bm)) em relação à profundidade?",
     options: ["BFS", "UCS", "DFS", "IDS", "A*"],
     correct: 2,
@@ -1797,6 +1928,7 @@ const questoes = [
   {
     id: 132,
     topicoId: 10,
+    provaId: 1,
     question: "A principal falha da Busca em Profundidade (DFS) em termos de optimalidade é:",
     options: [
       "Aceitar a primeira solução que encontra.",
@@ -1811,6 +1943,7 @@ const questoes = [
   {
     id: 133,
     topicoId: 10,
+    provaId: 1,
     question: "Verdadeiro ou Falso: A Busca em Largura (BFS) pode encontrar o caminho mais curto em número de passos, mas ignora o peso financeiro das ações.",
     options: ["Verdadeiro", "Falso"],
     correct: 0,
@@ -1823,6 +1956,7 @@ const questoes = [
   {
     id: 134,
     topicoId: 11,
+    provaId: 1,
     question: "Sobre UCS, DLS e IDS, qual afirmação é INCORRETA?",
     options: [
       "UCS expande o vértice de menor custo acumulado.",
@@ -1837,6 +1971,7 @@ const questoes = [
   {
     id: 135,
     topicoId: 11,
+    provaId: 1,
     question: "Analise as propriedades dos algoritmos UCS, DLS e IDS:\nI. O algoritmo IDS é considerado Ótimo e Completo.\nII. O UCS é Ótimo e Completo, assumindo que os custos sejam positivos (ε > 0).\nIII. A complexidade de espaço (memória) da busca DLS é definida como O(b<sup>d</sup>).\nIV. O IDS combina a economia de memória da DFS com a garantia de solução da BFS.\nV. A DLS é sempre completa, mesmo que a solução esteja além do limite d definido.",
     options: ["I, II e IV", "I, III e V", "II, IV e V", "I, II e III", "Todas estão corretas"],
     correct: 0,
@@ -1845,6 +1980,7 @@ const questoes = [
   {
     id: 136,
     topicoId: 11,
+    provaId: 1,
     question: "Verdadeiro ou Falso: O algoritmo IDS é menos eficiente em memória que o BFS.",
     options: ["Verdadeiro", "Falso"],
     correct: 1,
@@ -1853,6 +1989,7 @@ const questoes = [
   {
     id: 137,
     topicoId: 11,
+    provaId: 1,
     question: "Qual algoritmo exige que o custo das arestas (ε) seja maior que zero para garantir completude?",
     options: ["BFS", "DFS", "UCS", "DLS", "Minimax"],
     correct: 2,
@@ -1861,6 +1998,7 @@ const questoes = [
   {
     id: 138,
     topicoId: 11,
+    provaId: 1,
     question: "No algoritmo DLS, se o limite 'd' for menor que a profundidade máxima 'm', o que ocorre?",
     options: [
       "O algoritmo se torna estocástico.",
@@ -1875,6 +2013,7 @@ const questoes = [
   {
     id: 139,
     topicoId: 11,
+    provaId: 1,
     question: "Analise:\nI. IDS aumenta o limite de profundidade a cada iteração.\nII. UCS expande o nó com maior custo primeiro para economizar.\n\nAssinale a correta:",
     options: [
       "I e II são verdadeiras.",
@@ -1889,6 +2028,7 @@ const questoes = [
   {
     id: 140,
     topicoId: 11,
+    provaId: 1,
     question: "Verdadeiro ou Falso: A Busca de Custo Uniforme (UCS) é inspirada na lógica da busca em profundidade, mas com foco em custos.",
     options: ["Verdadeiro", "Falso"],
     correct: 1,
@@ -1901,6 +2041,7 @@ const questoes = [
   {
     id: 141,
     topicoId: 12,
+    provaId: 1,
     question: "Em relação à Busca Informada, assinale a opção INCORRETA:",
     options: [
       "Usa informações adicionais para guiar o caminho.",
@@ -1915,6 +2056,7 @@ const questoes = [
   {
     id: 142,
     topicoId: 12,
+    provaId: 1,
     question: "Analise as afirmações sobre Busca Heurística e Informada:\nI. A busca cega explora opções em todas as direções por não ter informações de localização do objetivo.\nII. Heurísticas são estratégias que utilizam conhecimento específico do problema para guiar o algoritmo e reduzir o custo computacional.\nIII. O valor da função heurística h(n) será igual a zero se o nó 'n' for o estado objetivo.\nIV. Uma heurística fornece uma visão global e perfeita de todo o caminho do início ao fim do grafo.\nV. O principal objetivo da informação heurística é decidir qual nó da fronteira (fringe) deve ser expandido em seguida.",
     options: ["I, II e IV", "II, III e V", "I, II, III e V", "I, III e IV", "Todas estão corretas"],
     correct: 2,
@@ -1923,6 +2065,7 @@ const questoes = [
   {
     id: 143,
     topicoId: 12,
+    provaId: 1,
     question: "Verdadeiro ou Falso: A orientação de uma heurística é usada exclusivamente para escolher a próxima ação sucessora a partir do estado atual.",
     options: ["Verdadeiro", "Falso"],
     correct: 0,
@@ -1931,6 +2074,7 @@ const questoes = [
   {
     id: 144,
     topicoId: 12,
+    provaId: 1,
     question: "Qual o objetivo principal de utilizar uma função heurística em IA?",
     options: [
       "Aumentar a complexidade do algoritmo.",
@@ -1945,6 +2089,7 @@ const questoes = [
   {
     id: 145,
     topicoId: 12,
+    provaId: 1,
     question: "Sobre a formulação de heurísticas, é correto dizer:",
     options: [
       "Só existe uma heurística correta para cada problema.",
@@ -1959,6 +2104,7 @@ const questoes = [
   {
     id: 146,
     topicoId: 12,
+    provaId: 1,
     question: "Verdadeiro ou Falso: Buscas heurísticas são classificadas como um subconjunto das buscas cegas.",
     options: ["Verdadeiro", "Falso"],
     correct: 1,
@@ -1971,6 +2117,7 @@ const questoes = [
   {
     id: 147,
     topicoId: 13,
+    provaId: 1,
     question: "Sobre a Greedy Search, assinale a opção INCORRETA:",
     options: [
       "Expande o nó que estima estar mais próximo do objetivo.",
@@ -1985,6 +2132,7 @@ const questoes = [
   {
     id: 148,
     topicoId: 13,
+    provaId: 1,
     question: "Verdadeiro ou Falso: A Greedy Search assemelha-se estruturalmente à busca em largura (BFS).",
     options: ["Verdadeiro", "Falso"],
     correct: 1,
@@ -1993,6 +2141,7 @@ const questoes = [
   {
     id: 149,
     topicoId: 13,
+    provaId: 1,
     question: "No pior cenário (heurística ruim), a complexidade de tempo da Greedy Search é:",
     options: ["O(bd)", "O(bm)", "O(b<sup>m</sup>)", "O(1)", "O(s)"],
     correct: 2,
@@ -2001,6 +2150,7 @@ const questoes = [
   {
     id: 150,
     topicoId: 13,
+    provaId: 1,
     question: "O que acontece se a Greedy Search não possuir controle de estados repetidos?",
     options: [
       "Ela se torna Ótima.",
@@ -2015,6 +2165,7 @@ const questoes = [
   {
     id: 151,
     topicoId: 13,
+    provaId: 1,
     question: "Verdadeiro ou Falso: Greedy Search garante encontrar a solução ótima se o espaço de estados for finito.",
     options: ["Verdadeiro", "Falso"],
     correct: 1,
@@ -2027,6 +2178,7 @@ const questoes = [
   {
     id: 152,
     topicoId: 14,
+    provaId: 1,
     question: "Sobre o algoritmo A*, assinale a opção INCORRETA:",
     options: [
       "Utiliza a fórmula f(n) = g(n) + h(n).",
@@ -2041,6 +2193,7 @@ const questoes = [
   {
     id: 153,
     topicoId: 14,
+    provaId: 1,
     question: "Verdadeiro ou Falso: No pior caso, a complexidade de tempo do A* é O(b<sup>s</sup>).",
     options: ["Verdadeiro", "Falso"],
     correct: 0,
@@ -2049,6 +2202,7 @@ const questoes = [
   {
     id: 154,
     topicoId: 14,
+    provaId: 1,
     question: "O que o g(n) garante no algoritmo A*?",
     options: [
       "A completude em ambientes dinâmicos.",
@@ -2063,6 +2217,7 @@ const questoes = [
   {
     id: 155,
     topicoId: 14,
+    provaId: 1,
     question: "Analise:\nI. A* utiliza o custo acumulado da UCS.\nII. A* utiliza a heurística da Greedy Search.\n\nAssinale a correta:",
     options: [
       "Ambas as afirmações",
@@ -2081,6 +2236,7 @@ const questoes = [
   {
     id: 156,
     topicoId: 15,
+    provaId: 1,
     question: "Sobre Admissibilidade e Consistência, assinale a opção INCORRETA:",
     options: [
       "Heurísticas admissíveis nunca superestimam o custo real.",
@@ -2095,6 +2251,7 @@ const questoes = [
   {
     id: 157,
     topicoId: 15,
+    provaId: 1,
     question: "A consistência (monotonicidade) de uma heurística garante que:",
     options: [
       "O valor f(n) nunca diminui ao longo do caminho.",
@@ -2109,6 +2266,7 @@ const questoes = [
   {
     id: 158,
     topicoId: 15,
+    provaId: 1,
     question: "Verdadeiro ou Falso: No jogo 8-puzzle, permitir qualquer movimento sem restrições é um exemplo de problema relaxado.",
     options: ["Verdadeiro", "Falso"],
     correct: 0,
@@ -2121,6 +2279,7 @@ const questoes = [
   {
     id: 159,
     topicoId: 16,
+    provaId: 1,
     question: "Sobre jogos e busca adversarial, assinale a opção INCORRETA:",
     options: [
       "Jogos exigem regras claras e decisões racionais.",
@@ -2135,6 +2294,7 @@ const questoes = [
   {
     id: 160,
     topicoId: 16,
+    provaId: 1,
     question: "Verdadeiro ou Falso: Ao utilizar uma função de utilidade em jogos, o agente deixa de focar na minimização de custos e passa a buscar a maximização de sua própria pontuação.",
     options: ["Verdadeiro", "Falso"],
     correct: 0,
@@ -2143,6 +2303,7 @@ const questoes = [
   {
     id: 161,
     topicoId: 16,
+    provaId: 1,
     question: "O que caracteriza os 'General Games'?",
     options: [
       "Apenas um agente no ambiente.",
@@ -2157,6 +2318,7 @@ const questoes = [
   {
     id: 162,
     topicoId: 16,
+    provaId: 1,
     question: "No contexto de jogos, o 'Espaço Inicial' identifica:",
     options: [
       "A pontuação final máxima.",
@@ -2175,6 +2337,7 @@ const questoes = [
   {
     id: 163,
     topicoId: 17,
+    provaId: 1,
     question: "Sobre o algoritmo MINIMAX, assinale a opção INCORRETA:",
     options: [
       "MAX tenta maximizar sua utilidade.",
@@ -2189,6 +2352,7 @@ const questoes = [
   {
     id: 164,
     topicoId: 17,
+    provaId: 1,
     question: "Analise as premissas:\nI. No nível MIN, escolhe-se o menor valor entre os filhos.\nII. No nível MAX, escolhe-se o maior valor entre os filhos.\nIII. A raiz da árvore sempre representa o jogador MIN.\n\nEstá(ão) correta(s):",
     options: ["I e II", "II e III", "Apenas I", "Apenas II", "I, II e III"],
     correct: 0,
@@ -2197,6 +2361,7 @@ const questoes = [
   {
     id: 165,
     topicoId: 17,
+    provaId: 1,
     question: "Verdadeiro ou Falso: Se o oponente humano jogar de forma subótima (cometer erros), o MINIMAX obterá uma utilidade menor que a prevista.",
     options: ["Verdadeiro", "Falso"],
     correct: 1,
@@ -2205,6 +2370,7 @@ const questoes = [
   {
     id: 166,
     topicoId: 17,
+    provaId: 1,
     question: "O valor MINIMAX pode ser definido como:",
     options: [
       "A soma de todas as heurísticas dos nós folha.",
@@ -2219,6 +2385,7 @@ const questoes = [
   {
     id: 167,
     topicoId: 17,
+    provaId: 1,
     question: "O uso de funções heurísticas no MINIMAX ocorre quando:",
     options: [
       "O estado do jogo é terminal.",
@@ -2233,6 +2400,7 @@ const questoes = [
   {
     id: 168,
     topicoId: 17,
+    provaId: 1,
     question: "Verdadeiro ou Falso: No algoritmo MINIMAX, as arestas da árvore representam as jogadas possíveis de ambos os jogadores.",
     options: ["Verdadeiro", "Falso"],
     correct: 0,
@@ -2241,6 +2409,7 @@ const questoes = [
   {
     id: 169,
     topicoId: 18,
+    provaId: 1,
     question: "Sobre os valores de controle da Poda Alfa-Beta, assinale a alternativa correta:",
     options: [
       "O valor Alfa representa o melhor valor encontrado pelo jogador MIN.",
@@ -2255,6 +2424,7 @@ const questoes = [
   {
     id: 170,
     topicoId: 18,
+    provaId: 1,
     question: "Analise as condições para a ocorrência das podas:\nI. A Poda Alfa ocorre especificamente em um nó do tipo MIN.\nII. A Poda Beta ocorre em um nó MAX quando α(n) ≥ β(i) para um ancestral i.\nIII. Ocorre Poda Alfa em um nó MIN quando β(n) ≤ α(i) para um ancestral i.\nIV. Ao ocorrer uma poda em um nó MAX, ela é tecnicamente chamada de Poda Alfa.\nV. A poda altera o resultado final que seria obtido pelo Minimax convencional.\nEstá(ão) correta(s):",
     options: ["I, II e III", "II, IV e V", "I, II e IV", "III e V", "Todas estão corretas"],
     correct: 0,
@@ -2263,6 +2433,7 @@ const questoes = [
   {
     id: 171,
     topicoId: 18,
+    provaId: 1,
     question: "Qual o impacto de uma 'boa ordenação' dos nós na eficiência da Poda Alfa-Beta?",
     options: [
       "Permite que o algoritmo ignore o valor Alfa na raiz.",
@@ -2277,6 +2448,7 @@ const questoes = [
   {
     id: 172,
     topicoId: 18,
+    provaId: 1,
     question: "Sobre a complexidade de tempo e viabilidade do algoritmo, analise:\nI. Com a poda perfeita, a complexidade cai para O(b<sup>m/2</sup>).\nII. É necessário armazenar a utilidade de todos os estados possíveis em disco.\nIII. A utilidade é normalmente calculada dinamicamente durante a execução.\nIV. A poda Alfa-Beta é uma forma de evitar a expansão de nós irrelevantes.\nV. A quantidade de podas é independente da ordem de visita aos nós.\nEstá(ão) correta(s):",
     options: ["I, II e III", "I, III e IV", "II, IV e V", "Apenas I e IV", "I, II, III, IV e V"],
     correct: 1,
@@ -2285,6 +2457,7 @@ const questoes = [
   {
     id: 173,
     topicoId: 18,
+    provaId: 1,
     question: "Observe a árvore abaixo e execute o algoritmo Minimax com Poda Alfa-Beta. Ao final da execução, determine quantas podas ocorrerão e classifique cada uma delas como Poda Alfa ou Poda Beta.",
     
     image: PruningQuestion1,
@@ -2305,6 +2478,7 @@ const questoes = [
   {
     id: 174,
     topicoId: 18,
+    provaId: 1,
     question: "O cálculo dinâmico da utilidade durante a expansão da árvore é preferido porque:",
     options: [
       "A quantidade de combinações de estados cresce rapidamente.",
@@ -2319,6 +2493,7 @@ const questoes = [
   {
     id: 175,
     topicoId: 18,
+    provaId: 1,
     question: "Analise a lógica de atualização dos valores de controle:\nI. No nível MAX, busca-se atualizar o valor de Alfa.\nII. No nível MIN, busca-se atualizar o valor de Beta.\nIII. Alfa é o melhor valor (maior) encontrado pelo MAX até o momento.\nIV. Beta é o melhor valor (menor) encontrado pelo MIN até o momento.\nV. Ambos os valores iniciam em zero e crescem conforme a profundidade.\nEstá(ão) correta(s):",
     options: ["I, II e III", "II, III e IV", "I, II, III e IV", "III e V", "Todas estão corretas"],
     correct: 2,
@@ -2327,6 +2502,7 @@ const questoes = [
   {
     id: 176,
     topicoId: 18,
+    provaId: 1,
     question: "Ao executar o algoritmo MINIMAXA com poda Alfa-Beta na árvore abaixo, qual dessas alternativas está correta: \nPara facilitar o entedimento os nós folhas são: 8,3,6,9,4,7,5,2,14,11,1,0,13,10,2,4,9,12,7,5, respectivamente.",
     image: PruningQuestion2,
     explanationImage: PruningQuestionrResult2,
@@ -2344,6 +2520,7 @@ const questoes = [
   {
     id: 177,
     topicoId: 20,
+    provaId: 1,
     question: "Qual é a principal motivação para a utilização de 'Decisões Imperfeitas' em jogos reais?",
     options: [
       "Aumentar a garantia de jogo ótimo em 100% das partidas.",
@@ -2358,6 +2535,7 @@ const questoes = [
   {
     id: 178,
     topicoId: 20,
+    provaId: 1,
     question: "Analise as premissas sobre a implementação de Decisões Imperfeitas:\nI. A função de utilidade é substituída por uma função de avaliação (heurística).\nII. A pesquisa é realizada apenas até uma profundidade limitada 'd'.\nIII. A garantia de jogo ótimo é mantida mesmo com a profundidade limitada.\nIV. O mecanismo de parada pode ser baseado no tempo disponível (IDS limitada).\nEstá(ão) correta(s):",
     options: ["I, II e IV", "I, III e IV", "II e III", "Apenas I e II", "Todas estão corretas"],
     correct: 0,
@@ -2366,6 +2544,7 @@ const questoes = [
   {
     id: 179,
     topicoId: 20,
+    provaId: 1,
     question: "Verdadeiro ou Falso: Ao utilizar decisões imperfeitas, o algoritmo 'olha para frente' apenas um número fixo de movimentos em vez de buscar o fim do jogo.",
     options: ["Verdadeiro", "Falso"],
     correct: 0,
@@ -2374,6 +2553,7 @@ const questoes = [
   {
     id: 180,
     topicoId: 20,
+    provaId: 1,
     question: "Sobre o mecanismo de parada em buscas limitadas, é correto afirmar que:",
     options: [
       "Pode-se usar uma Iterative Deepening Search interrompida pelo tempo.",
@@ -2388,6 +2568,7 @@ const questoes = [
   {
     id: 181,
     topicoId: 20,
+    provaId: 1,
     question: "Uma consequência direta de não pesquisar até os nós terminais é:",
     options: [
       "A árvore de busca torna-se infinita.",
@@ -2403,6 +2584,7 @@ const questoes = [
   {
     id: 182,
     topicoId: 20,
+    provaId: 1,
     question: "Sobre o Trade-off (equilíbrio) na escolha de uma função de avaliação, analise:\nI. Funções precisas são computacionalmente baratas.\nII. Funções imprecisas permitem uma busca mais profunda no mesmo tempo.\nIII. Funções complexas deixam menos tempo para realizar a busca na árvore.\nIV. Funções rápidas/imprecisas sempre garantem resultados melhores que funções lentas/precisas.\nEstá(ão) correta(s):",
     options: ["I e II", "II e III", "III e IV", "Apenas II", "I, II e III"],
     correct: 1,
@@ -2411,6 +2593,7 @@ const questoes = [
   {
     id: 183,
     topicoId: 20,
+    provaId: 1,
     question: "Verdadeiro ou Falso: O teste de objetivo (verificar se o jogo acabou) deve ser baseado exclusivamente nos valores retornados pela função de avaliação.",
     options: ["Verdadeiro", "Falso"],
     correct: 1,
@@ -2419,6 +2602,7 @@ const questoes = [
   {
     id: 184,
     topicoId: 20,
+    provaId: 1,
     question: "Qual característica define um Estado Intermediário em uma busca limitada?",
     options: [
       "Possui apenas os valores fixos de 1, 0 ou -1.",
@@ -2433,11 +2617,834 @@ const questoes = [
   {
     id: 185,
     topicoId: 20,
+    provaId: 1,
     question: "Analise as afirmações sobre a Função de Avaliação:\nI. Elas estimam a pontuação para nós não terminais.\nII. São sempre imperfeitas.\nIII. Designar boas funções é a chave para o sucesso do algoritmo.\nIV. Devem obrigatoriamente expandir a árvore até o final para calcular a utilidade.\nV. Devem atribuir valores maiores para estados que favorecem o jogador MIN.\n\nEstá(ão) correta(s):",
     options: ["I, II e III", "II, III e IV", "I e III", "III, IV e V", "Todas estão corretas"],
     correct: 0,
     explanation: "IV é falsa (heurísticas evitam ir até o fim) e V é falsa (valores maiores favorecem o MAX)."
   },
+
+  // ----------------------------------------------------
+  // TÓPICO 21: Busca Local
+  // ----------------------------------------------------
+  {
+    id: 186,
+    topicoId: 21,
+    provaId: 2,
+    question: "Qual é a principal vantagem da busca local em relação ao consumo de recursos computacionais?",
+    options: [
+      "Ela armazena toda a árvore de busca em disco para consultas rápidas.",
+      "Ela consome pouca memória por não utilizar uma árvore de busca e trabalhar apenas com o estado atual.",
+      "Ela calcula a utilidade de todos os estados terminais antes de iniciar.",
+      "Ela transforma espaços de busca contínuos em árvores discretas finitas.",
+      "Ela garante a descoberta da solução ótima em qualquer topologia."
+    ],
+    correct: 1,
+    explanation: "A busca local trabalha apenas com o estado atual e busca melhorá-lo de forma iterativa, dispensando o armazenamento de uma árvore completa de estados."
+  },
+  {
+    id: 187,
+    topicoId: 21,
+    provaId: 2,
+    question: "O que representam as 'configurações' no contexto do espaço de estados de uma busca local?",
+    options: [
+      "O conjunto de comandos físicos que os atuadores executam.",
+      "O conjunto completo de todas as soluções possíveis para o problema.",
+      "Os caminhos históricos já visitados e salvos na memória RAM.",
+      "As variáveis ambientais estocásticas fora do controle do agente.",
+      "As funções heurísticas utilizadas para avaliar a descida do gradiente."
+    ],
+    correct: 1,
+    explanation: "No modelo de busca local, o espaço de estados corresponde ao conjunto completo das soluções possíveis, que são chamadas de configurações."
+  },
+  {
+    id: 188,
+    topicoId: 21,
+    provaId: 2,
+    question: "O que caracteriza o fenômeno do 'Máximo Local' na topologia de um espaço de busca?",
+    options: [
+      "O pico absoluto e ideal de toda a paisagem de busca.",
+      "Um estado com valor menor que seus vizinhos, mas aceitável para o MIN.",
+      "Um estado que possui valor maior que seus vizinhos.",
+      "Uma sequência de estados idênticos que formam um ombro (shoulder).",
+      "O ponto zero inicial configurado de forma aleatória pelo sistema."
+    ],
+    correct: 2,
+    explanation: "O máximo local possui valor maior que os estados vizinhos, induzindo o algoritmo a considerar que achou uma solução adequada mesmo sem atingir o pico global."
+  },
+  {
+    id: 189,
+    topicoId: 21,
+    provaId: 2,
+    question: "No problema das 8 rainhas resolvido por busca local, como é definida uma configuração?",
+    options: [
+      "O posicionamento de uma rainha por vez até atingir a oitava linha.",
+      "O mapeamento das jogadas do adversário em um cenário de soma-zero.",
+      "A representação de todas as 8 rainhas em posições do tabuleiro.",
+      "Apenas o estado final perfeito onde nenhuma rainha ataca outra.",
+      "A remoção de restrições de movimento do tabuleiro relaxado."
+    ],
+    correct: 2,
+    explanation: "Na busca local, cada configuração representa todas as rainhas posicionadas no tabuleiro simultaneamente, mesmo que existam conflitos entre elas."
+  },
+  {
+    id: 190,
+    topicoId: 21,
+    provaId: 2,
+    question: "Qual das seguintes desvantagens é explicitamente associada à busca local?",
+    options: [
+      "A complexidade de espaço exponencial de memória O(b^m).",
+      "A necessidade de calibrar múltiplos agentes competidores em tempo real.",
+      "A incapacidade total de resolver problemas do tipo convexos.",
+      "A dependência obrigatória de sensores de alta precisão ambiental.",
+      "O risco de nunca explorar o estado em que a solução correta realmente se encontra.",
+    ],
+    correct: 4,
+    explanation: "A busca local possui a desvantagem de poder nunca explorar o estado em que a solução correta se encontra e, normalmente, não armazena os estados já visitados."
+  },
+  {
+    id: 191,
+    topicoId: 21,
+    provaId: 2,
+    question: "O que define conceitualmente o 'Máximo Global' na paisagem topológica de um problema?",
+    options: [
+      "Qualquer estado que supere a primeira heurística calculada.",
+      "O menor valor encontrado para a função objetivo na paisagem.",
+      "O maior valor encontrado para a função objetivo, representando o pico mais alto.",
+      "Uma área plana e extensa onde os vizinhos têm valores equivalentes.",
+      "O estado intermediário que ativa a poda do tipo alfa."
+    ],
+    correct: 2,
+    explanation: "O máximo global representa o pico mais alto absoluto da paisagem, ou seja, o maior valor possível para a função objetivo."
+  },
+  {
+    id: 192,
+    topicoId: 21,
+    provaId: 2,
+    question: "A técnica de 'Descida de Gradiente' (Gradient Descent) é corretamente definida como:",
+    options: [
+      "Um método para saltar aleatoriamente entre cordilheiras de máximos.",
+      "Um algoritmo que segue na direção de maior diminuição da função objetivo buscando o mínimo global.",
+      "Uma abordagem exclusiva de crossover para algoritmos genéticos binários.",
+      "A expansão circular de nós com base no custo acumulado g(n).",
+      "Um critério de parada usado quando a diversidade populacional cai a zero."
+    ],
+    correct: 1,
+    explanation: "A descida de gradiente caminha na direção de maior decréscimo da função objetivo para achar o mínimo global, podendo ficar presa em mínimos locais."
+  },
+  {
+    id: 193,
+    topicoId: 21,
+    provaId: 2,
+    question: "Analise as premissas sobre a Busca Local:\nI. Não armazena todos os estados nem utiliza uma árvore de busca.\nII. É altamente recomendada para problemas onde é obrigatório garantir a solução ótima.\nIII. A função objetivo mede a qualidade de uma possível solução na paisagem.\n\nEstá(ão) correta(s):",
+    options: ["I e II", "II e III", "I e III", "Apenas I", "I, II e III"],
+    correct: 2,
+    explanation: "As premissas I e III estão corretas. A II é falsa porque a busca local NÃO é recomendada quando se faz estritamente necessária a garantia da solução ótima."
+  },
+
+  // ----------------------------------------------------
+  // TÓPICO 22: Hill Climbing
+  // ----------------------------------------------------
+  {
+    id: 194,
+    topicoId: 22,
+    provaId: 2,
+    question: "Como o algoritmo Hill Climbing determina o momento de encerrar a sua execução?",
+    options: [
+      "Quando atinge um limite fixo de 100 iterações laterais.",
+      "No momento em que nenhum vizinho apresenta um valor superior ao do estado atual.",
+      "Quando o valor da função objetivo zera.",
+      "Ao cruzar dois cromossomos com fitness score idênticos.",
+      "Assim que localiza uma região de ombro (shoulder)."
+    ],
+    correct: 1,
+    explanation: "O Hill Climbing analisa os vizinhos e escolhe o mais alto. O processo cessa imediatamente quando nenhum vizinho possui valor superior ao estado atual."
+  },
+  {
+    id: 195,
+    topicoId: 22,
+    provaId: 2,
+    question: "Por que o Hill Climbing também é denominado como uma 'busca local gulosa'?",
+    options: [
+      "Porque tenta expandir todas as ramificações paralelas ao mesmo tempo.",
+      "Porque exige o armazenamento completo das utilidades em tabelas hash.",
+      "Porque consome recursos de memória RAM de forma exponencial.",
+      "Porque considera apenas a melhor escolha imediata, sem analisar caminhos futuros.",
+      "Porque inverte o sinal da função objetivo dinamicamente."
+    ],
+    correct: 3,
+    explanation: "Ele ganha esse rótulo por focar estritamente na melhoria imediata ao seu redor (vizinhos diretos), ignorando o impacto dessa escolha a longo prazo."
+  },
+  {
+    id: 196,
+    topicoId: 22,
+    provaId: 2,
+    question: "O que são 'Cordilheiras' no espaço de busca do Hill Climbing e qual o seu impacto?",
+    options: [
+      "Áreas planas que fazem o algoritmo entrar em loops infinitos de custo zero.",
+      "Pontos de mínimo global localizados em problemas estritamente convexos.",
+      "Pontos de partida aleatórios que reiniciam o feixe estocástico.",
+      "Extensas sequências de máximos locais que podem fazer o algoritmo parar precocemente.",
+      "Mutações genéticas que alteram o vetor binário da solução."
+    ],
+    correct: 3,
+    explanation: "Cordilheiras são sequências de máximos locais que enganam o algoritmo, fazendo-o parar antes de alcançar o verdadeiro máximo global."
+  },
+  {
+    id: 197,
+    topicoId: 22,
+    provaId: 2,
+    question: "Analise a diferença entre as estruturas de anomalias conhecidas como Platôs e Shoulders:\nI. Platôs são regiões em que os estados vizinhos possuem o mesmo valor da função objetivo.\nII. Shoulders são semelhantes aos platôs, porém possuem uma saída para estados melhores.\nIII. O Hill Climbing possui facilidade natural para encontrar a direção correta em Shoulders.\n\nEstá(ão) correta(s):",
+    options: ["I e II", "II e III", "I e III", "Apenas I", "I, II e III"],
+    correct: 0,
+    explanation: "As premissas I e II definem corretamente as estruturas. A III está incorreta porque o algoritmo tem dificuldade em achar a direção correta nos shoulders."
+  },
+  {
+    id: 198,
+    topicoId: 22,
+    provaId: 2,
+    question: "A respeito das propriedades de Completeza e Otimalidade do Hill Climbing tradicional, é correto afirmar:",
+    options: [
+      "Ele é completo e ótimo em qualquer tipo de espaço de estados.",
+      "Ele é ótimo apenas se for associado a uma seleção por roleta sem reposição.",
+      "Não é completo nem ótimo, mas garante otimalidade em problemas convexos.",
+      "Ele é completo, mas falha em encontrar soluções ótimas devido a mutações.",
+      "Ele consome complexidade O(b^m/2) no espaço de estados."
+    ],
+    correct: 2,
+    explanation: "O Hill Climbing não é completo nem ótimo (pode travar em picos locais e platôs), mas em problemas convexos (um só pico, sem máximos locais) ele acha a solução ótima."
+  },
+  {
+    id: 199,
+    topicoId: 22,
+    provaId: 2,
+    question: "Como opera a variante denominada 'Random-Restart Hill Climbing'?",
+    options: [
+      "Executa o algoritmo modificando a temperatura de resfriamento da encosta.",
+      "Gera k vizinhos idênticos e aplica cruzamento uniforme em um ponto de corte.",
+      "Inicia no máximo global e desce iterativamente até os platôs.",
+      "Armazena todos os estados visitados para impedir que o sistema repita nós.",
+      "Executa o algoritmo múltiplas vezes a partir de estados iniciais aleatórios.",
+    ],
+    correct: 4,
+    explanation: "Essa estratégia roda o Hill Climbing várias vezes mudando o ponto de partida aleatoriamente, escolhendo a melhor solução salva ao final."
+  },
+  {
+    id: 200,
+    topicoId: 22,
+    provaId: 2,
+    question: "Apesar de robusto, de qual estrutura espacial o algoritmo 'Random-Restart Hill Climbing' ainda possui dificuldades para progredir?",
+    options: [
+      "Máximos locais.",
+      "Regiões de platô.",
+      "Regiões de ombro (shoulders).",
+      "Espaços convexos puros.",
+      "Problemas invertidos de minimização."
+    ],
+    correct: 1,
+    explanation: "O Random-Restart consegue escapar de picos locais e shoulders reiniciando em outras áreas, mas em regiões extensas de platô ele ainda exibe pouco ou nenhum progresso."
+  },
+  {
+    id: 201,
+    topicoId: 22,
+    provaId: 2,
+    question: "Verdadeiro ou Falso: No Hill Climbing, os máximos e mínimos locais são anomalias que devem ser sempre descartadas, nunca servindo como soluções aceitáveis.",
+    options: ["Verdadeiro", "Falso"],
+    correct: 1,
+    explanation: "Falso. O material destaca que, dependendo do problema estrutural abordado, esses máximos e mínimos locais podem sim ser considerados soluções aceitáveis."
+  },
+
+  // ----------------------------------------------------
+  // TÓPICO 23: Simulated Annealing (Têmpera Simulada)
+  // ----------------------------------------------------
+  {
+    id: 202,
+    topicoId: 23,
+    provaId: 2,
+    question: "O algoritmo Simulated Annealing opera combinando a lógica da subida de encosta com qual mecanismo?",
+    options: [
+      "Um processo estatístico baseado em filtros de Pearson.",
+      "Um mecanismo de busca em feixe paralelo com k fixo.",
+      "Um processo aleatório controlado de aceitação.",
+      "A eliminação reversa de atributos menos relevantes (backward).",
+      "Uma técnica embedded ligada a árvores de decisão."
+    ],
+    correct: 2,
+    explanation: "Ele une a subida de encosta a um processo probabilístico/aleatório governado por uma variável térmica."
+  },
+  {
+    id: 203,
+    topicoId: 23,
+    provaId: 2,
+    question: "No Simulated Annealing, qual a finalidade da variável conhecida como 'temperatura'?",
+    options: [
+      "Medir o tempo de CPU restante para desligar o feixe local.",
+      "Mensurar a probabilidade de o algoritmo aceitar um estado pior que o atual.",
+      "Contar quantas gerações de indivíduos já foram processadas.",
+      "Determinar o ponto de corte binário (one-point) na população.",
+      "Indicar a taxa de mutação exata aplicada aos cromossomos."
+    ],
+    correct: 1,
+    explanation: "A temperatura baliza a chance de aceitar intencionalmente movimentos piores ('ruins') para chacoalhar o sistema e tirá-lo de máximos locais."
+  },
+  {
+    id: 204,
+    topicoId: 23,
+    provaId: 2,
+    question: "Como o algoritmo se comporta dinamicamente quando a temperatura encontra-se ALTA?",
+    options: [
+      "Mais movimentos ruins são permitidos, aumentando a flexibilidade de escolha.",
+      "Nenhum movimento ruim é permitido, travando o sistema por elitismo.",
+      "Menos movimentos ruins são tolerados, focando apenas no gradiente direto.",
+      "A função objetivo é zerada e a busca é finalizada.",
+      "O feixe de estados reduz o fator k para a unidade."
+    ],
+    correct: 0,
+    explanation: "Temperatura alta garante flexibilidade, permitindo a livre aceitação de piores estados para mapear novas regiões da topologia."
+  },
+  {
+    id: 205,
+    topicoId: 23,
+    provaId: 2,
+    question: "O que ocorre com a flexibilidade de escolha do Simulated Annealing à medida que a temperatura diminui (resfria)?",
+    options: [
+      "Aumenta exponencialmente, aceitando mais erros.",
+      "Permanece estática, ignorando o decréscimo da variável.",
+      "O algoritmo passa a usar cruzamento uniforme (uniform crossover).",
+      "Menos movimentos ruins são permitidos, reduzindo a flexibilidade.",
+      "Força a substituição imediata da seleção com reposição."
+    ],
+    correct: 3,
+    explanation: "Com a temperatura baixa, o rigor aumenta: menos movimentos piores são aceitos, restringindo o algoritmo a movimentos de melhoria estrita."
+  },
+  {
+    id: 206,
+    topicoId: 23,
+    provaId: 2,
+    question: "Como problemas cuja meta primária seja a minimização global são tratados no Simulated Annealing?",
+    options: [
+      "Eles são inviáveis de resolver por esta técnica.",
+      "Eles exigem a ativação automática de algoritmos de formiga em GPS.",
+      "Eles podem ser resolvidos simplesmente invertendo o sinal da função objetivo.",
+      "Eles demandam a codificação obrigatória em matrizes decimais contínuas.",
+      "Eles exigem que a temperatura inicie em valores negativos."
+    ],
+    correct: 2,
+    explanation: "Embora focado em maximização, o algoritmo resolve minimizações bastando inverter o sinal matemático da função objetivo."
+  },
+  {
+    id: 207,
+    topicoId: 23,
+    provaId: 2,
+    question: "Sob qual condição estritamente teórica o Simulated Annealing pode ser considerado um algoritmo Ótimo?",
+    options: [
+      "Quando a taxa de mutação atinge o patamar de 100%.",
+      "Se a temperatura diminuir de forma extremamente lenta e houver tempo ilimitado.",
+      "Se o fator k de estados aleatórios for igual ao número de genes.",
+      "Quando o teste de objetivo baseia-se em seleção por roleta com reposição.",
+      "Se operar apenas sobre métodos de wrapper como Forward Selection."
+    ],
+    correct: 1,
+    explanation: "Teoricamente, se o resfriamento for infinitamente lento e o tempo infinito, o algoritmo garante convergência para o ótimo global."
+  },
+  {
+    id: 208,
+    topicoId: 23,
+    provaId: 2,
+    question: "Por que, na prática do desenvolvimento, o Simulated Annealing costuma ser classificado como NÃO ótimo?",
+    options: [
+      "Porque alcançar o ótimo exigiria um custo computacional e tempo de execução excessivamente grandes.",
+      "Porque ele deforma a topologia da paisagem durante a execução.",
+      "Porque ele é incapaz de operar com funções objetivo baseadas em fitness.",
+      "Porque ele gera loops infinitos em problemas puramente convexos.",
+      "Porque aceita apenas genes codificados em formato decimal."
+    ],
+    correct: 0,
+    explanation: "Na prática, a lentidão extrema exigida para cravar o ótimo demandaria tempo e processamento proibitivos, tornando-o heuristicamente não ótimo."
+  },
+  {
+    id: 209,
+    topicoId: 23,
+    provaId: 2,
+    question: "Analise a completeza do Simulated Annealing na prática:",
+    options: [
+      "Ele é completo porque sempre acha a saída no primeiro resfriamento.",
+      "Não é completo, pois pode demorar muito ou parar a execução antes de achar a solução.",
+      "Ele é completo apenas se a função objetivo for calculada por métodos de filtro.",
+      "Não é completo porque depende de rastros de feromônios estáveis.",
+      "Ele torna-se completo ao remover o parâmetro de volatilidade térmica."
+    ],
+    correct: 1,
+    explanation: "O algoritmo não é completo na prática devido ao risco de estourar limites temporais ou encerrar antes de localizar uma resposta."
+  },
+
+  // ----------------------------------------------------
+  // TÓPICO 24: Local Beam Search (Busca em feixe local)
+  // ----------------------------------------------------
+  {
+    id: 210,
+    topicoId: 24,
+    provaId: 2,
+    question: "Qual é a principal diferença estrutural de memória do Local Beam Search em relação ao Hill Climbing?",
+    options: [
+      "Ele necessita salvar todo o histórico de nós expandidos em pilhas LIFO.",
+      "Em vez de armazenar apenas o estado atual, mantém simultaneamente um conjunto de k estados.",
+      "Ele opera sem usar nenhuma função objetivo ou teste de objetivo.",
+      "Ele descarta os vizinhos mais promissores a cada nova iteração técnica.",
+      "Ele é o único que exige codificação baseada em cromossomos binários."
+    ],
+    correct: 1,
+    explanation: "O feixe local gerencia paralelamente um conjunto composto por k estados, expandindo o horizonte de busca em relação às técnicas de estado único."
+  },
+  {
+    id: 211,
+    topicoId: 24,
+    provaId: 2,
+    question: "Se configurarmos um algoritmo de Local Beam Search com k = 9, como o processo será iniciado?",
+    options: [
+      "Com 1 estado inicial que gerará exatamente 4 mutações contínuas.",
+      "Com a execução de 9 pontos de corte em um One-point crossover.",
+      "Com a geração de exatamente 9 estados iniciais totalmente aleatórios.",
+      "Com o treinamento de 9 modelos estatísticos pelo método Wrapper.",
+      "Avaliando 4 atributos independentes via correlação de Pearson."
+    ],
+    correct: 2,
+    explanation: "O valor de k dita o tamanho do feixe; se k = 4, o algoritmo dá a largada instanciando 4 estados aleatórios."
+  },
+  {
+    id: 212,
+    topicoId: 24,
+    provaId: 2,
+    question: "Como funciona o fluxo de seleção de novos estados a cada iteração do Local Beam Search?",
+    options: [
+      "Ele seleciona aleatoriamente qualquer vizinho que apresente valor negativo.",
+      "Ele mantém apenas os pais originais, descartando os sucessores gerados.",
+      "Ele aplica mutações de 5% sobre os estados que falharam no teste de objetivo.",
+      "Ele gera todos os vizinhos dos k estados e seleciona os k melhores vizinhos absolutos.",
+      "Ele remove o melhor estado para forçar a diversificação regional."
+    ],
+    correct: 3,
+    explanation: "A mecânica do feixe gera a vizinhança completa de todos os k estados atuais reunidos e filtra os k melhores globais para a próxima rodada."
+  },
+  {
+    id: 213,
+    topicoId: 24,
+    provaId: 2,
+    question: "Sob qual condição o algoritmo Local Beam Search encerra a sua rotina de execução?",
+    options: [
+      "No momento em que encontra o estado objetivo entre os estados gerados.",
+      "Quando a taxa de feromônio de um caminho evapora totalmente.",
+      "Quando a temperatura da busca atinge o valor de zero absoluto.",
+      "Quando o método de Forward Selection adiciona o último atributo.",
+      "Ao identificar que a roleta realizou uma seleção com reposição."
+    ],
+    correct: 0,
+    explanation: "O algoritmo encerra as atividades de forma bem-sucedida assim que o estado meta (objetivo) aparece no conjunto de vizinhos gerados."
+  },
+  {
+    id: 214,
+    topicoId: 24,
+    provaId: 2,
+    question: "A respeito das propriedades de Completeza e Otimalidade do Local Beam Search, assinale a alternativa correta:",
+    options: [
+      "Ele é ótimo e completo porque varre o espaço de estados em largura FIFO.",
+      "Ele garante otimalidade apenas se os cromossomos forem decimais contínuos.",
+      "É completo, mas falha em ser ótimo por depender de métodos de filtro de atributos.",
+      "Sua complexidade cai de O(b^m) para O(1) devido ao paralelismo.",
+      "Não é ótimo nem completo, pois pode convergir para máximos locais e eliminar caminhos importantes.",
+    ],
+    correct: 4,
+    explanation: "Ele carece de otimalidade e completeza porque restringir-se a k estados pode fazê-lo descartar rotas vitais e convergir o feixe a picos locais."
+  },
+  {
+    id: 215,
+    topicoId: 24,
+    provaId: 2,
+    question: "Qual é a falha crônica de diversidade associada à versão tradicional do Local Beam Search?",
+    options: [
+      "Os estados mudam de valor de forma estocástica e desordenada.",
+      "Os k estados podem acabar concentrados em uma pequena região do espaço.",
+      "O algoritmo exige o cálculo de matrizes de correlação caras.",
+      "Os critérios de parada dependem de sucessivas populações mutantes.",
+      "Ele consome muita memória ao criar árvores infinitas."
+    ],
+    correct: 1,
+    explanation: "O defeito do feixe puro é a perda de diversidade (focalização excessiva): os k estados tendem a se aglomerar rapidamente em um mesmo setor da paisagem."
+  },
+  {
+    id: 216,
+    topicoId: 24,
+    provaId: 2,
+    question: "Na Busca em Feixe Local Estocástica, qual a vantagem de permitir a escolha de estados menos promissores?",
+    options: [
+      "Reduzir o custo computacional da função objetivo para zero.",
+      "Garantir completeza estrita em ambientes de teste não-observáveis.",
+      "Forçar o cruzamento uniforme de cromossomos binários parecidos.",
+      "Aumentar a diversidade da busca e reduzir as chances de ficar preso em uma única região.",
+      "Permitir o mapeamento de sistemas baseados em GPS automotivo."
+    ],
+    correct: 3,
+    explanation: "Dar chance a nós menos promissores evita que o feixe paralize aglutinado em uma só depressão ou pico local da topologia."
+  },
+
+  // ----------------------------------------------------
+  // TÓPICO 25 e 26: Algoritmos Genéticos e Representação
+  // ----------------------------------------------------
+  {
+    id: 217,
+    topicoId: 25,
+    provaId: 2,
+    question: "Em qual pilar da biologia evolucionária os Algoritmos Genéticos são fundamentados?",
+    options: [
+      "No processo de seleção natural e mecanismos de evolução biológica.",
+      "Na evaporação e rastro químico de colônias de formigas.",
+      "No comportamento de refriamento estruturado de metais.",
+      "Na filtragem estatística independente de atributos de dados.",
+      "No comportamento determinístico de redes neurais profundas."
+    ],
+    correct: 0,
+    explanation: "Os AGs simulam o processo de seleção natural, onde indivíduos mais aptos transmitem características adiante, evoluindo a população."
+  },
+  {
+    id: 218,
+    topicoId: 25,
+    provaId: 2,
+    question: "O que é uma 'Geração' dentro do ciclo de execução de um Algoritmo Genético?",
+    options: [
+      "O vetor de tamanho finito composto por genes binários.",
+      "A probabilidade exata de ocorrer uma alteração aleatória em um gene.",
+      "O critério de parada que encerra o processamento por estouro de tempo.",
+      "O conjunto de indivíduos existente em um determinado momento.",
+      "A fatia da roleta ocupada pela melhor solução disponível."
+    ],
+    correct: 3,
+    explanation: "Uma geração é o conjunto de soluções (população de cromossomos) ativa em uma determinada iteração do algoritmo."
+  },
+  {
+    id: 219,
+    topicoId: 26,
+    provaId: 2,
+    question: "Na representação estrutural de um AG, qual o nome dado a cada componente individual de um cromossomo?",
+    options: [
+      "Fitness Score.",
+      "Platô.",
+      "Gene.",
+      "Feixe.",
+      "Feromônio."
+    ],
+    correct: 2,
+    explanation: "Um cromossomo é um vetor composto por posições finitas chamadas genes, onde cada gene codifica uma característica da solução."
+  },
+  {
+    id: 220,
+    topicoId: 26,
+    provaId: 2,
+    question: "Por que a representação binária (0 e 1) é a mais adotada para modelar cromossomos?",
+    options: [
+      "Porque garante que a complexidade espacial caia para O(1).",
+      "Porque elimina a necessidade de calcular a função de fitness.",
+      "Porque simula fielmente o rastro de feromônios em sistemas de GPS.",
+      "Porque impede a convergência prematura para máximos locais.",
+      "Porque é simples de implementar e facilita operadores como crossover e mutação.",
+    ],
+    correct: 4,
+    explanation: "Os bits 0 e 1 facilitam os cortes e inversões lógicas dos operadores de Crossover e Mutação, além de mapearem com simplicidade a presença/ausência de traços."
+  },
+  {
+    id: 221,
+    topicoId: 26,
+    provaId: 2,
+    question: "Como opera o método de seleção por aptidão denominado 'Roulette Wheel Selection'?",
+    options: [
+      "Seleciona indivíduos com base na ordem inversa de sua entrada no sistema.",
+      "A probabilidade de um indivíduo ser escolhido é proporcional ao seu fitness.",
+      "Sorteia genes decimais contínuos usando uma distribuição de Pearson.",
+      "Divide a população em k feixes paralelos de forma determinística.",
+      "Escolhe apenas os indivíduos que sofreram mutações na geração atual."
+    ],
+    correct: 1,
+    explanation: "Na roleta, os cromossomos mais aptos (maior fitness) ganham áreas proporcionalmente maiores, elevando suas chances matemáticas de sorteio."
+  },
+  {
+    id: 222,
+    topicoId: 26,
+    provaId: 2,
+    question: "Qual problema de diversidade pode ocorrer na roleta se for permitida a seleção com reposição simples?",
+    options: [
+      "O algoritmo deixa de calcular o fitness dos descendentes.",
+      "Os critérios de parada baseados em tempo de execução são desativados.",
+      "Os genes são forçados a migrar de formato binário para decimal.",
+      "Um mesmo cromossomo pode reproduzir consigo mesmo, gerando clones e reduzindo a diversidade.",
+      "Ocorre a perda imediata do melhor indivíduo por falta de elitismo."
+    ],
+    correct: 3,
+    explanation: "Se houver reposição pura, um indivíduo altamente apto pode ser sorteado como pai e mãe ao mesmo tempo, cruzando consigo mesmo e gerando clones que arruinam a diversidade genética."
+  },
+  {
+    id: 223,
+    topicoId: 26,
+    provaId: 2,
+    question: "O operador genético 'One-point crossover' atua realizando qual procedimento?",
+    options: [
+      "Inverte o valor lógico de um único gene sorteado com probabilidade de 5%.",
+      "Sorteia individualmente cada gene do filho entre o pai e a mãe.",
+      "Utiliza um único ponto de corte no cromossomo e troca as partes finais dos pais.",
+      "Transfere o melhor indivíduo intacto diretamente para a próxima geração.",
+      "Calcula a média aritmética dos valores decimais contínuos dos pais."
+    ],
+    correct: 2,
+    explanation: "O cruzamento de um ponto escolhe um índice de corte; a partir desse ponto, as caudas dos cromossomos dos pais são intercambiadas para gerar os filhos."
+  },
+  {
+    id: 224,
+    topicoId: 26,
+    provaId: 2,
+    question: "Qual o papel desempenhado pela 'Mutação' e como sua frequência é estabelecida?",
+    options: [
+      "Introduzir alterações aleatórias nos genes e sua frequência é definida pela taxa de mutação.",
+      "Combinar dados de dois pais; sua frequência é linear.",
+      "Preservar os melhores indivíduos intactos; sua frequência depende do tempo de CPU.",
+      "Selecionar características proporcionais ao fitness; sua frequência usa métodos Wrapper.",
+      "Substituir genes binários por decimais; sua frequência é fixa em 50%."
+    ],
+    correct: 0,
+    explanation: "A mutação insere pequenas alterações aleatórias nos genes de acordo com a probabilidade ditada pela 'taxa de mutação', essencial para injetar novidade genética e escapar de picos locais."
+  },
+  // ----------------------------------------------------
+  // TÓPICO 27: Aplicações do Algoritmo Genético
+  // ----------------------------------------------------
+  {
+    id: 225,
+    topicoId: 27,
+    provaId: 2,
+    question: "Como os Algoritmos Genéticos são aplicados na área de Processamento de Imagens?",
+    options: [
+      "Eles realizam a compressão física de hardware das câmeras digitais.",
+      "Eles invertem o sinal dos pixels para transformar imagens estáticas em contínuas.",
+      "Eles auxiliam em tarefas como segmentação de imagens, ajudando a identificar e separar regiões importantes.",
+      "Eles removem completamente a necessidade de usar filtros ou pooling.",
+      "Eles armazenam o histórico de todas as imagens visitadas em uma pilha LIFO."
+    ],
+    correct: 2,
+    explanation: "No processamento de imagens, os AGs são excelentes para problemas de otimização combinatória, atuando fortemente na segmentação e separação de regiões de interesse."
+  },
+  {
+    id: 226,
+    topicoId: 27,
+    provaId: 2,
+    question: "Qual é a contribuição prática dos Algoritmos Genéticos na Ciência Médica citada no texto?",
+    options: [
+      "Substituir o uso de exames de raio-X por simulações estocásticas.",
+      "Ajustar a dosagem de medicamentos por meio de forward selection.",
+      "Criar prontuários médicos baseados em algoritmos de formiga.",
+      "Mapear a temperatura de resfriamento de tecidos celulares humanos.",
+      "Auxiliar na determinação da estrutura do DNA utilizando informações espectrométricas.",
+    ],
+    correct: 4,
+    explanation: "Na ciência médica, uma das aplicações nobres dos AGs é a determinação estrutural de moléculas de DNA combinando dados espectrométricos."
+  },
+  {
+    id: 227,
+    topicoId: 27,
+    provaId: 2,
+    question: "No Mercado Financeiro, os Algoritmos Genéticos são frequentemente utilizados para:",
+    options: [
+      "Encontrar a melhor alocação de ativos em uma carteira de investimentos, equilibrando risco e retorno.",
+      "Zerar os riscos de qualquer operação de crédito de forma determinística.",
+      "Substituir as moedas físicas por sistemas baseados em roleta sem reposição.",
+      "Calcular a correlação de Pearson de todas as moedas globais em tempo real.",
+      "Prever com 100% de certeza o valor de fechamento de ações em ambientes estocásticos."
+    ],
+    correct: 0,
+    explanation: "Os AGs tratam a alocação de ativos como um problema de otimização de múltiplos critérios, buscando o arranjo que maximize o retorno e minimize o risco."
+  },
+  {
+    id: 228,
+    topicoId: 27,
+    provaId: 2,
+    question: "O que significa aplicar Algoritmos Genéticos para o 'Ajuste de hiperparâmetros' em Machine Learning?",
+    options: [
+      "Treinar o modelo uma única vez utilizando dados puramente binários.",
+      "Remover todos os atributos que apresentam baixa diversidade estatística.",
+      "Aumentar o número de amostras do banco de dados por meio de mutações.",
+      "Buscar de forma otimizada as melhores configurações externas para o modelo de aprendizado.",
+      "Forçar o modelo a rodar sem limite de tempo ou critérios de parada."
+    ],
+    correct: 3,
+    explanation: "O ajuste de hiperparâmetros consiste em encontrar a combinação ideal de parâmetros de configuração do modelo para melhorar sua performance."
+  },
+  {
+    id: 229,
+    topicoId: 27,
+    provaId: 2,
+    question: "Como os AGs podem atuar no design de arquiteturas para Redes Neurais?",
+    options: [
+      "Eles eliminam a fase de treinamento, gerando os pesos finais por elitismo.",
+      "Eles transformam as funções de ativação em problemas de crossover de um ponto.",
+      "Eles limitam a rede a processar apenas variáveis independentes do tipo Filter.",
+      "Eles impedem que a rede neural sofra com o crescimento exponencial de estados.",
+      "Eles definem a melhor estrutura da rede, como a quantidade de neurônios, camadas ocultas, filtros e pooling.",
+    ],
+    correct: 4,
+    explanation: "Os AGs podem automatizar a busca arquitetural, testando e evoluindo arranjos de camadas, neurônios e filtros para achar a melhor rede neural."
+  },
+  {
+    id: 230,
+    topicoId: 27,
+    provaId: 2,
+    question: "A engenharia de 'Seleção de Atributos' (feature selection) via Algoritmos Genéticos visa primordialmente:",
+    options: [
+      "Escolher as características mais relevantes de um conjunto de dados.",
+      "Injetar dados ruidosos para testar a robustez do modelo de aprendizado.",
+      "Substituir a codificação dos dados decimais por vetores infinitos.",
+      "Garantir completeza estrita à busca cega não informada.",
+      "Gerar novos atributos combinando o rastro de feromônios das variáveis."
+    ],
+    correct: 0,
+    explanation: "A seleção de atributos busca reduzir a dimensionalidade dos dados, filtrando apenas o que é informativo para tornar o modelo mais rápido e preciso."
+  },
+  {
+    id: 231,
+    topicoId: 27,
+    provaId: 2,
+    question: "Analise as frentes de atuação de AGs dentro do ecossistema de Machine Learning:\nI. Ajuste de hiperparâmetros (tuning).\nII. Definição da melhor arquitetura para redes neurais.\nIII. Seleção de atributos (feature selection).\n\nEstá(ão) correta(s):",
+    options: ["Apenas I", "I e II", "II e III", "Apenas III", "I, II e III"],
+    correct: 4,
+    explanation: "Os Algoritmos Genéticos possuem um papel versátil em Machine Learning, atuando com sucesso nas três frentes de otimização citadas."
+  },
+  {
+    id: 232,
+    topicoId: 27,
+    provaId: 2,
+    question: "Verdadeiro ou Falso: Os Algoritmos Genéticos são ferramentas exclusivas para o mercado financeiro e desenvolvimento de hardware, sendo inviável sua aplicação em Machine Learning.",
+    options: ["Verdadeiro", "Falso"],
+    correct: 1,
+    explanation: "Falso. Os AGs possuem vasta aplicação em Machine Learning, operando no tuning de parâmetros, seleção de features e design de redes neurais."
+  },
+
+  // ----------------------------------------------------
+  // TÓPICO 28: Seleção de atributos (feature selection)
+  // ----------------------------------------------------
+  {
+    id: 233,
+    topicoId: 28,
+    provaId: 2,
+    question: "Qual característica define o método de seleção de atributos conhecido como 'Filter'?",
+    options: [
+      "Ele realiza o treinamento do modelo várias vezes mudando as features.",
+      "Ele seleciona características exclusivamente durante o split de árvores de decisão.",
+      "Ele avalia estatisticamente cada atributo de forma independente do modelo de aprendizado.",
+      "Ele depende do cálculo de taxas de mutação binária dos atributos.",
+      "Ele inicia com um modelo vazio e adiciona variáveis progressivamente."
+    ],
+    correct: 2,
+    explanation: "O método Filter opera de forma isolada do modelo, aplicando métricas estatísticas diretamente sobre os dados para selecionar os melhores atributos."
+  },
+  {
+    id: 234,
+    topicoId: 28,
+    provaId: 2,
+    question: "Quais métricas são comumente aplicadas pelos métodos do tipo 'Filter' para classificar a relevância das features?",
+    options: [
+      "Fator de ramificação (b) e profundidade da solução (s).",
+      "Temperatura de resfriamento e fator de chacoalhamento térmico.",
+      "Correlação de Pearson e informação mútua.",
+      "Aptidão da roleta e contornos radiais do A*.",
+      "Taxa de crossover uniforme e pontos de corte lineares."
+    ],
+    correct: 2,
+    explanation: "Os métodos Filter utilizam ferramentas matemáticas e estatísticas como a correlação de Pearson e a informação mútua para triar as variáveis."
+  },
+  {
+    id: 235,
+    topicoId: 28,
+    provaId: 2,
+    question: "Como funciona a dinâmica de seleção de atributos classificada como 'Embedded'?",
+    options: [
+      "A seleção ocorre de forma totalmente externa e antes de qualquer treinamento.",
+      "Ela exige testar todas as combinações matemáticas possíveis em uma roleta.",
+      "A seleção de atributos ocorre durante o treinamento do próprio algoritmo de aprendizado.",
+      "Ela remove todos os atributos no primeiro passo para iniciar com um modelo nulo.",
+      "Ela baseia-se unicamente em dados coletados de sensores de GPS."
+    ],
+    correct: 2,
+    explanation: "Nos métodos Embedded, a seleção é embutida; o próprio algoritmo de Machine Learning determina quais variáveis são importantes enquanto aprende."
+  },
+  {
+    id: 236,
+    topicoId: 28,
+    provaId: 2,
+    question: "Qual modelo de aprendizado é citado como um exemplo clássico capaz de realizar a seleção 'Embedded' nativamente?",
+    options: [
+      "Busca de Custo Uniforme (UCS).",
+      "Têmpera Simulada (Simulated Annealing).",
+      "Árvores de Decisão.",
+      "Algoritmo da Formiga.",
+      "Busca em Profundidade com Limite (DLS)."
+    ],
+    correct: 2,
+    explanation: "As Árvores de Decisão realizam seleção embedded porque, ao criarem suas quebras (splits), identificam e priorizam os atributos mais importantes estruturalmente."
+  },
+  {
+    id: 237,
+    topicoId: 28,
+    provaId: 2,
+    question: "O método de seleção de atributos conhecido como 'Wrapper' atua de que maneira?",
+    options: [
+      "Aplica testes estatísticos isolados sem nunca rodar o classificador.",
+      "Garante que apenas variáveis binárias codificadas em bits entrem no modelo.",
+      "Evita o excesso de processamento eliminando o uso de critérios de parada.",
+      "Usa feromônios para marcar os atributos que causaram erros no passado.",
+      "Realiza o treinamento do modelo várias vezes utilizando diferentes combinações de atributos e compara o desempenho.",
+    ],
+    correct: 4,
+    explanation: "O Wrapper usa o próprio modelo como avaliador, testando exaustivamente ou heuristicamente subconjuntos de features e medindo o score final de cada arranjo."
+  },
+  {
+    id: 238,
+    topicoId: 28,
+    provaId: 2,
+    question: "Qual é o ponto de partida e a mecânica de evolução do algoritmo 'Forward Selection'?",
+    options: [
+      "Começa com todas as características e remove a pior a cada rodada.",
+      "Sorteia subconjuntos de features de forma 100% aleatória via roleta.",
+      "Mapeia as variáveis em uma paisagem topológica buscando mínimos locais.",
+      "Inicia aplicando um filtro de correlação de Pearson sobre todo o conjunto.",
+      "Inicia com um modelo sem atributos e, a cada etapa, adiciona a característica que proporciona a maior melhoria.",
+    ],
+    correct: 4,
+    explanation: "O Forward Selection é um método Wrapper progressivo: parte do zero e vai acoplando iterativamente o atributo que gera o maior ganho de performance."
+  },
+  {
+    id: 239,
+    topicoId: 28,
+    provaId: 2,
+    question: "Como opera o algoritmo denominado 'Backward Elimination' no contexto de métodos Wrapper?",
+    options: [
+      "O modelo começa utilizando todos os atributos disponíveis e, em cada etapa, remove a característica menos relevante.",
+      "Inicia sem nenhum atributo e remove os nós fringe que gerarem custos.",
+      "Sorteia individualmente quais atributos serão deletados usando crossover uniforme.",
+      "Treina o modelo uma única vez utilizando exclusivamente critérios de parada temporais.",
+      "Substitui todas as variáveis contínuas por representações binárias de tamanho finito."
+    ],
+    correct: 0,
+    explanation: "O Backward Elimination faz o caminho inverso do Forward: joga todo mundo para dentro do modelo e vai eliminando, elo por elo, a variável que menos faz falta."
+  },
+  {
+    id: 240,
+    topicoId: 28,
+    provaId: 2,
+    question: "Por que é estritamente necessário configurar 'Critérios de Parada' em abordagens de Forward Selection e Backward Elimination?",
+    options: [
+      "Para forçar o modelo a converter variáveis decimais em binárias.",
+      "Para garantir que o modelo encontre o máximo global na primeira iteração.",
+      "Para evitar excesso de processamento e complexidade desnecessária.",
+      "Para permitir que características irrelevantes entrem no modelo simultaneamente.",
+      "Para reverter o sinal da função objetivo em problemas convexos."
+    ],
+    correct: 2,
+    explanation: "Sem critérios de parada, esses métodos continuariam adicionando ou removendo variáveis indefinidamente, gerando um desperdício massivo de processamento computacional."
+  }
 ];
 
 export default questoes;

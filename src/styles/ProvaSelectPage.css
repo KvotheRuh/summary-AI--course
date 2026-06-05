@@ -1,0 +1,144 @@
+/* ── Tela de seleção de prova ─────────────────────────────── */
+.prova-select {
+  min-height: calc(100vh - 116px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--rosa-fundo);
+  padding: 2rem 1.5rem;
+}
+
+.prova-select__inner {
+  width: 100%;
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.2rem;
+}
+
+.prova-select__header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.prova-select__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--rosa);
+  box-shadow: 0 0 0 4px var(--rosa-claro);
+  margin-bottom: 0.4rem;
+}
+
+.prova-select__eyebrow {
+  font-size: 10px;
+  color: var(--beige-texto);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.prova-select__title {
+  font-family: var(--font-serif);
+  font-size: 26px;
+  font-weight: 400;
+  color: var(--texto);
+  line-height: 1.2;
+}
+
+.prova-select__subtitle {
+  font-size: 13px;
+  color: var(--texto-fraco);
+  line-height: 1.7;
+  max-width: 380px;
+}
+
+/* ── Cards de prova ──────────────────────────────────────── */
+.prova-select__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.prova-card {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.4rem 1.5rem;
+  background: var(--branco);
+  border: 1.5px solid var(--beige-escuro);
+  border-radius: var(--radius-xl);
+  text-align: left;
+  transition: all 0.2s;
+  cursor: pointer;
+  width: 100%;
+}
+
+.prova-card:hover:not(:disabled) {
+  border-color: var(--rosa);
+  background: var(--rosa-fundo);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(250, 109, 147, 0.1);
+}
+
+.prova-card--em-breve {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.prova-card__emoji {
+  font-size: 32px;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.prova-card__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.prova-card__title {
+  font-family: var(--font-serif);
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--texto);
+  margin-bottom: 0.25rem;
+}
+
+.prova-card__desc {
+  font-size: 12.5px;
+  color: var(--texto-fraco);
+  line-height: 1.55;
+}
+
+.prova-card__badge {
+  flex-shrink: 0;
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 0.3rem 0.75rem;
+  border-radius: 99px;
+}
+
+.prova-card__badge--estudar {
+  background: var(--rosa);
+  color: #fff;
+}
+
+.prova-card__badge--breve {
+  background: var(--beige-escuro);
+  color: var(--texto-fraco);
+  font-weight: 500;
+}
+
+/* ── Responsivo ───────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .prova-select__title { font-size: 22px; }
+  .prova-select__subtitle { font-size: 12.5px; }
+  .prova-card { padding: 1.1rem 1.2rem; gap: 1rem; }
+  .prova-card__emoji { font-size: 26px; }
+  .prova-card__title { font-size: 15px; }
+  .prova-card__desc { font-size: 12px; }
+}

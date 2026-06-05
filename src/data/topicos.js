@@ -19,11 +19,22 @@ import passo9 from "../images/9.png"
 import passo10 from "../images/10.png"
 import passo11 from "../images/11.png"
 import ticTac from "../images/tic-tac.png"
+import Cordilheira from "../images/Cordilheira.png"
+import ShouldersPlato from "../images/Shoulders e Plato.png"
+import BackwardSelection from "../images/backward.png"
+import definicoesAG from "../images/definicoesAG.png"
+import crossover1 from "../images/crossover1.png"
+import crossover2 from "../images/crossover2.png"
+import crossover3 from "../images/crossover3.png"
+import mutacao from "../images/mutacao.png"
+import fitness from "../images/fitness.png"
+import ForwardSelection from "../images/forward.png"
 
 
 const topicos = [
   {
     id: 1,
+    provaId: 1,
     titulo: "O que é Inteligência?",
     conteudo: `É a habilidade de adquirir e aplicar conhecimento para resolver problemas complexos. Existem nove tipos de inteligência:
 
@@ -39,6 +50,7 @@ const topicos = [
   },
   {
     id: 2,
+    provaId: 1,
     titulo: "Resolução Lógica",
     conteudo: `Existem três tipos de raciocínio lógico:
 
@@ -54,6 +66,7 @@ Exemplo: Se bancos pedem COBOL e Jailson trabalha em um banco, então é possív
   },
   {
     id: 3,
+    provaId: 1,
     titulo: "O que é Inteligência Artificial?",
     conteudo: `É o campo da ciência da computação que cria máquinas que pensam e agem igual ou semelhante aos humanos.
 
@@ -66,6 +79,7 @@ Quando uma máquina reproduz uma habilidade humana, avaliamos por três critéri
   },
   {
     id: 4,
+    provaId: 1,
     titulo: "Agentes Racionais e Inteligentes",
     conteudo: `Agente racional: É qualquer entidade que consegue perceber por meio de sensores o ambiente em que está inserido, e em seguida tomar ações utilizando atuadores.
 
@@ -81,6 +95,7 @@ Performance measure (Medida de performance): Critério para medir o sucesso do a
   },
   {
     id: 5,
+    provaId: 1,
     titulo: "Tipos de Ambiente",
     conteudo: `O ambiente em que um agente opera pode ser caracterizado de várias formas:
 
@@ -110,6 +125,7 @@ Performance measure (Medida de performance): Critério para medir o sucesso do a
   },
   {
     id: 6,
+    provaId: 1,
     titulo: "Tipos de Agentes",
     conteudo: `<strong>Agente reativo simples (por reflexo):</strong> Suas ações serão tomadas a partir da percepção do estado atual do ambiente. Esse tipo de agente não guarda um histórico de percepções, por isso é necessário que o ambiente seja totalmente observável.
 
@@ -121,6 +137,7 @@ Performance measure (Medida de performance): Critério para medir o sucesso do a
   },
   {
     id: 7,
+    provaId: 1,
     titulo: "Problemas de Busca",
     conteudo: `Utilizam agentes baseados em objetivo. O ambiente é totalmente observável, discreto e determinístico. Problemas de busca possuem 5 elementos fundamentais:
 
@@ -139,6 +156,7 @@ Abstração: Processo de remover detalhes da representação de um problema. Mui
   },
   {
     id: 8,
+    provaId: 1,
     titulo: "Grafos e Árvores de Busca",
     conteudo: `<strong>Grafo de espaço de estado:</strong> Representação matemática de problemas complexos.
 — Nós (nodes): Representam os estados.
@@ -155,6 +173,7 @@ Abstração: Processo de remover detalhes da representação de um problema. Mui
   },
   {
     id: 9,
+    provaId: 1,
     titulo: "Algoritmos Não Informados",
     conteudo: `Também chamado de busca cega. Usa apenas a informação dada na descrição do problema, ou seja, não tem informação adicional.
 
@@ -193,6 +212,7 @@ Abstração: Processo de remover detalhes da representação de um problema. Mui
   },
   {
     id: 10,
+    provaId: 1,
     titulo: "DFS e BFS",
     conteudo: `<strong>Busca em Profundidade (DFS):</strong>
 
@@ -214,6 +234,7 @@ Explora todos os vértices adjacentes ao estado inicial  e, em seguida, expande 
   },
   {
     id: 11,
+    provaId: 1,
     titulo: "UCS, DLS e IDS",
     conteudo: `<strong>Busca de Custo Uniforme (UCS):</strong>
 É inspirada na busca em largura, contudo ela irá expandir o vértice de menor custo. Esse tipo de busca garante o caminho mais barato. Utiliza estrutura de fila de prioridades.
@@ -252,6 +273,7 @@ Faz buscas em profundidade limitadas, as buscas são feitas aumentando o limite 
   },
   {
     id: 12,
+    provaId: 1,
     titulo: "Busca Informada",
     conteudo: `A busca informada (ou heurística) é um tipo de busca que usa informações adicionais sobre o problema para encontrar a solução de forma mais eficiente.
 Diferente da busca não informada (cega), ela não explora tudo aleatoriamente — ela usa uma heurística (estimativa) para guiar o caminho.
@@ -264,6 +286,7 @@ Diferente da busca não informada (cega), ela não explora tudo aleatoriamente �
   },
   {
     id: 13,
+    provaId: 1,
     titulo: "Greedy Search",
     conteudo: `Greedy Search(Best First):
 
@@ -283,8 +306,9 @@ Com uma boa heurística, a complexidade de tempo e espaço podem ser reduzidas s
     gifLabel: "Exemplo: Greedy Search",
   },
 
-{
+  {
     id: 14,
+    provaId: 1,
     titulo: "A* Search",
     conteudo: `A* Search:
 
@@ -312,6 +336,7 @@ O A* adiciona contornos gradualmente aos nos.
 
   {
     id: 15,
+    provaId: 1,
     titulo: "Admissibilidade",
     conteudo: `Superestima o custo: Heurísticas inadmissíveis(pessimistas) superestimam o custo, isso acarreta em soluções não ótimas. Por exemplo: Considerando que o custo real para alcançar o objetivo é 15 e a heurística é 20, o algoritmo entenderá que não é um bom caminho, mesmo que ao seguir expandir esse nó a solução obtida seja ótima. 
 
@@ -339,6 +364,7 @@ OBS: Toda heurística consistente é admissível, mas nem toda heurística admis
   },
   {
     id: 16,
+    provaId: 1,
     titulo: "Game Theory e Adversarial Search",
     conteudo: `Para representar jogos é necessário definir claramente as regras, ter um conjunto finito de ações, ter decisões racionais e resultados bem definidos.
 Em um jogo competitivo cada jogador realiza a sua jogada sem saber o que o outro fará. 
@@ -366,6 +392,7 @@ Curiosidade: A Deep Blue foi a primeira máquina a ganhar um jogo de xadrez cont
   },
   {
     id: 17,
+    provaId: 1,
     titulo: "Algoritmo MINIMAX",
     conteudo: `Assume dois ótimos jogadores: MIN e MAX. A estratégia é maximizar a função de utilidade de um player(MAX), enquanto minimiza a utilidade do oponente(MIN).
 Por exemplo: O bot de um jogo de xadrez busca as melhores ações para obter o rei do adversário e evitar que suas peças sejam comidas.
@@ -388,6 +415,7 @@ O valor permanece válido como a melhor utilidade garantida, mas os movimentos r
 
   {
     id: 18,
+    provaId: 1,
     titulo: "Poda Alfa-beta",
     conteudo: `Devido ao grande número de estados, a árvore construída pelo algoritmo MINIMAX pode ser muito extensa.  Para evitar que todos os nós da árvore sejam expandidos, é feito uma poda em nós que não afetarão a decisão final do algoritmo. Um tipo de poda é a Alfa-Beta, ela consiste em utilizar dois tipos de valores para decidir quais nos serão podados, o alfa e o beta.
 
@@ -419,6 +447,7 @@ Não é viável armazenar a utilidade de todos os estados possíveis, pois a qua
 
   {
     id: 19,
+    provaId: 1,
     titulo: "Passo-a-Passo Poda Alfa-beta",
     slides: [
       {legenda:"Inicializar a raiz com valores de [-INF, +INF], alfa e beta, respectivamente",
@@ -458,6 +487,7 @@ Não é viável armazenar a utilidade de todos os estados possíveis, pois a qua
   },
   {
     id: 20,
+    provaId: 1,
     titulo: "Decisões Imperfeitas e Função de Avaliação",
     conteudo: `<strong>Decisões imperfeitas</strong>
 Limitações do MINIMAX:
@@ -506,7 +536,249 @@ Propriedades:
     na função de avaliação.
     - Exemplo (jogo da velha): "3 em linha" encerra o jogo 
     independentemente da pontuação heurística`,
+  },
+
+  // ── PROVA 2 ────────────────────────────────────────────────
+  {
+    id: 21,
+    provaId: 2,
+    titulo: "Busca Local",
+    conteudo: `A busca local é uma técnica utilizada para encontrar soluções em espaços de estados muito grandes ou até infinitos utilizando pouca memória. Diferente de outros métodos de busca, ela não armazena todos os estados nem utiliza uma árvore de busca, trabalhando apenas com o estado atual e buscando melhorá-lo de forma iterativa. Nesse tipo de abordagem, o espaço de estados corresponde ao conjunto completo das soluções possíveis, chamadas de configurações.
+Na busca local, o algoritmo utiliza apenas decisões locais para tentar melhorar o estado atual. A partir de um estado específico, ele busca estados vizinhos que maximizem ou minimizem a função objetivo, dependendo do problema. Entretanto, pode acontecer de o algoritmo encontrar um máximo local e considerá-lo uma solução adequada, mesmo que ele não seja o máximo global. Além disso, a busca local não é recomendada para todos os problemas, principalmente quando é necessário garantir a solução ótima.
+No problema das 8 rainhas, por exemplo, cada configuração representa todas as rainhas posicionadas no tabuleiro, mesmo que existam conflitos entre elas. Apesar de ser eficiente em termos de memória, a busca local possui a desvantagem de poder nunca explorar o estado em que a solução correta realmente se encontra. Além disso, os estados já visitados normalmente não são armazenados. A busca local é utilizada preferencialmente em problemas em que há limitação de memória ou espaços de busca muito grandes.
+
+<strong>Espaço de estado paisagem(topologia)</strong>
+O espaço de estados em busca local pode ser representado como uma paisagem(topologia), em que cada estado possui um valor definido pela função objetivo. Essa função mede a qualidade de uma possível solução, permitindo que o algoritmo explore os vizinhos do estado atual em busca de estados melhores. 
+Na maioria dos casos, o objetivo é encontrar o melhor valor possível para a função objetivo. Contudo, durante a busca, o algoritmo pode encontrar soluções locais e não alcançar a solução ideal. 
+
+<strong>Conceitos:</strong>
+— Máximo global: maior valor encontrado para a função objetivo, representando o pico mais alto da paisagem. 
+— Mínimo global: menor valor encontrado para a função objetivo, representando o ponto mais baixo da paisagem. 
+— Máximo local: estado que possui valor maior que os estados vizinhos, mas que não é necessariamente o maior valor de toda a paisagem. 
+— Mínimo local: estado que possui valor menor que os estados vizinhos, mas que não é necessariamente o menor valor de toda a paisagem. 
+— Subida de encosta (Hill Climbing): método utilizado para encontrar o máximo global. O algoritmo vai “subindo” para estados cada vez melhores, porém pode parar em um máximo local sem alcançar o melhor valor possível. 
+— Descida de gradiente (Gradient Descent): método utilizado para encontrar o mínimo global. O algoritmo segue na direção de maior diminuição da função objetivo, mas pode ficar preso em um mínimo local sem atingir o mínimo global.`,
+  },
+
+
+  {
+    id: 22,
+    provaId: 2,
+    titulo: "Hill Climbing",
+    conteudo: `O Hill Climbing é um algoritmo de busca local utilizado para encontrar soluções melhores de forma iterativa. Em cada etapa, o algoritmo analisa apenas os vizinhos do estado atual e escolhe aquele que possui o valor mais alto da função objetivo, ou seja, o vizinho que representa a encosta mais alta.
+O processo continua enquanto existirem vizinhos com valores superiores ao estado atual. Quando nenhum vizinho apresenta um valor mais alto, o algoritmo encerra a execução. Por considerar apenas a melhor escolha imediata, sem analisar os possíveis caminhos futuros, o Hill Climbing também é conhecido como busca local gulosa.
+Apesar de ser simples e eficiente, o algoritmo pode ficar preso em máximos ou mínimos locais. Isso ocorre porque o algoritmo interrompe a execução no momento em que não encontra mais vizinhos com valores melhores que o estado atual, mesmo que ainda exista uma solução superior em outra região do espaço de estados. Entretanto, em alguns problemas, esses máximos e mínimos locais podem ser considerados soluções aceitáveis.
+
+<strong>Conceitos:</strong>
+— Cordilheiras: são extensas sequências de máximos locais. A existência de cordilheiras pode fazer com que o algoritmo pare precocemente em um máximo local, encontrando apenas uma solução ótima local em vez do máximo global. 
+
+<img src="${Cordilheira}" alt="Exemplo de uma cordilheira em um espaço de busca" class="resumo__gif"/>
+<p class="resumo__gif-label">Exemplo de uma cordilheira em um espaço de busca</p>
+
+— Platôs: são regiões em que os estados vizinhos possuem o mesmo valor da função objetivo. Isso pode fazer com que o algoritmo gaste muito tempo explorando lateralmente ou até pare prematuramente, sem conseguir avançar para estados melhores.
+— Shoulders: são regiões semelhantes aos platôs, porém existe uma saída para estados melhores. O problema é que o algoritmo pode ter dificuldade em encontrar a direção correta para continuar a busca. 
+
+<img src="${ShouldersPlato}" alt="Exemplo de um espaço de busca que contém um Shoulder e um Platô" class="resumo__gif"  style="max-width: 100%; max-height: 400px;"/>
+<p class="resumo__gif-label">Exemplo de um espaço de busca que contém um Shoulder e um Platô</p>
+
+<strong>Propriedades:</strong>
+— Completo: Não. O algoritmo pode ficar preso em máximos locais, parar em platôs ou entrar em loops, não garantindo que encontrará uma solução mesmo que ela exista. 
+— Ótimo: O algoritmo do Hill Climbing não consegue garantir que uma solução ótima seja encontrada. Contudo, alguns pontos devem ser considerados:
+    — Em problemas convexos (onde existe apenas um pico principal e não há máximos locais), o algoritmo pode encontrar a solução ótima. 
+    — Mesmo variantes como o Random-Restart Hill Climbing não conseguem garantir uma solução ótima em problemas normais (não convexos). 
+    — Em alguns casos, uma solução subótima já é suficiente. 
+    — Encontrar a solução ótima pode possuir um alto custo computacional. 
+
+<strong>Random-restart Hill Climbing:</strong>
+O Random-Restart Hill Climbing consiste em executar o algoritmo Hill Climbing múltiplas vezes a partir de estados iniciais aleatórios, escolhendo ao final a melhor solução encontrada.
+Essa abordagem ajuda a evitar que o algoritmo fique preso em máximos locais. Contudo, não há garantia de que o máximo global será encontrado, embora as chances de alcançá-lo sejam aumentadas.
+Além disso, o Random-Restart Hill Climbing consegue escapar de regiões conhecidas como shoulders. Porém, em regiões de platô, o algoritmo ainda pode apresentar pouco ou nenhum progresso significativo.`,
+  },
+
+  {
+    id: 23,
+    provaId: 2,
+    titulo: "Simulated Annealing (Têmpera Simulada)",
+    conteudo:`O Simulated Annealing combina a subida de encosta com um processo aleatório.
+O algoritmo utiliza uma variável chamada temperatura, que é decrementada ao longo da execução. Essa temperatura é utilizada para medir a probabilidade de o algoritmo aceitar um estado pior que o atual.
+À medida que a temperatura diminui, a probabilidade de aceitar estados piores também diminui. Por outro lado, quanto maior a temperatura, maior será a possibilidade de o algoritmo selecionar um estado considerado “ruim”.
+Esse mecanismo é utilizado para “chacoalhar” a busca, permitindo que o algoritmo explore outras regiões do espaço de estados e evitando que ele fique preso em máximos locais.
+
+— Temperatura alta: mais movimentos ruins são permitidos, aumentando a flexibilidade de escolha do algoritmo.
+— Temperatura baixa: menos movimentos ruins são permitidos, reduzindo a flexibilidade de escolha.
+
+O algoritmo de têmpera simulada pode ser utilizado tanto para encontrar o mínimo global quanto o máximo global. Em muitos casos, os problemas são tratados como maximização; porém, problemas de minimização podem ser resolvidos invertendo o sinal da função objetivo.
+
+<strong>Propriedades:</strong>
+— Completo: Não. Pode demorar muito para encontrar uma solução ou até mesmo parar a execução antes de encontrar a solução.
+— Ótimo: Teoricamente, o algoritmo de Têmpera Simulada pode ser considerado ótimo. Isso ocorre porque, em situações onde a temperatura diminui de forma extremamente lenta e o algoritmo pode executar sem limite de tempo, ele consegue convergir para a solução ótima global. Contudo, na prática, o algoritmo normalmente é considerado não ótimo, pois alcançar essa solução exigiria um custo computacional muito elevado e um tempo de execução excessivamente grande.`,
+  },
+
+  {
+    id: 24,
+    provaId: 2,
+    titulo: "Local Beam Search (Busca em feixe local)",
+    conteudo: ` Diferente do Hill Climbing e do Simulated Annealing, que armazenam apenas o estado atual, o Local Beam Search mantém simultaneamente um conjunto de (k) estados.
+O algoritmo inicia com estados aleatórios, cuja quantidade é definida pelo valor de (k). Por exemplo, se (k = 4), a busca começará com 4 estados aleatórios.
+Em seguida, são gerados todos os vizinhos desses estados. Após a geração, os (k) melhores vizinhos são selecionados, e o processo se repete continuamente.
+O algoritmo encerra sua execução quando encontra o estado objetivo entre os estados gerados.
+
+<strong>Propriedades:</strong> 
+Ótimo: Não. O Local Beam Search não garante encontrar a solução ótima global, pois pode convergir para máximos locais e descartar estados que poderiam levar à melhor solução. 
+Completo: Não. O algoritmo não garante encontrar uma solução mesmo que ela exista, pois mantém apenas (k) estados simultaneamente e pode eliminar caminhos importantes durante a busca. 
+
+<strong>Busca em feixe local estocástica</strong>
+A busca em feixe local pode sofrer com a falta de diversidade, ou seja, os estados podem acabar concentrados em uma pequena região do espaço de estados.
+Uma solução para esse problema é combinar a função objetivo com probabilidade para selecionar os sucessores.
+Nessa abordagem, os estados mais promissores possuem maior chance de serem escolhidos, mas estados menos promissores ainda podem ser selecionados em menores proporções.
+Isso aumenta a diversidade da busca e reduz as chances de o algoritmo ficar preso em uma única região do espaço de estados.`,
+  },
+
+  {
+    id: 25,
+    provaId: 2,
+    titulo: "Algoritmos Genéticos",
+    conteudo: `Os Algoritmos Genéticos são métodos de resolução de problemas de otimização inspirados no processo de seleção natural. Nesse método, existe uma população de indivíduos, também chamados de estados ou cromossomos, em que cada indivíduo representa uma possível solução para o problema.
+Durante a execução, os indivíduos mais aptos, ou seja, aqueles que possuem melhores valores para a função objetivo, possuem maior chance de gerar descendentes. Esses novos indivíduos formam a próxima geração, permitindo que o algoritmo evolua gradualmente em busca da melhor solução possível.
+O funcionamento do algoritmo simula mecanismos da evolução biológica para encontrar o cromossomo mais adaptável, correspondente à solução mais adequada do problema.
+
+<strong>Propriedades:</strong> 
+— Completo: Não são completos porque não garantem encontrar uma solução, mesmo que ela exista. O algoritmo pode convergir prematuramente para mínimos ou máximos locais ou encerrar a execução antes de explorar regiões importantes do espaço de busca.
+— Ótimo: Não são ótimos porque não garantem encontrar o máximo ou mínimo global. Apesar de frequentemente produzirem boas soluções, o resultado encontrado pode ser apenas uma solução ótima local.
+
+<strong>Geração:</strong> 
+Uma geração corresponde ao conjunto de indivíduos(população) existente em um determinado momento da execução do algoritmo.
+A cada geração, os indivíduos passam pelas etapas de seleção, crossover e mutação, gerando novos descendentes que formarão a próxima geração. Com isso, o algoritmo busca produzir populações cada vez mais adaptadas ao problema.
+
+<strong>Algoritmo da formiga:</strong> 
+É um método de otimização inspirado no comportamento das formigas na busca por alimento. As formigas deixam rastros de feromônio no caminho percorrido, e caminhos com maior quantidade de feromônio possuem maior probabilidade de serem escolhidos pelas outras formigas.
+Com o tempo, os caminhos mais curtos e eficientes acumulam mais feromônios, permitindo que o algoritmo encontre boas soluções para problemas de otimização e busca de caminhos.
+O algoritmo da formiga é utilizado em sistemas de GPS para encontrar rotas mais eficientes entre diferentes pontos.`,
+  },
+
+  {
+    id: 26,
+    provaId: 2,
+    titulo: "Representação de um problema com Algoritmos Genéticos",
+    conteudo: `Nos Algoritmos Genéticos, o problema é representado por um espaço de busca formado por uma população de indivíduos. Cada indivíduo corresponde a uma possível solução para o problema e é representado por um cromossomo.
+O cromossomo é composto por um vetor de tamanho finito, cujos componentes podem assumir diferentes valores. Cada posição desse vetor é chamada de gene, e cada gene representa uma característica específica da solução individual.
+A forma mais comum de representar cromossomos é utilizando representação binária, com valores 0 e 1. Isso ocorre porque a representação binária é simples de implementar e facilita operações importantes do algoritmo, como crossover e mutação. Além disso, os valores binários permitem indicar facilmente a presença ou ausência de determinadas características em uma solução.
+Outra forma de representação é utilizar valores decimais, principalmente em problemas que envolvem valores contínuos.
+
+<img src="${definicoesAG}" alt="Representação das principais definições de um algoritmo genético" class="resumo__gif" style="max-width: 100%; max-height: 100px;"/>
+<p class="resumo__gif-label">Representação das principais definições de um algoritmo genético</p>
+
+
+<strong>Fitness Score</strong>
+A aptidão(Fitness) representa a capacidade de um indivíduo “competir” dentro da população dos Algoritmos Genéticos. Para isso, é calculado um fitness score para cada indivíduo, indicando a qualidade da solução que ele representa.
+Os indivíduos que possuem melhores valores de fitness possuem maior probabilidade de serem selecionados para a reprodução e, consequentemente, gerar melhores descendentes durante a fase de crossover.
+A função de fitness corresponde à função objetivo do problema, sendo responsável por avaliar o quão boa é cada solução encontrada pelo algoritmo.
+
+<img src="${fitness}" alt="Exemplo de como funciona o algoritmo." class="resumo__gif"  style="max-width: 100%; max-height: 400px;"/>
+<p class="resumo__gif-label">Exemplo de como funciona o algoritmo realiza a busca</p>
+
+<strong>Roulette Wheel Selection</strong>
+É um método de seleção utilizado nos Algoritmos Genéticos em que a probabilidade de um indivíduo ser escolhido é proporcional ao seu fitness. Dessa forma, quanto maior for o fitness de um cromossomo, maior será sua chance de ser selecionado para reprodução.
+O funcionamento pode ser comparado a uma roleta com várias posições. Considerando uma roleta com 100 posições, cada cromossomo ocupa uma quantidade de espaços proporcional ao seu valor de fitness. Durante a seleção, são gerados números aleatórios entre 1 e 100, e o indivíduo correspondente à posição sorteada é escolhido.
+Em implementações simples, um mesmo cromossomo pode ser selecionado várias vezes. Quando isso acontece e o indivíduo reproduz com ele mesmo, os descendentes tendem a ser idênticos ao pai, reduzindo a diversidade genética da população.
+Para evitar esse problema, utiliza-se a seleção sem reposição. Nesse método, após um cromossomo ser selecionado como pai, ele não pode ser escolhido novamente na mesma etapa de seleção, aumentando a diversidade genética dos descendentes.
+
+<strong>Crossover</strong>
+O Crossover é a principal etapa dos Algoritmos Genéticos. Nessa fase, dois indivíduos selecionados anteriormente são utilizados para gerar um novo descendente. O filho é criado combinando características dos dois pais, formando uma nova possível solução para o problema.
+A escolha das características herdadas de cada pai ocorre de forma aleatória, permitindo que diferentes combinações sejam geradas ao longo das gerações.
+Existem diferentes operadores de crossover utilizados nos Algoritmos Genéticos para combinar características dos pais e gerar novos descendentes.
+Principais tipos:
+— One-point crossover: utiliza um único ponto de corte no cromossomo. Após esse ponto, as partes finais dos pais são trocadas para gerar os filhos.
+— Two-point crossover: utiliza dois pontos de corte. A região entre esses pontos é trocada entre os pais, permitindo combinações mais variadas.
+— Uniform crossover: cada gene do descendente é escolhido aleatoriamente entre os genes dos dois pais, aumentando a diversidade genética.
+
+<img src="${crossover2}" alt="Representação de um One-point crossover" class="resumo__gif"/>
+<p class="resumo__gif-label">Representação de um One-point crossover</p>
+<img src="${crossover3}" alt="Representação de um Two-point crossover" class="resumo__gif"/>
+<p class="resumo__gif-label">Representação de um Two-point crossover</p>
+<img src="${crossover1}" alt="Representação de um Uniform crossover" class="resumo__gif"/>
+<p class="resumo__gif-label">Representação de um Uniform crossover</p>
+
+<strong>Mutação</strong>
+A mutação é uma etapa utilizada nos Algoritmos Genéticos para aumentar a diversidade genética da população. Quando os pais possuem cromossomos muito parecidos, ou até mesmo iguais, os descendentes gerados também tendem a ser semelhantes. Isso reduz a diversidade da população e pode fazer o algoritmo ficar preso em mínimos ou máximos locais.
+Para evitar esse problema, são realizadas alterações aleatórias nos genes dos cromossomos, permitindo o surgimento de novas características e aumentando a variedade de soluções possíveis.
+A frequência com que essas alterações ocorrem é definida pela taxa de mutação.
+A taxa de mutação é o valor que define a frequência com que alterações aleatórias irão ocorrer nos genes dos cromossomos durante a etapa de mutação dos Algoritmos Genéticos.
+Ela funciona como uma probabilidade. Por exemplo, uma taxa de mutação de 5% indica que cada gene possui 5% de chance de sofrer uma alteração aleatória.
+O objetivo da taxa de mutação é aumentar a diversidade genética da população, evitando que todos os indivíduos fiquem muito parecidos e que o algoritmo fique preso em mínimos ou máximos locais.
+
+
+<img src="${mutacao}" alt="Representação da realização de uma possível mutação no filho" class="resumo__gif"/>
+<p class="resumo__gif-label">Representação da realização de uma possível mutação no filho</p>
+
+<strong>Critério de parada</strong>
+Os critérios de parada definem quando a execução de um Algoritmo Genético deve ser encerrada. 
+O cenário ideal é encontrar o máximo global, ou seja, a melhor solução possível para o problema. Contudo, nem sempre isso é possível, principalmente em espaços de busca muito grandes.
+Por isso, outros critérios de parada podem ser utilizados durante a execução do algoritmo.
+Principais critérios de parada:
+— Encontrar o máximo global: situação ideal em que o algoritmo encontra a melhor solução possível
+— Limite de tempo de execução: o algoritmo é encerrado após determinado tempo
+— Limite do número de iterações(gerações): a execução para após atingir uma quantidade máxima de gerações
+— Sucessivas populações com baixa diversidade: indica que os indivíduos estão muito parecidos e que o algoritmo pode ter convergido para uma solução local.
+
+<strong>Elitismo</strong>
+O elitismo é uma estratégia utilizada nos Algoritmos Genéticos para preservar os melhores indivíduos da população ao longo das gerações.
+Após a geração de novos descendentes, é necessário decidir se os pais permanecerão ou serão removidos da população. Remover os pais pode causar a perda de características importantes de indivíduos bem adaptados. Por outro lado, manter muitos indivíduos antigos pode reduzir a diversidade genética da população.
+O elitismo busca equilibrar esse processo, garantindo que os indivíduos mais aptos sejam preservados para a próxima geração.`,
+  },
+
+  {
+    id: 27,
+    provaId: 2,
+    titulo: "Aplicações do Algoritmo Genético",
+    conteudo:`Os Algoritmos Genéticos possuem aplicações em diversas áreas, principalmente em problemas de otimização e busca por melhores soluções.
+Principais aplicações:
+—  Processamento de Imagens: utilizados em tarefas como segmentação de imagens, auxiliando na identificação e separação de regiões importantes.
+— Ciência Médica: ajudam na determinação da estrutura do DNA utilizando informações espectrométricas.
+— Mercado Financeiro: utilizados para encontrar a melhor alocação de ativos em uma carteira de investimentos, buscando equilibrar risco e retorno.
+— Machine Learning:
+    • Ajuste de hiperparâmetros(tuning)
+    • Definição da melhor arquitetura para redes neurais, como quantidade de neurônios, camadas ocultas, filtros e pooling
+    • Seleção de atributos(feature selection)`,
+  },
+
+  {
+    id: 28,
+    provaId: 2,
+    titulo: "Seleção de atributos(feature selection)",
+    conteudo:` A seleção de atributos é utilizada para escolher as características mais relevantes de um conjunto de dados, reduzindo informações desnecessárias e melhorando o desempenho dos modelos de aprendizado de máquina.
+Principais métodos:
+— Filter: avalia estatisticamente cada atributo de forma independente do modelo de aprendizado. Utiliza métricas como correlação de Pearson e informação mútua para identificar os atributos mais relevantes.
+— Embedded: a seleção de atributos ocorre durante o treinamento do próprio algoritmo de aprendizado. Alguns modelos, como Árvores de Decisão, conseguem identificar automaticamente quais atributos são mais importantes.
+— Wrapper: realiza o treinamento do modelo várias vezes utilizando diferentes combinações de atributos e compara o desempenho obtido em cada caso para encontrar a melhor seleção.
+
+<strong>Métodos de wrapper populares</strong>
+O Forward Selection inicia com um modelo sem atributos. A cada etapa, o algoritmo adiciona a característica que proporciona a maior melhoria no desempenho do modelo. O processo continua até que não existam melhorias significativas ou até atingir um critério de parada.
+
+<img src="${ForwardSelection}" alt="Exemplo da execução do  Forward Selection" class="resumo__gif"/>
+<p class="resumo__gif-label">Exemplo da execução do  Forward Selection</p>
+
+Já o Backward Elimination funciona de forma oposta. Nesse método, o modelo começa utilizando todos os atributos disponíveis e, em cada etapa, remove a característica menos relevante. Após cada remoção, o modelo é treinado novamente para verificar se o desempenho continua adequado.
+Em ambos os métodos, é necessário definir critérios de parada para evitar excesso de processamento e complexidade desnecessária.
+
+<img src="${BackwardSelection}" alt="Exemplo da execução do algoritmo Backward Elimination" class="resumo__gif"/>
+<p class="resumo__gif-label">Exemplo da execução do algoritmo Backward Elimination</p>`,
   }
+];
+
+export const provas = [
+  {
+    id: 1,
+    titulo: "Prova 1",
+    descricao: "Fundamentos de IA, agentes, algoritmos de busca e teoria dos jogos.",
+    emoji: "📘",
+  },
+  {
+    id: 2,
+    titulo: "Prova 2",
+    descricao: "Exemplo com conteúdo sobre futebol.",
+    emoji: "📗",
+  },
 ];
 
 export default topicos;

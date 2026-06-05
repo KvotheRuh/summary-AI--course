@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Sidebar from "../components/Sidebar";
 import QuizEngine from "../components/QuizEngine";
-import questoes from "../data/questoes";
-import topicos from "../data/topicos";
+import questoesData from "../data/questoes";
+import topicosData from "../data/topicos";
 import "../styles/QuizPage.css";
 
 function shuffle(arr) {
@@ -16,7 +16,11 @@ function shuffle(arr) {
 
 const BATCH = 15;
 
-export default function QuizPage() {
+export default function QuizPage({ onNavigate, provaId, topicos: topicosProva }) {
+  const topicos = topicosProva ?? topicosData;
+  const questoes = provaId
+    ? questoesData.filter(q => q.provaId === provaId)
+    : questoesData;
   const [mode, setMode] = useState(null);
   const [activeTopicId, setActiveTopicId] = useState(topicos[0].id);
   const [questions, setQuestions] = useState(null);

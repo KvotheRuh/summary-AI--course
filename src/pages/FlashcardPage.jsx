@@ -1,8 +1,8 @@
 import { useState, useEffect, useCallback } from "react";
 import Sidebar from "../components/Sidebar";
 import "../styles/FlashcardPage.css";
-import flashcards from "../data/flashcards";
-import topicos from "../data/topicos";
+import flashcardsData from "../data/flashcards";
+import topicosData from "../data/topicos";
 
 function shuffle(arr) {
   const a = [...arr];
@@ -121,7 +121,11 @@ function CardViewer({ deck, onBack }) {
   );
 }
 
-export default function FlashcardPage() {
+export default function FlashcardPage({ onNavigate, provaId, topicos: topicosProva }) {
+  const topicos = topicosProva ?? topicosData;
+  const flashcards = provaId
+    ? flashcardsData.filter(f => f.provaId === provaId)
+    : flashcardsData;
   const [mode, setMode] = useState(null);       // null | "random" | "topico"
   const [activeTopicId, setActiveTopicId] = useState(topicos[0].id);
   const [deck, setDeck] = useState(null);
