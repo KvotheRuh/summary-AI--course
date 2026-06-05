@@ -776,7 +776,7 @@ export const provas = [
   {
     id: 2,
     titulo: "Prova 2",
-    descricao: "Exemplo com conteúdo sobre futebol.",
+    descricao: "Busca Local e Algoritmos Genéticos.",
     emoji: "📗",
   },
 ];
