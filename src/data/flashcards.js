@@ -264,7 +264,7 @@ const flashcards = [
   { id: 204, topicoId: 28, provaId: 2, frente: "Como opera a estratégia de seleção por métodos de 'Wrapper'?", verso: "Ela treina o modelo repetidamente testando diferentes combinações de atributos e validando o score final." },
   { id: 205, topicoId: 28, provaId: 2, frente: "Qual o ponto de partida do algoritmo 'Forward Selection'?", verso: "Um modelo vazio, contendo exatamente zero atributos selecionados." },
   { id: 206, topicoId: 28, provaId: 2, frente: "Como o Forward Selection adiciona novas variáveis a cada passo?", verso: "Ele injeta a variável isolada que causa o maior incremento de performance no modelo atual." },
-  { id: 207, topicoId: 28, provaId: 2, frente: "Qual a estratégia inversa aplicada pelo método 'Backward Elimination'?", verso: "Inicia o modelo com 100% dos atributos disponíveis e descarta a variável menos relevante a cada rodada." },
+  { id: 207, topicoId: 28, provaId: 2, frente: "Qual a estratégia inversa aplicada pelo método 'Backward Selection'?", verso: "Inicia o modelo com 100% dos atributos disponíveis e descarta a variável menos relevante a cada rodada." },
   { id: 208, topicoId: 28, provaId: 2, frente: "O que é mandatório configurar tanto no Forward quanto no Backward para evitar processamento infinito?", verso: "Critérios claros de parada, limitando a adição ou remoção quando não houver ganho estatístico significativo." }
 
 ];

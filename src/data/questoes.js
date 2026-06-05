@@ -3419,7 +3419,7 @@ const questoes = [
     id: 239,
     topicoId: 28,
     provaId: 2,
-    question: "Como opera o algoritmo denominado 'Backward Elimination' no contexto de métodos Wrapper?",
+    question: "Como opera o algoritmo denominado 'Backward Selection' no contexto de métodos Wrapper?",
     options: [
       "O modelo começa utilizando todos os atributos disponíveis e, em cada etapa, remove a característica menos relevante.",
       "Inicia sem nenhum atributo e remove os nós fringe que gerarem custos.",
@@ -3428,13 +3428,13 @@ const questoes = [
       "Substitui todas as variáveis contínuas por representações binárias de tamanho finito."
     ],
     correct: 0,
-    explanation: "O Backward Elimination faz o caminho inverso do Forward: joga todo mundo para dentro do modelo e vai eliminando, elo por elo, a variável que menos faz falta."
+    explanation: "O Backward Selection faz o caminho inverso do Forward: joga todo mundo para dentro do modelo e vai eliminando, elo por elo, a variável que menos faz falta."
   },
   {
     id: 240,
     topicoId: 28,
     provaId: 2,
-    question: "Por que é estritamente necessário configurar 'Critérios de Parada' em abordagens de Forward Selection e Backward Elimination?",
+    question: "Por que é estritamente necessário configurar 'Critérios de Parada' em abordagens de Forward Selection e Backward Selection?",
     options: [
       "Para forçar o modelo a converter variáveis decimais em binárias.",
       "Para garantir que o modelo encontre o máximo global na primeira iteração.",

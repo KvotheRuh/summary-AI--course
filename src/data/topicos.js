@@ -758,11 +758,11 @@ O Forward Selection inicia com um modelo sem atributos. A cada etapa, o algoritm
 <img src="${ForwardSelection}" alt="Exemplo da execução do  Forward Selection" class="resumo__gif"/>
 <p class="resumo__gif-label">Exemplo da execução do  Forward Selection</p>
 
-Já o Backward Elimination funciona de forma oposta. Nesse método, o modelo começa utilizando todos os atributos disponíveis e, em cada etapa, remove a característica menos relevante. Após cada remoção, o modelo é treinado novamente para verificar se o desempenho continua adequado.
+Já o Backward Selection funciona de forma oposta. Nesse método, o modelo começa utilizando todos os atributos disponíveis e, em cada etapa, remove a característica menos relevante. Após cada remoção, o modelo é treinado novamente para verificar se o desempenho continua adequado.
 Em ambos os métodos, é necessário definir critérios de parada para evitar excesso de processamento e complexidade desnecessária.
 
-<img src="${BackwardSelection}" alt="Exemplo da execução do algoritmo Backward Elimination" class="resumo__gif"/>
-<p class="resumo__gif-label">Exemplo da execução do algoritmo Backward Elimination</p>`,
+<img src="${BackwardSelection}" alt="Exemplo da execução do algoritmo Backward Selection" class="resumo__gif"/>
+<p class="resumo__gif-label">Exemplo da execução do algoritmo Backward Selection</p>`,
   }
 ];
 
